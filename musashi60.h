@@ -26,11 +26,25 @@
  * The second converts the arguments into a two-dimensional array which
  * represents the switch matrix.
  */
+
+#define ___ KC_NO
+
 #define LAYOUT( \
-    k00, k01, k02, \
-      k10,  k12    \
+         LG1, LF1, LE1, LD1, LC1, LB1,           RB1, RC1, RD1, RE1, RF1, RG1,      \
+    LH2, LG2, LF2, LE2, LD2, LC2, LB2,           RB2, RC2, RD2, RE2, RF2, RG2, RH2, \
+    LH3, LG3, LF3, LE3, LD3, LC3, LB3, LA3, RA3, RB3, RC3, RD3, RE3, RF3, RG3, RH3, \
+    LH4, LG4, LF4, LE4, LD4, LC4, LB4, LA4, RA4, RB4, RC4, RD4, RE4, RF4, RG4, RH4, \
+                        LD5, LC5, LB5, LA5, RA5, RB5, RC5, RD5                      \
 ) \
 { \
-    { k00, k01,   k02 }, \
-    { k10, KC_NO, k12 }  \
+    { ___, LB1, LC1, LD1, LE1, LF1, LG1, ___ }, \
+    { ___, LB2, LC2, LD2, LE2, LF2, LG2, LH2 }, \
+    { LA3, LB3, LC3, LD3, LE3, LF3, LG3, LH3 }, \
+    { LA4, LB4, LC4, LD4, LE4, LF4, LG4, LH4 }, \
+    { LA5, LB5, LC5, LD5, ___, ___, ___, ___ },	\
+    { ___, RB1, RC1, RD1, RE1, RF1, RG1, ___ },	\
+    { ___, RB2, RC2, RD2, RE2, RF2, RG2, RH2 }, \
+    { RA3, RB3, RC3, RD3, RE3, RF3, RG3, RH3 }, \
+    { RA4, RB4, RC4, RD4, RE4, RF4, RG4, RH4 }, \
+    { RA5, RB5, RC5, RD5, ___, ___, ___, ___ }	\
 }
