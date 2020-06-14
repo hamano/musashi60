@@ -31,11 +31,12 @@ enum custom_keycodes {
 #define RAISE MO(_RAISE)
 #define LOWER MO(_LOWER)
 
-#define MT_CS MT(MOD_LCTL, KC_SPACE)
-#define MT_SS MT(MOD_LSFT, KC_SPACE)
+#define MT_CS MT(MOD_LCTL, KC_SPACE) // Tap for Space, hold for Control
+#define MT_LSS MT(MOD_LSFT, KC_SPACE) // Tap for Space, hold for LShift
+#define MT_RSS MT(MOD_LSFT, KC_SPACE) // Tap for Space, hold for RShift
 
-#define MT_LM MT(LOWER, KC_MHEN)
-#define MT_RH MT(RAISE, KC_HENK)
+#define MT_RH MT(RAISE, KC_HENK) // Tap for HENKAN, hold for Raise
+#define MT_LM MT(LOWER, KC_MHEN) // Tap for MUHENKAN, hold for Lower
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BASE] = LAYOUT(
@@ -43,7 +44,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_LBRC,KC_TAB, KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,                     KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,   KC_RBRC,KC_BSPC,\
     KC_2,   KC_MINS,KC_A,   KC_S,   KC_D,   KC_F,   KC_G,   KC_ESC,   KC_BSPC,KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,KC_QUOT,KC_ENT, \
     KC_3,   KC_EQL, KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   KC_TAB,   KC_ENT, KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,KC_RSFT,KC_RSFT,\
-                                    KC_LALT,KC_LGUI,MT_CS,  MT_LM,    MT_RH,  MT_SS,  KC_HENK,KC_MHEN                                 \
+                                    KC_LALT,KC_LGUI,MT_CS,  MT_LSS,   MT_RSS, MT_RH,  MT_LM,  KC_RALT                                 \
   ),
   [_RAISE] = LAYOUT(
             KC_NO,  KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,                    KC_F6,  KC_F7,  KC_F8,  KC_F9,  KC_F10, KC_NO,          \
