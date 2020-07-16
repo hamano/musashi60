@@ -31,34 +31,32 @@ enum custom_keycodes {
 #define RAISE MO(_RAISE)
 #define LOWER MO(_LOWER)
 
-#define MT_CS MT(MOD_LCTL, KC_SPACE) // Tap for Space, hold for Control
+#define MT_CM MT(MOD_LCTL, KC_MHEN) // Tap for Space, hold for Muhenkan
+#define MT_CH MT(MOD_LCTL, KC_HENK) // Tap for Space, hold for Henkan
 #define MT_LSS MT(MOD_LSFT, KC_SPACE) // Tap for Space, hold for LShift
 #define MT_RSS MT(MOD_LSFT, KC_SPACE) // Tap for Space, hold for RShift
-
-#define MT_RH MT(RAISE, KC_HENK) // Tap for HENKAN, hold for Raise
-#define MT_LM MT(LOWER, KC_MHEN) // Tap for MUHENKAN, hold for Lower
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BASE] = LAYOUT(
             KC_GRV, KC_1,   KC_2,   KC_3,   KC_4,   KC_5,                     KC_6,   KC_7,   KC_8,   KC_9,   KC_0,   KC_BSLS,        \
-    KC_LBRC,KC_TAB, KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,                     KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,   KC_RBRC,KC_BSPC,\
-    KC_2,   KC_MINS,KC_A,   KC_S,   KC_D,   KC_F,   KC_G,   KC_ESC,   KC_BSPC,KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,KC_QUOT,KC_ENT, \
-    KC_3,   KC_EQL, KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   KC_TAB,   KC_ENT, KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,KC_RSFT,KC_RSFT,\
-                                    KC_LALT,KC_LGUI,MT_CS,  MT_LSS,   MT_RSS, MT_RH,  MT_LM,  KC_RALT                                 \
+    KC_LBRC,KC_TAB, KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,   KC_LBRC,  KC_RBRC,KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,   KC_MINS,KC_BSPC,\
+    KC_2,   KC_EQL, KC_A,   KC_S,   KC_D,   KC_F,   KC_G,   KC_ESC,   KC_BSPC,KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,KC_QUOT,KC_ENT, \
+    KC_HOME,KC_LSFT,KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   KC_TAB,   KC_ENT, KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,KC_MINS,KC_END, \
+                            KC_LALT,KC_LGUI,MT_CM,  LOWER,  MT_LSS,   MT_RSS, RAISE,  MT_CH,  KC_RALT,KC_RALT                         \
   ),
   [_RAISE] = LAYOUT(
             KC_NO,  KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,                    KC_F6,  KC_F7,  KC_F8,  KC_F9,  KC_F10, KC_NO,          \
-    KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,                    KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  \
-    KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,    KC_NO,  KC_LEFT,KC_DOWN,KC_UP,  KC_RGHT,KC_NO,  KC_NO,  KC_NO,  \
-    KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,    KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  \
-                                    KC_NO,  KC_NO,  KC_NO,  KC_NO,    KC_NO,  KC_NO,  KC_NO,  KC_NO                                   \
+    KC_NO,  KC_NO,  _______,KC_MS_U,_______,KC_NO,  KC_NO,  KC_NO,    _______,_______,_______,_______,_______,_______,_______,_______,\
+    KC_NO,  KC_NO,  KC_MS_L,KC_MS_D,KC_MS_R,KC_NO,  KC_NO,  KC_NO,    KC_NO,  KC_LEFT,KC_DOWN,KC_UP,  KC_RGHT,KC_NO,  KC_NO,  KC_NO,  \
+    KC_NO,  KC_NO,  KC_BTN1,KC_BTN3,KC_BTN2,KC_NO,  KC_NO,  KC_NO,    KC_NO,  KC_HOME,KC_END, KC_PGUP,KC_PGDN,KC_NO,  KC_NO,  KC_NO,  \
+                            _______,_______,_______,_______,_______,  _______,_______,_______,_______,_______                         \
   ),
   [_LOWER] = LAYOUT(
             KC_NO,  KC_F11, KC_F12, KC_F13, KC_F14, KC_F15,                   KC_F16, KC_F17, KC_F18, KC_F19, KC_F20, KC_NO,          \
-    KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,                    KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  \
-    KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,    KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  \
-    KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,    KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  \
-                                    KC_NO,  KC_NO,  KC_NO,  KC_NO,    KC_NO,  KC_NO,  KC_NO,  KC_NO                                   \
+    _______,_______,_______,KC_MS_U,_______,_______,_______,_______,  _______,_______,_______,_______,_______,_______,_______,_______,\
+    _______,_______,KC_MS_L,KC_MS_D,KC_MS_R,_______,_______,_______,  KC_NO,  KC_BSPC,KC_ENT, KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  \
+    _______,_______,KC_BTN1,KC_BTN3,KC_BTN2,_______,_______,_______,  KC_NO,  KC_HOME,KC_END, KC_PGUP,KC_PGDN,KC_NO,  KC_NO,  KC_NO,  \
+                            _______,_______,_______,_______,_______,  _______,_______,_______,_______,_______                         \
   )
 };
 
