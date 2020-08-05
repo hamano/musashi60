@@ -1,6 +1,6 @@
 # Musashi60
 
-![musashi60](imgur.com image replace me!)
+![Musashi60](musashi60.png)
 
 A short description of the keyboard/project
 
