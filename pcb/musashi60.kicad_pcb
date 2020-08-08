@@ -2880,7 +2880,7 @@
   )
 
   (module foostan:D3_TH_SMD (layer F.Cu) (tedit 5B7FD767) (tstamp 5F6A248D)
-    (at 23.8125 70.246875)
+    (at 42.86268 65.48465)
     (descr "Resitance 3 pas")
     (tags R)
     (path /5F747666)
@@ -2927,7 +2927,7 @@
   )
 
   (module foostan:D3_TH_SMD (layer F.Cu) (tedit 5B7FD767) (tstamp 5F6A24A7)
-    (at 23.8125 89.296875)
+    (at 42.86268 84.53473)
     (descr "Resitance 3 pas")
     (tags R)
     (path /5F74767E)
@@ -2974,7 +2974,7 @@
   )
 
   (module foostan:D3_TH_SMD (layer F.Cu) (tedit 5B7FD767) (tstamp 5F6A24C1)
-    (at 23.8125 108.346875)
+    (at 42.86268 103.58481)
     (descr "Resitance 3 pas")
     (tags R)
     (path /5F747655)
@@ -3021,7 +3021,7 @@
   )
 
   (module foostan:D3_TH_SMD (layer F.Cu) (tedit 5B7FD767) (tstamp 5F6A24DB)
-    (at 23.8125 127.396875)
+    (at 43.46894 122.63489)
     (descr "Resitance 3 pas")
     (tags R)
     (path /5F747648)
@@ -3068,7 +3068,7 @@
   )
 
   (module foostan:D3_TH_SMD (layer F.Cu) (tedit 5B7FD767) (tstamp 5F6A24F5)
-    (at 42.8625 65.484375)
+    (at 23.8126 70.24717)
     (descr "Resitance 3 pas")
     (tags R)
     (path /5F85845B)
@@ -3115,7 +3115,7 @@
   )
 
   (module foostan:D3_TH_SMD (layer F.Cu) (tedit 5B7FD767) (tstamp 5F6A250F)
-    (at 42.8625 84.534375)
+    (at 23.8126 89.29725)
     (descr "Resitance 3 pas")
     (tags R)
     (path /5F858443)
@@ -3162,7 +3162,7 @@
   )
 
   (module foostan:D3_TH_SMD (layer F.Cu) (tedit 5B7FD767) (tstamp 5F6A2529)
-    (at 42.8625 103.584375)
+    (at 23.8126 108.34733)
     (descr "Resitance 3 pas")
     (tags R)
     (path /5F85846C)
@@ -3209,7 +3209,7 @@
   )
 
   (module foostan:D3_TH_SMD (layer F.Cu) (tedit 5B7FD767) (tstamp 5F6A2543)
-    (at 42.8625 122.634375)
+    (at 23.8126 127.39741)
     (descr "Resitance 3 pas")
     (tags R)
     (path /5F858479)
@@ -4335,7 +4335,7 @@
   )
 
   (module foostan:CherryMX_Choc_Hotswap (layer F.Cu) (tedit 5BCEB3D5) (tstamp 5F6A28FB)
-    (at 23.8125 61.9125)
+    (at 42.86268 57.15024)
     (path /5F74766C)
     (fp_text reference SW_G2 (at 7 8.1) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4418,7 +4418,7 @@
   )
 
   (module foostan:CherryMX_Choc_Hotswap (layer F.Cu) (tedit 5BCEB3D5) (tstamp 5F6A293F)
-    (at 23.8125 80.9625)
+    (at 42.86268 76.20032)
     (path /5F747684)
     (fp_text reference SW_G3 (at 7 8.1) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4501,7 +4501,7 @@
   )
 
   (module foostan:CherryMX_Choc_Hotswap (layer F.Cu) (tedit 5BCEB3D5) (tstamp 5F6A2983)
-    (at 23.8125 100.0125)
+    (at 42.86268 95.2504)
     (path /5F747678)
     (fp_text reference SW_G4 (at 7 8.1) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4584,7 +4584,7 @@
   )
 
   (module foostan:CherryMX_Choc_Hotswap (layer F.Cu) (tedit 5BCEB3D5) (tstamp 5F6A29C7)
-    (at 23.8125 119.0625)
+    (at 42.86268 114.30048)
     (path /5F74764F)
     (fp_text reference SW_G5 (at 7 8.1) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4667,7 +4667,7 @@
   )
 
   (module foostan:CherryMX_Choc_Hotswap (layer F.Cu) (tedit 5BCEB3D5) (tstamp 5F6A2A0B)
-    (at 42.8625 57.15)
+    (at 23.8126 61.91276)
     (path /5F858455)
     (fp_text reference SW_H2 (at 7 8.1) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4750,7 +4750,7 @@
   )
 
   (module foostan:CherryMX_Choc_Hotswap (layer F.Cu) (tedit 5BCEB3D5) (tstamp 5F6A2A4F)
-    (at 42.8625 76.2)
+    (at 23.8126 80.96284)
     (path /5F85843D)
     (fp_text reference SW_H3 (at 7 8.1) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4833,7 +4833,7 @@
   )
 
   (module foostan:CherryMX_Choc_Hotswap (layer F.Cu) (tedit 5BCEB3D5) (tstamp 5F6A2A93)
-    (at 42.8625 95.25)
+    (at 23.8126 100.01292)
     (path /5F858449)
     (fp_text reference SW_H4 (at 7 8.1) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4916,7 +4916,7 @@
   )
 
   (module foostan:CherryMX_Choc_Hotswap (layer F.Cu) (tedit 5BCEB3D5) (tstamp 5F6A2AD7)
-    (at 42.8625 114.3)
+    (at 23.8126 119.063)
     (path /5F858472)
     (fp_text reference SW_H5 (at 7 8.1) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
