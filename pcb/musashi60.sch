@@ -1223,25 +1223,14 @@ Wire Wire Line
 Text GLabel 2050 6400 2    50   Input ~ 0
 B6
 $Comp
-L Device:Jumper JP1
+L Device:Jumper JP_LEFT1
 U 1 1 5F738159
 P 1250 6400
-F 0 "JP1" H 1250 6268 50  0000 C CNN
+F 0 "JP_LEFT1" H 1250 6268 50  0000 C CNN
 F 1 "Jumper" H 1250 6177 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1250 6400 50  0001 C CNN
 F 3 "~" H 1250 6400 50  0001 C CNN
 	1    1250 6400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5F746B7E
-P 950 6400
-F 0 "#PWR02" H 950 6150 50  0001 C CNN
-F 1 "GND" H 955 6227 50  0000 C CNN
-F 2 "" H 950 6400 50  0001 C CNN
-F 3 "" H 950 6400 50  0001 C CNN
-	1    950  6400
 	1    0    0    -1  
 $EndComp
 Text GLabel 1500 3100 0    50   Input ~ 0
@@ -1408,4 +1397,40 @@ F 3 "" H 5050 6350 50  0001 C CNN
 	1    5050 6350
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Jumper JP_RIGHT1
+U 1 1 5F795429
+P 1250 6850
+F 0 "JP_RIGHT1" H 1250 6718 50  0000 C CNN
+F 1 "Jumper" H 1250 6627 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1250 6850 50  0001 C CNN
+F 3 "~" H 1250 6850 50  0001 C CNN
+	1    1250 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5F79542F
+P 950 6850
+F 0 "#PWR05" H 950 6600 50  0001 C CNN
+F 1 "GND" H 955 6677 50  0000 C CNN
+F 2 "" H 950 6850 50  0001 C CNN
+F 3 "" H 950 6850 50  0001 C CNN
+	1    950  6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR02
+U 1 1 5F7A2499
+P 950 6400
+F 0 "#PWR02" H 950 6250 50  0001 C CNN
+F 1 "VCC" H 965 6573 50  0000 C CNN
+F 2 "" H 950 6400 50  0001 C CNN
+F 3 "" H 950 6400 50  0001 C CNN
+	1    950  6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 6400 1550 6850
+Connection ~ 1550 6400
 $EndSCHEMATC
