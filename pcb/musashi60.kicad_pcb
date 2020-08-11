@@ -21,10 +21,10 @@
     (37 F.SilkS user hide)
     (38 B.Mask user hide)
     (39 F.Mask user hide)
-    (40 Dwgs.User user)
+    (40 Dwgs.User user hide)
     (41 Cmts.User user hide)
     (42 Eco1.User user)
-    (43 Eco2.User user hide)
+    (43 Eco2.User user)
     (44 Edge.Cuts user)
     (45 Margin user hide)
     (46 B.CrtYd user hide)
@@ -1489,7 +1489,7 @@
   )
 
   (module foostan:D3_TH_SMD (layer F.Cu) (tedit 5B7FD767) (tstamp 5F6A9E5F)
-    (at 170.099861 141.003579 300)
+    (at 166.99133 141.338405 300)
     (descr "Resitance 3 pas")
     (tags R)
     (path /5F6D5CF4)
@@ -1536,7 +1536,7 @@
   )
 
   (module foostan:D3_TH_SMD (layer F.Cu) (tedit 5B7FD767) (tstamp 5F6A9E79)
-    (at 156.481704 127.556389 330)
+    (at 153.244705 127.556389 330)
     (descr "Resitance 3 pas")
     (tags R)
     (path /5F6D5D04)
@@ -1724,7 +1724,7 @@
   )
 
   (module foostan:D3_TH_SMD (layer F.Cu) (tedit 5B7FD767) (tstamp 5F6A9EFB)
-    (at 138.1125 122.634375)
+    (at 135.14745 121.44426)
     (descr "Resitance 3 pas")
     (tags R)
     (path /5F6E5561)
@@ -2457,7 +2457,7 @@
   )
 
   (module foostan:D3_TH_SMD (layer F.Cu) (tedit 5B7FD767) (tstamp 5F6A23A3)
-    (at 119.0625 122.634375)
+    (at 116.09737 117.87237)
     (descr "Resitance 3 pas")
     (tags R)
     (path /5F812BE5)
@@ -2692,7 +2692,7 @@
   )
 
   (module foostan:D3_TH_SMD (layer F.Cu) (tedit 5B7FD767) (tstamp 5F6A2425)
-    (at 61.9125 41.671875)
+    (at 61.9125 36.909355)
     (descr "Resitance 3 pas")
     (tags R)
     (path /5F83F19D)
@@ -2739,7 +2739,7 @@
   )
 
   (module foostan:D3_TH_SMD (layer F.Cu) (tedit 5B7FD767) (tstamp 5F6A243F)
-    (at 61.9125 63.103125)
+    (at 61.9125 55.95961)
     (descr "Resitance 3 pas")
     (tags R)
     (path /5F83F192)
@@ -2786,7 +2786,7 @@
   )
 
   (module foostan:D3_TH_SMD (layer F.Cu) (tedit 5B7FD767) (tstamp 5F6A2459)
-    (at 61.9125 79.771875)
+    (at 61.91276 75.00969)
     (descr "Resitance 3 pas")
     (tags R)
     (path /5F83F17A)
@@ -2833,7 +2833,7 @@
   )
 
   (module foostan:D3_TH_SMD (layer F.Cu) (tedit 5B7FD767) (tstamp 5F6A2473)
-    (at 61.9125 98.821875)
+    (at 61.9125 94.05977)
     (descr "Resitance 3 pas")
     (tags R)
     (path /5F83F1A3)
@@ -4003,7 +4003,7 @@
   )
 
   (module foostan:CherryMX_Choc_Hotswap (layer F.Cu) (tedit 5BCEB3D5) (tstamp 5F6A27EB)
-    (at 61.9125 33.3375)
+    (at 61.9125 28.57512)
     (path /5F83F186)
     (fp_text reference SW_F1 (at 7 8.1) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4086,7 +4086,7 @@
   )
 
   (module foostan:CherryMX_Choc_Hotswap (layer F.Cu) (tedit 5BCEB3D5) (tstamp 5F6A282F)
-    (at 61.9125 52.38772)
+    (at 61.9125 47.6252)
     (path /5F83F18C)
     (fp_text reference SW_F2 (at 7 8.1) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4169,7 +4169,7 @@
   )
 
   (module foostan:CherryMX_Choc_Hotswap (layer F.Cu) (tedit 5BCEB3D5) (tstamp 5F6A2873)
-    (at 61.9125 71.4375)
+    (at 61.9125 66.67498)
     (path /5F83F174)
     (fp_text reference SW_F3 (at 7 8.1) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -4252,7 +4252,7 @@
   )
 
   (module foostan:CherryMX_Choc_Hotswap (layer F.Cu) (tedit 5BCEB3D5) (tstamp 5F6A28B7)
-    (at 61.9125 90.4875)
+    (at 61.91276 85.72536)
     (path /5F83F180)
     (fp_text reference SW_F4 (at 7 8.1) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -5308,7 +5308,7 @@
       ))
   )
 
-  (gr_line (start 52.38772 104.77544) (end 78.58158 104.77544) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 52.38772 114.30048) (end 98.82229 114.30048) (layer Edge.Cuts) (width 0.05))
   (gr_text Musashi60 (at 89.29725 97.63166) (layer B.SilkS) (tstamp 5F6AE584)
     (effects (font (size 4 4) (thickness 0.4)) (justify mirror))
   )
@@ -5317,8 +5317,8 @@
   )
   (gr_line (start 147.6375 104.775) (end 166.6875 104.775) (layer Eco1.User) (width 0.15) (tstamp 5F6ACC4D))
   (gr_line (start 144.607744 123.993524) (end 149.538247 105.592637) (layer Eco1.User) (width 0.15) (tstamp 5F6ACC43))
-  (gr_line (start 52.38772 128.58804) (end 52.38772 104.77544) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 169.06875 150.01875) (end 78.58158 104.77544) (layer Edge.Cuts) (width 0.05) (tstamp 5F677815))
+  (gr_line (start 52.38772 128.58804) (end 52.38772 114.30048) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 169.06875 150.01875) (end 98.82229 114.30048) (layer Edge.Cuts) (width 0.05) (tstamp 5F677815))
   (gr_line (start 169.06875 150.01875) (end 189.31017 150.01938) (layer Edge.Cuts) (width 0.05) (tstamp 5F6777C3))
   (gr_line (start 52.38772 128.5875) (end 14.2875 128.5875) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 126.206393 119.062358) (end 144.60728 123.992861) (layer Eco1.User) (width 0.15) (tstamp 5F6775DC))
@@ -5352,7 +5352,7 @@
   (gr_line (start 170.25936 149.847784) (end 186.757144 140.322784) (layer Eco1.User) (width 0.15) (tstamp 5F676DAE))
   (gr_line (start 128.5875 19.05) (end 128.5875 23.8125) (layer Eco1.User) (width 0.15) (tstamp 5F676D71))
   (gr_line (start 109.5375 14.2875) (end 109.5375 19.05) (layer Eco1.User) (width 0.15) (tstamp 5F676D70))
-  (gr_line (start 71.4375 100.0125) (end 71.4375 90.4875) (layer Eco1.User) (width 0.15) (tstamp 5F676D6F))
+  (gr_line (start 71.4375 95.2504) (end 71.4375 90.4875) (layer Eco1.User) (width 0.15) (tstamp 5F676D6F))
   (gr_line (start 52.3875 123.825) (end 52.3875 100.0125) (layer Eco1.User) (width 0.15) (tstamp 5F676D6E))
   (gr_line (start 33.3375 123.825) (end 52.3875 123.825) (layer Eco1.User) (width 0.15))
   (gr_line (start 33.3375 104.775) (end 33.3375 123.825) (layer Eco1.User) (width 0.15))
@@ -5370,15 +5370,15 @@
   (gr_line (start 33.3375 66.675) (end 52.3875 66.675) (layer Eco1.User) (width 0.15) (tstamp 5F676CE9))
   (gr_line (start 33.3375 85.725) (end 52.3875 85.725) (layer Eco1.User) (width 0.15) (tstamp 5F676CE8))
   (gr_line (start 33.3375 104.775) (end 52.3875 104.775) (layer Eco1.User) (width 0.15) (tstamp 5F676CE7))
-  (gr_line (start 52.3875 61.9125) (end 71.4375 61.9125) (layer Eco1.User) (width 0.15) (tstamp 5F676C13))
-  (gr_line (start 52.3875 42.8625) (end 71.4375 42.8625) (layer Eco1.User) (width 0.15) (tstamp 5F676C12))
+  (gr_line (start 52.3875 57.14998) (end 71.4375 57.14998) (layer Eco1.User) (width 0.15) (tstamp 5F676C13))
+  (gr_line (start 52.3875 38.09998) (end 71.4375 38.09998) (layer Eco1.User) (width 0.15) (tstamp 5F676C12))
   (gr_line (start 52.3875 42.8625) (end 52.3875 61.9125) (layer Eco1.User) (width 0.15) (tstamp 5F676C11))
-  (gr_line (start 52.3875 100.0125) (end 71.4375 100.0125) (layer Eco1.User) (width 0.15) (tstamp 5F676C10))
+  (gr_line (start 52.3875 95.24998) (end 71.4375 95.24998) (layer Eco1.User) (width 0.15) (tstamp 5F676C10))
   (gr_line (start 52.3875 80.9625) (end 52.3875 100.0125) (layer Eco1.User) (width 0.15) (tstamp 5F676C0F))
   (gr_line (start 52.3875 61.9125) (end 52.3875 80.9625) (layer Eco1.User) (width 0.15) (tstamp 5F676C0E))
-  (gr_line (start 52.3875 80.9625) (end 71.4375 80.9625) (layer Eco1.User) (width 0.15) (tstamp 5F676C0D))
-  (gr_line (start 71.4375 23.8125) (end 52.3875 23.8125) (layer Eco1.User) (width 0.15) (tstamp 5F676C0C))
-  (gr_line (start 52.3875 23.8125) (end 52.3875 42.8625) (layer Eco1.User) (width 0.15) (tstamp 5F676C0B))
+  (gr_line (start 52.3875 76.19998) (end 71.4375 76.19998) (layer Eco1.User) (width 0.15) (tstamp 5F676C0D))
+  (gr_line (start 71.4375 19.04998) (end 52.3875 19.04998) (layer Eco1.User) (width 0.15) (tstamp 5F676C0C))
+  (gr_line (start 52.3875 19.05008) (end 52.3875 42.8625) (layer Eco1.User) (width 0.15) (tstamp 5F676C0B))
   (gr_line (start 71.4375 52.3875) (end 90.4875 52.3875) (layer Eco1.User) (width 0.15) (tstamp 5F676C13))
   (gr_line (start 71.4375 33.3375) (end 90.4875 33.3375) (layer Eco1.User) (width 0.15) (tstamp 5F676C12))
   (gr_line (start 71.4375 33.3375) (end 71.4375 52.3875) (layer Eco1.User) (width 0.15) (tstamp 5F676C11))
