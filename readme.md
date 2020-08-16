@@ -1,6 +1,6 @@
 # Musashi60
 
-![Musashi60](musashi60.png)
+![musashi60-logo](image/musashi60-logo.png)
 
 A short description of the keyboard/project
 
