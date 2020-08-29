@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 106)
+    (drawings 104)
     (tracks 0)
     (zones 0)
     (modules 81)
@@ -24,7 +24,7 @@
     (40 Dwgs.User user hide)
     (41 Cmts.User user hide)
     (42 Eco1.User user hide)
-    (43 Eco2.User user)
+    (43 Eco2.User user hide)
     (44 Edge.Cuts user)
     (45 Margin user hide)
     (46 B.CrtYd user hide)
@@ -6020,8 +6020,6 @@
       ))
   )
 
-  (gr_line (start 33.33764 123.82552) (end 142.8756 123.82552) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 33.33764 128.58804) (end 33.33764 123.82552) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 147.63812 47.6252) (end 147.63812 14.28756) (layer Edge.Cuts) (width 0.05) (tstamp 5F79B508))
   (gr_line (start 161.92568 47.6252) (end 147.63812 47.6252) (layer Edge.Cuts) (width 0.05))
   (dimension 175.02261 (width 0.15) (layer Dwgs.User)
@@ -6038,9 +6036,9 @@
   )
   (gr_line (start 147.6375 104.775) (end 166.6875 104.775) (layer Eco1.User) (width 0.15) (tstamp 5F6ACC4D))
   (gr_line (start 144.607744 123.993524) (end 149.538247 105.592637) (layer Eco1.User) (width 0.15) (tstamp 5F6ACC43))
-  (gr_line (start 170.26009 150.01938) (end 142.8756 123.82552) (layer Edge.Cuts) (width 0.05) (tstamp 5F677815))
+  (gr_line (start 170.26009 150.01938) (end 151.21001 128.58804) (layer Edge.Cuts) (width 0.05) (tstamp 5F677815))
   (gr_line (start 170.26009 150.01938) (end 189.31017 150.01938) (layer Edge.Cuts) (width 0.05) (tstamp 5F6777C3))
-  (gr_line (start 33.33764 128.58804) (end 14.2875 128.5875) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 151.21001 128.58804) (end 14.2875 128.5875) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 126.206393 119.062358) (end 144.60728 123.992861) (layer Eco1.User) (width 0.15) (tstamp 5F6775DC))
   (gr_line (start 149.537783 105.591974) (end 131.136896 100.661471) (layer Eco1.User) (width 0.15) (tstamp 5F6775DB))
   (gr_line (start 126.20678 100.01292) (end 126.20678 119.06292) (layer Eco1.User) (width 0.15) (tstamp 5F6775DA))
