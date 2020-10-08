@@ -31,10 +31,10 @@
 
 #define LAYOUT( \
               LF1, LE1, LD1, LC1, LB1,           RB1, RC1, RD1, RE1, RF1,           \
-    LG2, LH2, LF2, LE2, LD2, LC2, LB2,           RB2, RC2, RD2, RE2, RF2, RH2, RG2, \
-    LG3, LH3, LF3, LE3, LD3, LC3, LB3, LA3, RA3, RB3, RC3, RD3, RE3, RF3, RH3, RG3, \
-    LG4, LH4, LF4, LE4, LD4, LC4, LB4, LA4, RA4, RB4, RC4, RD4, RE4, RF4, RH4, RG4, \
-    LG5, LH5,           LD5, LC5, LB5, LA5, RA5, RB5, RC5, RD5,           RH5, RG5  \
+    LH2, LG2, LF2, LE2, LD2, LC2, LB2,           RB2, RC2, RD2, RE2, RF2, RG2, RH2, \
+    LH3, LG3, LF3, LE3, LD3, LC3, LB3, LA3, RA3, RB3, RC3, RD3, RE3, RF3, RG3, RH3, \
+    LH4, LG4, LF4, LE4, LD4, LC4, LB4, LA4, RA4, RB4, RC4, RD4, RE4, RF4, RG4, RH4, \
+    LH5, LG5,           LD5, LC5, LB5, LA5, RA5, RB5, RC5, RD5,           RG5, RH5  \
 ) \
 { \
     { XXX, LB1, LC1, LD1, LE1, LF1, XXX, XXX }, \
