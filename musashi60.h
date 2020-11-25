@@ -34,7 +34,7 @@
     LH2, LG2, LF2, LE2, LD2, LC2, LB2,           RB2, RC2, RD2, RE2, RF2, RG2, RH2, \
     LH3, LG3, LF3, LE3, LD3, LC3, LB3, LA3, RA3, RB3, RC3, RD3, RE3, RF3, RG3, RH3, \
     LH4, LG4, LF4, LE4, LD4, LC4, LB4, LA4, RA4, RB4, RC4, RD4, RE4, RF4, RG4, RH4, \
-                        LD5, LC5, LB5, LA5, RA5, RB5, RC5, RD5,                     \
+                        LD5, LC5, LB5, LA5, RA5, RB5, RC5, RD5                      \
 ) \
 { \
     { XXX, LB1, LC1, LD1, LE1, LF1, XXX, XXX }, \
