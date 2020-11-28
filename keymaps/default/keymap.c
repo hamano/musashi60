@@ -30,18 +30,21 @@ enum custom_keycodes {
 
 #define RAISE MO(_RAISE)
 #define LOWER MO(_LOWER)
-#define MT_LALT MT(MOD_LALT, KC_MHEN) // Tap for Alt, hold for Muhenkan
-#define MT_RALT MT(MOD_RALT, KC_HENK) // Tap for Alt, hold for Henkan
-#define MT_LSFT MT(MOD_LSFT, KC_MHEN) // Tap for Shift, hold for Muhenkan
-#define MT_RSFT MT(MOD_RSFT, KC_HENK) // Tap for Shift, hold for Henkan
+#define MT_LGUI MT(MOD_LGUI, KC_RO)   // Tap for RO, hold for LGUI
+#define MT_RGUI MT(MOD_RGUI, KC_KANA) // Tap for KANA, hold for RGUI
+#define MT_LALT MT(MOD_LALT, KC_MHEN) // Tap for MUHENKAN, hold for LALT
+#define MT_RALT MT(MOD_RALT, KC_HENK) // Tap for HENKAN, hold for RALT
+#define MT_LCTL MT(MOD_LCTL, KC_MHEN) // Tap for MUHENKAN, hold for LCTL
+#define MT_RCTL MT(MOD_RCTL, KC_HENK) // Tap for HENKAN, hold for RCTL
+
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BASE] = LAYOUT(
                     KC_1,   KC_2,   KC_3,   KC_4,   KC_5,                    KC_6,   KC_7,   KC_8,   KC_9,   KC_0,                   \
     KC_GRV, KC_EQL, KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,                    KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,   KC_LBRC,KC_RBRC,\
     KC_NO,  KC_MINS,KC_A,   KC_S,   KC_D,   KC_F,   KC_G,   KC_ESC,  KC_BSPC,KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,KC_QUOT,KC_BSLS,\
-    KC_LGUI,MT_LALT,KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   KC_TAB,  KC_BSPC,KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,MT_RALT,KC_RGUI,\
-                                    MT_LSFT,KC_LCTL,LOWER,  KC_SPC,  KC_ENT, RAISE,  KC_RCTL,MT_RSFT                                 \
+    MT_LGUI,MT_LALT,KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   KC_TAB,  KC_ENT, KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,MT_RALT,MT_RGUI,\
+		                    MT_LCTL,KC_LSFT,LOWER,  KC_SPC,  KC_SPC, RAISE,  KC_RSFT,MT_RCTL                                 \
   ),
   [_RAISE] = LAYOUT(
                     KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,                   KC_F6,  KC_F7,  KC_F8,  KC_F9,  KC_F10,                 \
@@ -55,7 +58,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_MUTE,KC_VOLU,KC_1,   KC_2,   KC_3,   KC_4,   KC_5,                    KC_6,   KC_7,   KC_8,   KC_9,   KC_0,   _______,_______,\
     _______,KC_VOLD,KC_MS_L,KC_MS_D,KC_MS_R,_______,KC_ESC, KC_APP,  KC_NO,  KC_MS_L,KC_MS_D,KC_MS_U,KC_MS_R,KC_NO,  KC_PGUP,KC_HOME,\
     _______,_______,KC_NO,  KC_NO,  KC_NO,  _______,KC_TAB, _______, KC_NO,  KC_ENT, KC_BTN1,KC_BTN3,KC_BTN2,KC_NO,  KC_PGDN,KC_END, \
-                                    _______,_______,_______, _______,_______,_______,_______,_______                                 \
+                                    _______,_______,_______,_______, _______,_______,_______,_______                                 \
   )
 };
 
