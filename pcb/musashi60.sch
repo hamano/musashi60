@@ -197,7 +197,7 @@ U 1 1 5F6E55AF
 P 8550 3750
 F 0 "SW_C3" H 8550 4005 50  0000 C CNN
 F 1 "SW_PUSH" H 8550 3914 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 8550 3750 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 8550 3750 50  0001 C CNN
 F 3 "" H 8550 3750 50  0000 C CNN
 	1    8550 3750
 	1    0    0    -1  
@@ -219,7 +219,7 @@ U 1 1 5F6E55A3
 P 8550 4400
 F 0 "SW_C4" H 8550 4655 50  0000 C CNN
 F 1 "SW_PUSH" H 8550 4564 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 8550 4400 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 8550 4400 50  0001 C CNN
 F 3 "" H 8550 4400 50  0000 C CNN
 	1    8550 4400
 	1    0    0    -1  
@@ -230,7 +230,7 @@ U 1 1 5F6E559D
 P 8550 2450
 F 0 "SW_C1" H 8550 2705 50  0000 C CNN
 F 1 "SW_PUSH" H 8550 2614 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 8550 2450 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 8550 2450 50  0001 C CNN
 F 3 "" H 8550 2450 50  0000 C CNN
 	1    8550 2450
 	1    0    0    -1  
@@ -241,7 +241,7 @@ U 1 1 5F6E5597
 P 8550 3100
 F 0 "SW_C2" H 8550 3355 50  0000 C CNN
 F 1 "SW_PUSH" H 8550 3264 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 8550 3100 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 8550 3100 50  0001 C CNN
 F 3 "" H 8550 3100 50  0000 C CNN
 	1    8550 3100
 	1    0    0    -1  
@@ -295,7 +295,7 @@ U 1 1 5F6E556A
 P 8550 5050
 F 0 "SW_C5" H 8550 5305 50  0000 C CNN
 F 1 "SW_PUSH" H 8550 5214 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 8550 5050 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 8550 5050 50  0001 C CNN
 F 3 "" H 8550 5050 50  0000 C CNN
 	1    8550 5050
 	1    0    0    -1  
@@ -319,7 +319,7 @@ U 1 1 5F6A5E17
 P 9250 3750
 F 0 "SW_B3" H 9250 4005 50  0000 C CNN
 F 1 "SW_PUSH" H 9250 3914 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 9250 3750 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 9250 3750 50  0001 C CNN
 F 3 "" H 9250 3750 50  0000 C CNN
 	1    9250 3750
 	1    0    0    -1  
@@ -341,7 +341,7 @@ U 1 1 5F6A8BBB
 P 9250 4400
 F 0 "SW_B4" H 9250 4655 50  0000 C CNN
 F 1 "SW_PUSH" H 9250 4564 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 9250 4400 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 9250 4400 50  0001 C CNN
 F 3 "" H 9250 4400 50  0000 C CNN
 	1    9250 4400
 	1    0    0    -1  
@@ -352,7 +352,7 @@ U 1 1 5F6AA817
 P 9250 2450
 F 0 "SW_B1" H 9250 2705 50  0000 C CNN
 F 1 "SW_PUSH" H 9250 2614 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 9250 2450 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 9250 2450 50  0001 C CNN
 F 3 "" H 9250 2450 50  0000 C CNN
 	1    9250 2450
 	1    0    0    -1  
@@ -363,7 +363,7 @@ U 1 1 5F6AA82B
 P 9250 3100
 F 0 "SW_B2" H 9250 3355 50  0000 C CNN
 F 1 "SW_PUSH" H 9250 3264 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 9250 3100 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 9250 3100 50  0001 C CNN
 F 3 "" H 9250 3100 50  0000 C CNN
 	1    9250 3100
 	1    0    0    -1  
@@ -431,7 +431,7 @@ U 1 1 5F6D5CFA
 P 9250 5050
 F 0 "SW_B5" H 9250 5305 50  0000 C CNN
 F 1 "SW_PUSH" H 9250 5214 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 9250 5050 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 9250 5050 50  0001 C CNN
 F 3 "" H 9250 5050 50  0000 C CNN
 	1    9250 5050
 	1    0    0    -1  
@@ -473,7 +473,7 @@ U 1 1 5F6D5CEE
 P 9950 5050
 F 0 "SW_A5" H 9950 5305 50  0000 C CNN
 F 1 "SW_PUSH" H 9950 5214 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 9950 5050 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 9950 5050 50  0001 C CNN
 F 3 "" H 9950 5050 50  0000 C CNN
 	1    9950 5050
 	1    0    0    -1  
@@ -518,7 +518,7 @@ U 1 1 5F69B2CE
 P 9950 3750
 F 0 "SW_A3" H 9950 4005 50  0000 C CNN
 F 1 "SW_PUSH" H 9950 3914 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 9950 3750 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 9950 3750 50  0001 C CNN
 F 3 "" H 9950 3750 50  0000 C CNN
 	1    9950 3750
 	1    0    0    -1  
@@ -529,7 +529,7 @@ U 1 1 5F69A34A
 P 9950 4400
 F 0 "SW_A4" H 9950 4655 50  0000 C CNN
 F 1 "SW_PUSH" H 9950 4564 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 9950 4400 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 9950 4400 50  0001 C CNN
 F 3 "" H 9950 4400 50  0000 C CNN
 	1    9950 4400
 	1    0    0    -1  
@@ -584,7 +584,7 @@ U 1 1 5F812BA9
 P 7850 3750
 F 0 "SW_D3" H 7850 4005 50  0000 C CNN
 F 1 "SW_PUSH" H 7850 3914 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 7850 3750 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 7850 3750 50  0001 C CNN
 F 3 "" H 7850 3750 50  0000 C CNN
 	1    7850 3750
 	1    0    0    -1  
@@ -606,7 +606,7 @@ U 1 1 5F812BB5
 P 7850 4400
 F 0 "SW_D4" H 7850 4655 50  0000 C CNN
 F 1 "SW_PUSH" H 7850 4564 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 7850 4400 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 7850 4400 50  0001 C CNN
 F 3 "" H 7850 4400 50  0000 C CNN
 	1    7850 4400
 	1    0    0    -1  
@@ -617,7 +617,7 @@ U 1 1 5F812BBB
 P 7850 2450
 F 0 "SW_D1" H 7850 2705 50  0000 C CNN
 F 1 "SW_PUSH" H 7850 2614 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 7850 2450 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 7850 2450 50  0001 C CNN
 F 3 "" H 7850 2450 50  0000 C CNN
 	1    7850 2450
 	1    0    0    -1  
@@ -628,7 +628,7 @@ U 1 1 5F812BC1
 P 7850 3100
 F 0 "SW_D2" H 7850 3355 50  0000 C CNN
 F 1 "SW_PUSH" H 7850 3264 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 7850 3100 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 7850 3100 50  0001 C CNN
 F 3 "" H 7850 3100 50  0000 C CNN
 	1    7850 3100
 	1    0    0    -1  
@@ -682,7 +682,7 @@ U 1 1 5F812BDE
 P 7850 5050
 F 0 "SW_D5" H 7850 5305 50  0000 C CNN
 F 1 "SW_PUSH" H 7850 5214 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 7850 5050 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 7850 5050 50  0001 C CNN
 F 3 "" H 7850 5050 50  0000 C CNN
 	1    7850 5050
 	1    0    0    -1  
@@ -702,7 +702,6 @@ Connection ~ 8150 2750
 Connection ~ 8150 3400
 Connection ~ 8150 4050
 Connection ~ 8150 4700
-Connection ~ 8150 5350
 Wire Wire Line
 	6850 3750 6850 4400
 Connection ~ 6850 3750
@@ -720,7 +719,7 @@ U 1 1 5F83B1EF
 P 7150 3750
 F 0 "SW_E3" H 7150 4005 50  0000 C CNN
 F 1 "SW_PUSH" H 7150 3914 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 7150 3750 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 7150 3750 50  0001 C CNN
 F 3 "" H 7150 3750 50  0000 C CNN
 	1    7150 3750
 	1    0    0    -1  
@@ -742,7 +741,7 @@ U 1 1 5F83B1FB
 P 7150 4400
 F 0 "SW_E4" H 7150 4655 50  0000 C CNN
 F 1 "SW_PUSH" H 7150 4564 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 7150 4400 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 7150 4400 50  0001 C CNN
 F 3 "" H 7150 4400 50  0000 C CNN
 	1    7150 4400
 	1    0    0    -1  
@@ -753,7 +752,7 @@ U 1 1 5F83B201
 P 7150 2450
 F 0 "SW_E1" H 7150 2705 50  0000 C CNN
 F 1 "SW_PUSH" H 7150 2614 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 7150 2450 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 7150 2450 50  0001 C CNN
 F 3 "" H 7150 2450 50  0000 C CNN
 	1    7150 2450
 	1    0    0    -1  
@@ -764,7 +763,7 @@ U 1 1 5F83B207
 P 7150 3100
 F 0 "SW_E2" H 7150 3355 50  0000 C CNN
 F 1 "SW_PUSH" H 7150 3264 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 7150 3100 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 7150 3100 50  0001 C CNN
 F 3 "" H 7150 3100 50  0000 C CNN
 	1    7150 3100
 	1    0    0    -1  
@@ -829,7 +828,7 @@ U 1 1 5F83F174
 P 6450 3750
 F 0 "SW_F3" H 6450 4005 50  0000 C CNN
 F 1 "SW_PUSH" H 6450 3914 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 6450 3750 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 6450 3750 50  0001 C CNN
 F 3 "" H 6450 3750 50  0000 C CNN
 	1    6450 3750
 	1    0    0    -1  
@@ -851,7 +850,7 @@ U 1 1 5F83F180
 P 6450 4400
 F 0 "SW_F4" H 6450 4655 50  0000 C CNN
 F 1 "SW_PUSH" H 6450 4564 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 6450 4400 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 6450 4400 50  0001 C CNN
 F 3 "" H 6450 4400 50  0000 C CNN
 	1    6450 4400
 	1    0    0    -1  
@@ -862,7 +861,7 @@ U 1 1 5F83F186
 P 6450 2450
 F 0 "SW_F1" H 6450 2705 50  0000 C CNN
 F 1 "SW_PUSH" H 6450 2614 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 6450 2450 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 6450 2450 50  0001 C CNN
 F 3 "" H 6450 2450 50  0000 C CNN
 	1    6450 2450
 	1    0    0    -1  
@@ -873,7 +872,7 @@ U 1 1 5F83F18C
 P 6450 3100
 F 0 "SW_F2" H 6450 3355 50  0000 C CNN
 F 1 "SW_PUSH" H 6450 3264 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 6450 3100 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 6450 3100 50  0001 C CNN
 F 3 "" H 6450 3100 50  0000 C CNN
 	1    6450 3100
 	1    0    0    -1  
@@ -920,30 +919,6 @@ Wire Wire Line
 Wire Wire Line
 	6050 3400 6750 3400
 $Comp
-L Device:D D_G5
-U 1 1 5F747648
-P 6050 5200
-F 0 "D_G5" V 6096 5280 50  0000 L CNN
-F 1 "D" V 6005 5280 50  0000 L CNN
-F 2 "foostan:D3_TH_SMD" H 6050 5200 50  0001 C CNN
-F 3 "~" H 6050 5200 50  0001 C CNN
-	1    6050 5200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5350 5350 6050 5350
-$Comp
-L foostan:SW_PUSH SW_G5
-U 1 1 5F74764F
-P 5750 5050
-F 0 "SW_G5" H 5750 5305 50  0000 C CNN
-F 1 "SW_PUSH" H 5750 5214 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 5750 5050 50  0001 C CNN
-F 3 "" H 5750 5050 50  0000 C CNN
-	1    5750 5050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:D D_G4
 U 1 1 5F747655
 P 6050 4550
@@ -979,7 +954,7 @@ U 1 1 5F74766C
 P 5750 3100
 F 0 "SW_G2" H 5750 3355 50  0000 C CNN
 F 1 "SW_PUSH" H 5750 3264 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 5750 3100 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 5750 3100 50  0001 C CNN
 F 3 "" H 5750 3100 50  0000 C CNN
 	1    5750 3100
 	1    0    0    -1  
@@ -990,7 +965,7 @@ U 1 1 5F747678
 P 5750 4400
 F 0 "SW_G4" H 5750 4655 50  0000 C CNN
 F 1 "SW_PUSH" H 5750 4564 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 5750 4400 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 5750 4400 50  0001 C CNN
 F 3 "" H 5750 4400 50  0000 C CNN
 	1    5750 4400
 	1    0    0    -1  
@@ -1012,7 +987,7 @@ U 1 1 5F747684
 P 5750 3750
 F 0 "SW_G3" H 5750 4005 50  0000 C CNN
 F 1 "SW_PUSH" H 5750 3914 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 5750 3750 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 5750 3750 50  0001 C CNN
 F 3 "" H 5750 3750 50  0000 C CNN
 	1    5750 3750
 	1    0    0    -1  
@@ -1023,16 +998,9 @@ Wire Wire Line
 Connection ~ 5450 3750
 Wire Wire Line
 	5450 3750 5450 4400
-Connection ~ 5450 4400
-Wire Wire Line
-	5450 4400 5450 5050
 Connection ~ 6050 3400
 Connection ~ 6050 4050
 Connection ~ 6050 4700
-Connection ~ 6050 5350
-Wire Wire Line
-	4750 4400 4750 5050
-Connection ~ 4750 4400
 Wire Wire Line
 	4750 3750 4750 4400
 Connection ~ 4750 3750
@@ -1045,7 +1013,7 @@ U 1 1 5F85843D
 P 5050 3750
 F 0 "SW_H3" H 5050 4005 50  0000 C CNN
 F 1 "SW_PUSH" H 5050 3914 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 5050 3750 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 5050 3750 50  0001 C CNN
 F 3 "" H 5050 3750 50  0000 C CNN
 	1    5050 3750
 	1    0    0    -1  
@@ -1067,7 +1035,7 @@ U 1 1 5F858449
 P 5050 4400
 F 0 "SW_H4" H 5050 4655 50  0000 C CNN
 F 1 "SW_PUSH" H 5050 4564 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 5050 4400 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 5050 4400 50  0001 C CNN
 F 3 "" H 5050 4400 50  0000 C CNN
 	1    5050 4400
 	1    0    0    -1  
@@ -1078,7 +1046,7 @@ U 1 1 5F858455
 P 5050 3100
 F 0 "SW_H2" H 5050 3355 50  0000 C CNN
 F 1 "SW_PUSH" H 5050 3264 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 5050 3100 50  0001 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 5050 3100 50  0001 C CNN
 F 3 "" H 5050 3100 50  0000 C CNN
 	1    5050 3100
 	1    0    0    -1  
@@ -1107,34 +1075,10 @@ F 3 "~" H 5350 4550 50  0001 C CNN
 	1    5350 4550
 	0    -1   -1   0   
 $EndComp
-$Comp
-L foostan:SW_PUSH SW_H5
-U 1 1 5F858472
-P 5050 5050
-F 0 "SW_H5" H 5050 5305 50  0000 C CNN
-F 1 "SW_PUSH" H 5050 5214 50  0000 C CNN
-F 2 "foostan:CherryMX_Choc_Hotswap" H 5050 5050 50  0001 C CNN
-F 3 "" H 5050 5050 50  0000 C CNN
-	1    5050 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D_H5
-U 1 1 5F858479
-P 5350 5200
-F 0 "D_H5" V 5396 5280 50  0000 L CNN
-F 1 "D" V 5305 5280 50  0000 L CNN
-F 2 "foostan:D3_TH_SMD" H 5350 5200 50  0001 C CNN
-F 3 "~" H 5350 5200 50  0001 C CNN
-	1    5350 5200
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	4750 2150 4750 3100
 Wire Wire Line
 	5450 2150 5450 3100
-Wire Wire Line
-	6050 5350 8150 5350
 Connection ~ 6750 3400
 Connection ~ 6750 4050
 Connection ~ 6750 4700
@@ -1290,10 +1234,10 @@ F4
 Text GLabel 5050 7150 0    50   Input ~ 0
 F5
 $Comp
-L Mechanical:MountingHole_Pad H_F4
+L Mechanical:MountingHole_Pad F4
 U 1 1 5F7D88A6
 P 5650 6950
-F 0 "H_F4" V 5696 7099 50  0000 L CNN
+F 0 "F4" V 5696 7099 50  0000 L CNN
 F 1 "MountingHole_Pad" V 5605 7099 50  0000 L CNN
 F 2 "foostan:1pin_conn" H 5650 6950 50  0001 C CNN
 F 3 "~" H 5650 6950 50  0001 C CNN
@@ -1301,10 +1245,10 @@ F 3 "~" H 5650 6950 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H_F5
+L Mechanical:MountingHole_Pad F5
 U 1 1 5F7DA890
 P 5650 7150
-F 0 "H_F5" V 5696 7299 50  0000 L CNN
+F 0 "F5" V 5696 7299 50  0000 L CNN
 F 1 "MountingHole_Pad" V 5605 7299 50  0000 L CNN
 F 2 "foostan:1pin_conn" H 5650 7150 50  0001 C CNN
 F 3 "~" H 5650 7150 50  0001 C CNN
@@ -1316,10 +1260,10 @@ Wire Wire Line
 Wire Wire Line
 	5050 6550 5550 6550
 $Comp
-L Mechanical:MountingHole_Pad H_D3
+L Mechanical:MountingHole_Pad D3
 U 1 1 5F6F0153
 P 5650 6550
-F 0 "H_D3" V 5604 6700 50  0000 L CNN
+F 0 "D3" V 5604 6700 50  0000 L CNN
 F 1 "MountingHole_Pad" V 5695 6700 50  0000 L CNN
 F 2 "foostan:1pin_conn" H 5650 6550 50  0001 C CNN
 F 3 "~" H 5650 6550 50  0001 C CNN
@@ -1331,10 +1275,10 @@ F4
 Text GLabel 1500 2500 0    50   Input ~ 0
 F5
 $Comp
-L Mechanical:MountingHole_Pad H_GND1
+L Mechanical:MountingHole_Pad GND1
 U 1 1 5F8A75FD
 P 5650 7350
-F 0 "H_GND1" V 5604 7500 50  0000 L CNN
+F 0 "GND1" V 5604 7500 50  0000 L CNN
 F 1 "MountingHole_Pad" V 5695 7500 50  0000 L CNN
 F 2 "foostan:1pin_conn" H 5650 7350 50  0001 C CNN
 F 3 "~" H 5650 7350 50  0001 C CNN
@@ -1342,10 +1286,10 @@ F 3 "~" H 5650 7350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H_VCC1
+L Mechanical:MountingHole_Pad VCC1
 U 1 1 5F8B4206
 P 5650 6350
-F 0 "H_VCC1" V 5604 6500 50  0000 L CNN
+F 0 "VCC1" V 5604 6500 50  0000 L CNN
 F 1 "MountingHole_Pad" V 5695 6500 50  0000 L CNN
 F 2 "foostan:1pin_conn" H 5650 6350 50  0001 C CNN
 F 3 "~" H 5650 6350 50  0001 C CNN
@@ -1361,10 +1305,10 @@ D2
 Wire Wire Line
 	5050 6750 5550 6750
 $Comp
-L Mechanical:MountingHole_Pad H_D2
+L Mechanical:MountingHole_Pad D2
 U 1 1 5F900118
 P 5650 6750
-F 0 "H_D2" V 5604 6900 50  0000 L CNN
+F 0 "D2" V 5604 6900 50  0000 L CNN
 F 1 "MountingHole_Pad" V 5695 6900 50  0000 L CNN
 F 2 "foostan:1pin_conn" H 5650 6750 50  0001 C CNN
 F 3 "~" H 5650 6750 50  0001 C CNN
