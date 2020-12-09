@@ -38,6 +38,8 @@ enum custom_keycodes {
 #define MT_RCTL MT(MOD_RCTL, KC_ENT)  // Tap for Enter, hold for RCTL
 #define MT_LSFT MT(MOD_LSFT, KC_SPC)  // Tap for Space, hold for LSFT
 #define MT_RSFT MT(MOD_RSFT, KC_SPC)  // Tap for Space, hold for RSFT
+#define CT_PGUP LCTL(KC_PGUP) // Ctrl + PageUp
+#define CT_PGDN LCTL(KC_PGDN) // Ctrl + PageDown
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BASE] = LAYOUT(
@@ -56,9 +58,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [_LOWER] = LAYOUT(
                     KC_F11, KC_F12, KC_F13, KC_F14, KC_F15,                  KC_F16, KC_F17, KC_F18, KC_F19, KC_F20,                 \
-    KC_MUTE,KC_VOLU,KC_1,   KC_2,   KC_3,   KC_4,   KC_5,                    KC_6,   KC_7,   KC_8,   KC_9,   KC_0,   _______,_______,\
-    _______,KC_VOLD,KC_MS_L,KC_MS_D,KC_MS_R,_______,KC_ESC, KC_APP,  KC_NO,  KC_MS_L,KC_MS_D,KC_MS_U,KC_MS_R,KC_NO,  KC_PGUP,KC_HOME,\
-    _______,_______,KC_NO,  KC_NO,  KC_NO,  _______,KC_TAB, _______, KC_NO,  KC_ENT, KC_BTN1,KC_BTN3,KC_BTN2,KC_NO,  KC_PGDN,KC_END, \
+    KC_MUTE,KC_VOLU,KC_1,   KC_2,   KC_3,   KC_4,   KC_5,                    KC_6,   KC_7,   KC_8,   KC_9,   KC_0,   KC_PGUP,CT_PGUP,\
+    _______,KC_VOLD,KC_MS_L,KC_MS_D,KC_MS_R,_______,KC_ESC, KC_APP,  KC_NO,  KC_MS_L,KC_MS_D,KC_MS_U,KC_MS_R,KC_NO,  KC_PGDN,CT_PGDN,\
+    _______,_______,KC_NO,  KC_NO,  KC_NO,  _______,KC_TAB, _______, KC_NO,  KC_ENT, KC_BTN1,KC_BTN3,KC_BTN2,KC_NO,  _______,_______,\
                                     _______,_______,_______,_______, _______,KC_ENT, _______,_______                                 \
   )
 };
