@@ -36,18 +36,18 @@ Text GLabel 1500 2800 0    50   Input ~ 0
 B1
 Text GLabel 1500 2900 0    50   Input ~ 0
 B3
-Text GLabel 2700 5000 0    50   Input ~ 0
+Text GLabel 2700 5200 0    50   Input ~ 0
 D1
-Text GLabel 3200 5000 2    50   Input ~ 0
+Text GLabel 3200 5200 2    50   Input ~ 0
 colA
 Wire Wire Line
-	2700 5000 3200 5000
-Text GLabel 2700 5200 0    50   Input ~ 0
+	2700 5200 3200 5200
+Text GLabel 2700 5400 0    50   Input ~ 0
 D0
-Text GLabel 3200 5200 2    50   Input ~ 0
+Text GLabel 3200 5400 2    50   Input ~ 0
 colB
 Wire Wire Line
-	2700 5200 3200 5200
+	2700 5400 3200 5400
 Text GLabel 1500 3000 0    50   Input ~ 0
 B2
 NoConn ~ 1500 2000
@@ -169,12 +169,12 @@ F 3 "" H 1450 3950 50  0000 C CNN
 	1    1450 3950
 	1    0    0    -1  
 $EndComp
-Text GLabel 2700 5400 0    50   Input ~ 0
+Text GLabel 2700 5600 0    50   Input ~ 0
 D4
-Text GLabel 3200 5400 2    50   Input ~ 0
+Text GLabel 3200 5600 2    50   Input ~ 0
 colC
 Wire Wire Line
-	2700 5400 3200 5400
+	2700 5600 3200 5600
 Text GLabel 2900 2600 2    50   Input ~ 0
 D4
 Wire Wire Line
@@ -893,24 +893,24 @@ F 3 "~" H 8150 3250 50  0001 C CNN
 $EndComp
 Text GLabel 4750 2150 0    50   Input ~ 0
 colG
-Text GLabel 2700 5600 0    50   Input ~ 0
-C6
-Text GLabel 3200 5600 2    50   Input ~ 0
-colD
-Wire Wire Line
-	2700 5600 3200 5600
 Text GLabel 2700 5800 0    50   Input ~ 0
-D7
+C6
 Text GLabel 3200 5800 2    50   Input ~ 0
-colE
+colD
 Wire Wire Line
 	2700 5800 3200 5800
 Text GLabel 2700 6000 0    50   Input ~ 0
-E6
+D7
 Text GLabel 3200 6000 2    50   Input ~ 0
-colF
+colE
 Wire Wire Line
 	2700 6000 3200 6000
+Text GLabel 2700 6200 0    50   Input ~ 0
+E6
+Text GLabel 3200 6200 2    50   Input ~ 0
+colF
+Wire Wire Line
+	2700 6200 3200 6200
 Text GLabel 2900 2700 2    50   Input ~ 0
 C6
 Text GLabel 2900 2800 2    50   Input ~ 0
@@ -919,14 +919,10 @@ Text GLabel 2900 2900 2    50   Input ~ 0
 E6
 Text GLabel 2900 3000 2    50   Input ~ 0
 B4
-Text GLabel 2700 6200 0    50   Input ~ 0
-B4
-Text GLabel 3200 6200 2    50   Input ~ 0
-colG
 Text GLabel 2700 6400 0    50   Input ~ 0
-B5
-Wire Wire Line
-	2700 6400 3200 6400
+B4
+Text GLabel 3200 6400 2    50   Input ~ 0
+colG
 Text GLabel 2900 3100 2    50   Input ~ 0
 B5
 Text GLabel 2900 2100 2    50   Input ~ 0
@@ -959,14 +955,14 @@ Wire Wire Line
 	2050 5400 1550 5400
 Text GLabel 1550 5400 0    50   Input ~ 0
 row1
-Text GLabel 5050 6550 0    50   Input ~ 0
+Text GLabel 5050 6350 0    50   Input ~ 0
 D3
-Text GLabel 2700 4800 0    50   Input ~ 0
+Text GLabel 2700 5000 0    50   Input ~ 0
 D2
-Text GLabel 3200 4800 2    50   Input ~ 0
+Text GLabel 3200 5000 2    50   Input ~ 0
 data
 Wire Wire Line
-	2700 4800 3200 4800
+	2700 5000 3200 5000
 Wire Wire Line
 	2050 6400 1550 6400
 Text GLabel 2050 6400 2    50   Input ~ 0
@@ -1031,48 +1027,48 @@ F6
 Text GLabel 2050 5600 2    50   Input ~ 0
 F7
 Wire Wire Line
-	5050 7150 5550 7150
-Wire Wire Line
 	5050 6950 5550 6950
-Text GLabel 5050 6950 0    50   Input ~ 0
+Wire Wire Line
+	5050 6750 5550 6750
+Text GLabel 5050 6750 0    50   Input ~ 0
 F4
-Text GLabel 5050 7150 0    50   Input ~ 0
+Text GLabel 5050 6950 0    50   Input ~ 0
 F5
 $Comp
 L Mechanical:MountingHole_Pad F4
 U 1 1 5F7D88A6
+P 5650 6750
+F 0 "F4" V 5696 6899 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5605 6899 50  0000 L CNN
+F 2 "foostan:1pin_conn" H 5650 6750 50  0001 C CNN
+F 3 "~" H 5650 6750 50  0001 C CNN
+	1    5650 6750
+	0    1    -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad F5
+U 1 1 5F7DA890
 P 5650 6950
-F 0 "F4" V 5696 7099 50  0000 L CNN
+F 0 "F5" V 5696 7099 50  0000 L CNN
 F 1 "MountingHole_Pad" V 5605 7099 50  0000 L CNN
 F 2 "foostan:1pin_conn" H 5650 6950 50  0001 C CNN
 F 3 "~" H 5650 6950 50  0001 C CNN
 	1    5650 6950
 	0    1    -1   0   
 $EndComp
-$Comp
-L Mechanical:MountingHole_Pad F5
-U 1 1 5F7DA890
-P 5650 7150
-F 0 "F5" V 5696 7299 50  0000 L CNN
-F 1 "MountingHole_Pad" V 5605 7299 50  0000 L CNN
-F 2 "foostan:1pin_conn" H 5650 7150 50  0001 C CNN
-F 3 "~" H 5650 7150 50  0001 C CNN
-	1    5650 7150
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
-	2700 6200 3200 6200
+	2700 6400 3200 6400
 Wire Wire Line
-	5050 6550 5550 6550
+	5050 6350 5550 6350
 $Comp
 L Mechanical:MountingHole_Pad D3
 U 1 1 5F6F0153
-P 5650 6550
-F 0 "D3" V 5604 6700 50  0000 L CNN
-F 1 "MountingHole_Pad" V 5695 6700 50  0000 L CNN
-F 2 "foostan:1pin_conn" H 5650 6550 50  0001 C CNN
-F 3 "~" H 5650 6550 50  0001 C CNN
-	1    5650 6550
+P 5650 6350
+F 0 "D3" V 5604 6500 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5695 6500 50  0000 L CNN
+F 2 "foostan:1pin_conn" H 5650 6350 50  0001 C CNN
+F 3 "~" H 5650 6350 50  0001 C CNN
+	1    5650 6350
 	0    1    1    0   
 $EndComp
 Text GLabel 1500 2400 0    50   Input ~ 0
@@ -1093,35 +1089,35 @@ $EndComp
 $Comp
 L Mechanical:MountingHole_Pad VCC1
 U 1 1 5F8B4206
-P 5650 6350
-F 0 "VCC1" V 5604 6500 50  0000 L CNN
-F 1 "MountingHole_Pad" V 5695 6500 50  0000 L CNN
-F 2 "foostan:1pin_conn" H 5650 6350 50  0001 C CNN
-F 3 "~" H 5650 6350 50  0001 C CNN
-	1    5650 6350
+P 5650 6150
+F 0 "VCC1" V 5604 6300 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5695 6300 50  0000 L CNN
+F 2 "foostan:1pin_conn" H 5650 6150 50  0001 C CNN
+F 3 "~" H 5650 6150 50  0001 C CNN
+	1    5650 6150
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	3600 3875 3925 3875
 Text GLabel 3925 3875 2    50   Input ~ 0
 data
-Text GLabel 5050 6750 0    50   Input ~ 0
+Text GLabel 5050 6550 0    50   Input ~ 0
 D2
 Wire Wire Line
-	5050 6750 5550 6750
+	5050 6550 5550 6550
 $Comp
 L Mechanical:MountingHole_Pad D2
 U 1 1 5F900118
-P 5650 6750
-F 0 "D2" V 5604 6900 50  0000 L CNN
-F 1 "MountingHole_Pad" V 5695 6900 50  0000 L CNN
-F 2 "foostan:1pin_conn" H 5650 6750 50  0001 C CNN
-F 3 "~" H 5650 6750 50  0001 C CNN
-	1    5650 6750
+P 5650 6550
+F 0 "D2" V 5604 6700 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5695 6700 50  0000 L CNN
+F 2 "foostan:1pin_conn" H 5650 6550 50  0001 C CNN
+F 3 "~" H 5650 6550 50  0001 C CNN
+	1    5650 6550
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5550 6350 5050 6350
+	5550 6150 5050 6150
 Wire Wire Line
 	5550 7350 5050 7350
 $Comp
@@ -1138,12 +1134,12 @@ $EndComp
 $Comp
 L power:VCC #PWR03
 U 1 1 5F996DCC
-P 5050 6350
-F 0 "#PWR03" H 5050 6200 50  0001 C CNN
-F 1 "VCC" H 5065 6523 50  0000 C CNN
-F 2 "" H 5050 6350 50  0001 C CNN
-F 3 "" H 5050 6350 50  0001 C CNN
-	1    5050 6350
+P 5050 6150
+F 0 "#PWR03" H 5050 6000 50  0001 C CNN
+F 1 "VCC" H 5065 6323 50  0000 C CNN
+F 2 "" H 5050 6150 50  0001 C CNN
+F 3 "" H 5050 6150 50  0001 C CNN
+	1    5050 6150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1201,7 +1197,6 @@ Wire Wire Line
 	8850 2750 9550 2750
 Wire Wire Line
 	9550 2750 9650 2750
-NoConn ~ 3200 6400
 Wire Wire Line
 	4750 2150 4750 3100
 $Comp
@@ -1311,12 +1306,27 @@ Wire Wire Line
 Connection ~ 8150 2750
 Connection ~ 7450 2750
 Wire Wire Line
-	8150 3400 8150 3750
-Connection ~ 8150 3400
-Connection ~ 8150 3750
-Wire Wire Line
 	8150 4050 7450 4050
 Connection ~ 8150 4050
 Connection ~ 7450 4050
 Connection ~ 6750 5350
+Wire Wire Line
+	8150 3400 7450 3400
+Connection ~ 8150 3400
+Connection ~ 7450 3400
+Wire Wire Line
+	5050 7150 5550 7150
+Text GLabel 5050 7150 0    50   Input ~ 0
+B5
+$Comp
+L Mechanical:MountingHole_Pad B5
+U 1 1 6008F413
+P 5650 7150
+F 0 "B5" V 5696 7299 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5605 7299 50  0000 L CNN
+F 2 "foostan:1pin_conn" H 5650 7150 50  0001 C CNN
+F 3 "~" H 5650 7150 50  0001 C CNN
+	1    5650 7150
+	0    1    -1   0   
+$EndComp
 $EndSCHEMATC
