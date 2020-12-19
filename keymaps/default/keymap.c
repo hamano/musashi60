@@ -36,15 +36,16 @@ enum custom_keycodes {
 #define MT_RALT MT(MOD_RALT, KC_HENK) // Tap for HENKAN, hold for RALT
 #define MT_LCTL MT(MOD_LCTL, KC_MHEN) // Tap for MUHENKAN, hold for LCTL
 #define MT_RCTL MT(MOD_RCTL, KC_HENK) // Tap for HENKAN, hold for RCTL
-
+#define MT_LSFT MT(MOD_LSFT, KC_SPC)  // Tap for Space, hold for LSFT
+#define MT_RSFT MT(MOD_RSFT, KC_SPC)  // Tap for Space, hold for RSFT
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BASE] = LAYOUT(
                     KC_1,   KC_2,   KC_3,   KC_4,   KC_5,                    KC_6,   KC_7,   KC_8,   KC_9,   KC_0,                   \
-    KC_GRV, KC_EQL, KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,                    KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,   KC_LBRC,KC_RBRC,\
-    KC_NO,  KC_MINS,KC_A,   KC_S,   KC_D,   KC_F,   KC_G,   KC_ESC,  KC_BSPC,KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,KC_QUOT,KC_BSLS,\
-    MT_LGUI,MT_LALT,KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   KC_TAB,  KC_ENT, KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,MT_RALT,MT_RGUI,\
-		                    MT_LCTL,LOWER,  KC_LSFT,KC_SPC, KC_SPC,  KC_RSFT,RAISE,  MT_RCTL                                         \
+    KC_GRV, KC_BSLS,KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,                    KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,   KC_LBRC,KC_RBRC,\
+    KC_NO,  KC_QUOT,KC_A,   KC_S,   KC_D,   KC_F,   KC_G,   KC_ESC,  KC_BSPC,KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,KC_MINS,KC_EQL, \
+    KC_NO,  MT_LGUI,KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   KC_TAB,  KC_ENT, KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,MT_RGUI,KC_NO,  \
+    	                            MT_LALT,MT_LCTL,LOWER,  MT_LSFT, MT_RSFT,RAISE,  MT_RCTL,MT_RALT                                 \
   ),
   [_RAISE] = LAYOUT(
                     KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,                   KC_F6,  KC_F7,  KC_F8,  KC_F9,  KC_F10,                 \
