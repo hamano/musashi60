@@ -45,23 +45,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BASE] = LAYOUT(
                     KC_1,   KC_2,   KC_3,   KC_4,   KC_5,                    KC_6,   KC_7,   KC_8,   KC_9,   KC_0,                   \
     KC_GRV, KC_BSLS,KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,                    KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,   KC_LBRC,KC_RBRC,\
-    KC_NO,  KC_QUOT,KC_A,   KC_S,   KC_D,   KC_F,   KC_G,   KC_ESC,  KC_BSPC,KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,KC_MINS,KC_EQL, \
-    KC_NO,  MT_LGUI,KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   KC_NO,   KC_ENT, KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,MT_RGUI,KC_NO,  \
-    	                            KC_LALT,MT_LCTL,MT_LSFT,LOWER,   RAISE,  MT_RSFT,MT_RCTL,KC_RALT                                 \
+    KC_NO,  KC_QUOT,KC_A,   KC_S,   KC_D,   KC_F,   KC_G,                    KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,KC_MINS,KC_EQL, \
+                    KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   KC_ESC,  KC_BSPC,KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,                \
+    	    MT_LGUI,                KC_LALT,MT_LCTL,MT_LSFT,LOWER,   RAISE,  MT_RSFT,MT_RCTL,KC_RALT,                MT_RGUI         \
   ),
   [_RAISE] = LAYOUT(
                     KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,                   KC_F6,  KC_F7,  KC_F8,  KC_F9,  KC_F10,                 \
     KC_HOME,KC_PGUP,KC_EXLM,KC_AT,  KC_HASH,KC_DLR, KC_PERC,                 CT_PGUP,KC_PGDN,KC_PGUP,CT_PGDN,KC_RPRN,KC_PGUP,KC_HOME,\
-    KC_END, KC_PGDN,KC_MS_L,KC_MS_D,KC_MS_R,KC_NO,  KC_NO,  KC_APP,  KC_NO,  KC_LEFT,KC_DOWN,KC_UP,  KC_RGHT,KC_NO,  KC_PGDN,KC_END, \
-    _______,_______,KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,   KC_NO,  CT_PGUP,KC_PGDN,KC_PGUP,CT_PGDN,KC_NO,  _______,_______,\
-                                    _______,_______,KC_TAB ,_______, _______,_______,_______,_______                                 \
+    KC_END, KC_PGDN,KC_MS_L,KC_MS_D,KC_MS_R,KC_NO,  KC_NO,                   KC_LEFT,KC_DOWN,KC_UP,  KC_RGHT,KC_NO,  KC_PGDN,KC_END, \
+                    KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_APP,  KC_NO,  CT_PGUP,KC_PGDN,KC_PGUP,CT_PGDN,KC_NO,                  \
+            _______,                _______,_______,KC_TAB, _______, _______,_______,_______,_______,                _______         \
   ),
   [_LOWER] = LAYOUT(
                     KC_F11, KC_F12, KC_F13, KC_F14, KC_F15,                  KC_F16, KC_F17, KC_F18, KC_F19, KC_F20,                 \
     KC_MUTE,KC_VOLU,KC_1,   KC_2,   KC_3,   KC_4,   KC_5,                    CT_PGUP,KC_PGDN,KC_PGUP,CT_PGDN,KC_0,   KC_PGUP,CT_PGUP,\
-    _______,KC_VOLD,KC_MS_L,KC_MS_D,KC_MS_R,_______,KC_ESC, KC_APP,  KC_NO,  KC_MS_L,KC_MS_D,KC_MS_U,KC_MS_R,KC_NO,  KC_PGDN,CT_PGDN,\
-    _______,_______,KC_NO,  KC_NO,  KC_NO,  _______,KC_TAB, _______, KC_NO,  KC_ENT, KC_BTN1,KC_BTN3,KC_BTN2,KC_NO,  _______,_______,\
-                                    _______,_______,_______,_______, _______,KC_ENT, _______,_______                                 \
+    _______,KC_VOLD,KC_MS_L,KC_MS_D,KC_MS_R,_______,KC_ESC,                  KC_MS_L,KC_MS_D,KC_MS_U,KC_MS_R,KC_NO,  KC_PGDN,CT_PGDN,\
+                    KC_NO,  KC_NO,  KC_NO,  _______,KC_TAB, KC_APP,  KC_NO,  KC_ENT, KC_BTN1,KC_BTN3,KC_BTN2,KC_NO,                  \
+            _______,                _______,_______,_______,_______, _______,KC_ENT, _______,_______,                _______         \
   )
 };
 
