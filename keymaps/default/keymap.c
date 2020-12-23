@@ -28,8 +28,8 @@ enum custom_keycodes {
     QMKURL
 };
 
-#define RAISE MO(_RAISE)
-#define LOWER MO(_LOWER)
+#define RAISE LT(_RAISE, KC_SPC)
+#define LOWER LT(_LOWER, KC_SPC)
 #define MT_LGUI MT(MOD_LGUI, KC_MHEN) // Tap for MUHENKAN, hold for LGUI
 #define MT_RGUI MT(MOD_RGUI, KC_HENK) // Tap for HENKAN, hold for RGUI
 #define MT_LALT MT(MOD_LALT, KC_MHEN) // Tap for MUHENKAN, hold for LALT
