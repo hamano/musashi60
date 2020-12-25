@@ -28,8 +28,9 @@ enum custom_keycodes {
     QMKURL
 };
 
-#define RAISE LT(_RAISE, KC_SPC)
-#define LOWER LT(_LOWER, KC_SPC)
+#define ALT_GRV LALT(KC_GRV)
+#define RAISE LT(_RAISE, KC_BSPC)     // Tap for BackSpace,	hold for Raise
+#define LOWER LT(_LOWER, KC_TAB)      // Tap for Tab, hold for Lower
 #define MT_LGUI MT(MOD_LGUI, KC_MHEN) // Tap for MUHENKAN, hold for LGUI
 #define MT_RGUI MT(MOD_RGUI, KC_HENK) // Tap for HENKAN, hold for RGUI
 #define MT_LALT MT(MOD_LALT, KC_MHEN) // Tap for MUHENKAN, hold for LALT
@@ -45,7 +46,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BASE] = LAYOUT(
                     KC_1,   KC_2,   KC_3,   KC_4,   KC_5,                    KC_6,   KC_7,   KC_8,   KC_9,   KC_0,                   \
     KC_GRV, KC_BSLS,KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,                    KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,   KC_EQL, KC_LBRC,\
-    KC_NO,  KC_QUOT,KC_A,   KC_S,   KC_D,   KC_F,   KC_G,                    KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,KC_MINS,KC_RBRC,\
+    ALT_GRV,KC_QUOT,KC_A,   KC_S,   KC_D,   KC_F,   KC_G,                    KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,KC_MINS,KC_RBRC,\
                     KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   KC_ESC,  KC_BSPC,KC_N,   KC_M,   KC_COMM,KC_DOT, KC_SLSH,                \
     	    MT_LGUI,                MT_LALT,MT_LCTL,MT_LSFT,LOWER,   RAISE,  MT_RSFT,MT_RCTL,MT_RALT,                MT_RGUI         \
   ),
