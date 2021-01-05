@@ -14,11 +14,49 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#include "analog.h"
+#include "print.h"
+#include "pointing_device.h"
 #include "musashi60.h"
 
 // Optional override functions below.
 // You can leave any or all of these undefined.
 // These are only required if you want to perform custom actions.
+
+#ifdef POINTING_DEVICE_ENABLE
+
+#define POINTING_H_PIN F4
+#define POINTING_V_PIN F5
+#define POINTING_SPEED 6
+#define POINTING_MAX ((1 << (9 - POINING_SPEED)) - 1)
+
+report_mouse_t mouseReport = {};
+
+void pointing_device_init(void) {
+  setPinInput(POINTING_H_PIN);
+  setPinInput(POINTING_V_PIN);
+}
+
+void pointing_device_task(void) {
+  int16_t x,y;
+  x = (analogReadPin(POINTING_H_PIN) >> POINTING_SPEED) - POINTING_MAX;
+  y = (analogReadPin(POINTING_V_PIN) >> POINTING_SPEED) - POINTING_MAX;
+  if (x > 0) {
+    x--;
+  }
+  if (y > 0) {
+    y--;
+  }
+  if (x || y) {
+    dprintf("x, y: %d, %d\n", x, y);
+    mouseReport.x = x;
+    mouseReport.y = y;
+    pointing_device_set_report(mouseReport);
+    pointing_device_send();
+  }
+}
+
+#endif
 
 /*
 void matrix_init_kb(void) {
