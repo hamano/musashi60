@@ -1,5 +1,5 @@
 /*
-Copyright 2020 HAMANO Tsukasa
+Copyright 2021 HAMANO Tsukasa
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -21,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID 0xFEED
-#define PRODUCT_ID 0x0000
+#define PRODUCT_ID 0x0634
 #define DEVICE_VER 0x0001
 #define MANUFACTURER @hamano
 #define PRODUCT Musashi60
