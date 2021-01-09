@@ -36,18 +36,18 @@ Text GLabel 1500 2800 0    50   Input ~ 0
 B1
 Text GLabel 1500 2900 0    50   Input ~ 0
 B3
-Text GLabel 2700 5200 0    50   Input ~ 0
+Text GLabel 2700 5400 0    50   Input ~ 0
 D1
-Text GLabel 3200 5200 2    50   Input ~ 0
+Text GLabel 3200 5400 2    50   Input ~ 0
 colA
 Wire Wire Line
-	2700 5200 3200 5200
-Text GLabel 2700 5400 0    50   Input ~ 0
+	2700 5400 3200 5400
+Text GLabel 2700 5600 0    50   Input ~ 0
 D0
-Text GLabel 3200 5400 2    50   Input ~ 0
+Text GLabel 3200 5600 2    50   Input ~ 0
 colB
 Wire Wire Line
-	2700 5400 3200 5400
+	2700 5600 3200 5600
 Text GLabel 1500 3000 0    50   Input ~ 0
 B2
 NoConn ~ 1500 2000
@@ -169,12 +169,12 @@ F 3 "" H 1450 3950 50  0000 C CNN
 	1    1450 3950
 	1    0    0    -1  
 $EndComp
-Text GLabel 2700 5600 0    50   Input ~ 0
+Text GLabel 2700 5800 0    50   Input ~ 0
 D4
-Text GLabel 3200 5600 2    50   Input ~ 0
+Text GLabel 3200 5800 2    50   Input ~ 0
 colC
 Wire Wire Line
-	2700 5600 3200 5600
+	2700 5800 3200 5800
 Text GLabel 2900 2600 2    50   Input ~ 0
 D4
 Wire Wire Line
@@ -465,28 +465,6 @@ Text GLabel 9650 3400 2    50   Input ~ 0
 row2
 Text GLabel 9650 2750 2    50   Input ~ 0
 row1
-$Comp
-L Device:D D_E5
-U 1 1 5F6A1CAE
-P 6750 5200
-F 0 "D_E5" V 6796 5279 50  0000 L CNN
-F 1 "D" V 6705 5279 50  0000 L CNN
-F 2 "foostan:D3_TH_SMD" H 6750 5200 50  0001 C CNN
-F 3 "~" H 6750 5200 50  0001 C CNN
-	1    6750 5200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L foostan:SW_PUSH SW_E5
-U 1 1 5F69A34A
-P 6450 5050
-F 0 "SW_E5" H 6450 5305 50  0000 C CNN
-F 1 "SW_PUSH" H 6450 5214 50  0000 C CNN
-F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 6450 5050 50  0001 C CNN
-F 3 "" H 6450 5050 50  0000 C CNN
-	1    6450 5050
-	1    0    0    -1  
-$EndComp
 Connection ~ 8250 2450
 Wire Wire Line
 	8250 2450 8250 3100
@@ -695,7 +673,7 @@ $EndComp
 Wire Wire Line
 	6050 4050 6750 4050
 Wire Wire Line
-	6050 3400 6750 3400
+	6050 4700 6750 4700
 Text GLabel 6850 2150 0    50   Input ~ 0
 colD
 $Comp
@@ -743,17 +721,6 @@ F 3 "~" H 6050 3900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L foostan:SW_PUSH SW_F5
-U 1 1 5F83F180
-P 5750 5050
-F 0 "SW_F5" H 5750 5305 50  0000 C CNN
-F 1 "SW_PUSH" H 5750 5214 50  0000 C CNN
-F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 5750 5050 50  0001 C CNN
-F 3 "" H 5750 5050 50  0000 C CNN
-	1    5750 5050
-	1    0    0    -1  
-$EndComp
-$Comp
 L foostan:SW_PUSH SW_C1
 U 1 1 5F83F186
 P 7850 2450
@@ -765,25 +732,25 @@ F 3 "" H 7850 2450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan:SW_PUSH SW_F2
+L foostan:SW_PUSH SW_F4
 U 1 1 5F83F18C
-P 5750 3100
-F 0 "SW_F2" H 5750 3355 50  0000 C CNN
-F 1 "SW_PUSH" H 5750 3264 50  0000 C CNN
-F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 5750 3100 50  0001 C CNN
-F 3 "" H 5750 3100 50  0000 C CNN
-	1    5750 3100
+P 5750 4400
+F 0 "SW_F4" H 5750 4655 50  0000 C CNN
+F 1 "SW_PUSH" H 5750 4564 50  0000 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 5750 4400 50  0001 C CNN
+F 3 "" H 5750 4400 50  0000 C CNN
+	1    5750 4400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D D_F2
+L Device:D D_F4
 U 1 1 5F83F192
-P 6050 3250
-F 0 "D_F2" V 6096 3330 50  0000 L CNN
-F 1 "D" V 6005 3330 50  0000 L CNN
-F 2 "foostan:D3_TH_SMD" H 6050 3250 50  0001 C CNN
-F 3 "~" H 6050 3250 50  0001 C CNN
-	1    6050 3250
+P 6050 4550
+F 0 "D_F4" V 6096 4630 50  0000 L CNN
+F 1 "D" V 6005 4630 50  0000 L CNN
+F 2 "foostan:D3_TH_SMD" H 6050 4550 50  0001 C CNN
+F 3 "~" H 6050 4550 50  0001 C CNN
+	1    6050 4550
 	0    -1   -1   0   
 $EndComp
 Text GLabel 6150 2150 0    50   Input ~ 0
@@ -799,63 +766,28 @@ F 3 "~" H 8150 2600 50  0001 C CNN
 	1    8150 2600
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:D D_F5
-U 1 1 5F83F1A3
-P 6050 5200
-F 0 "D_F5" V 6096 5280 50  0000 L CNN
-F 1 "D" V 6005 5280 50  0000 L CNN
-F 2 "foostan:D3_TH_SMD" H 6050 5200 50  0001 C CNN
-F 3 "~" H 6050 5200 50  0001 C CNN
-	1    6050 5200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5350 3400 6050 3400
 Text GLabel 5450 2150 0    50   Input ~ 0
 colF
 $Comp
-L Device:D D_G2
-U 1 1 5F747666
-P 5350 3250
-F 0 "D_G2" V 5396 3330 50  0000 L CNN
-F 1 "D" V 5305 3330 50  0000 L CNN
-F 2 "foostan:D3_TH_SMD" H 5350 3250 50  0001 C CNN
-F 3 "~" H 5350 3250 50  0001 C CNN
-	1    5350 3250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L foostan:SW_PUSH SW_G2
-U 1 1 5F74766C
-P 5050 3100
-F 0 "SW_G2" H 5050 3355 50  0000 C CNN
-F 1 "SW_PUSH" H 5050 3264 50  0000 C CNN
-F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 5050 3100 50  0001 C CNN
-F 3 "" H 5050 3100 50  0000 C CNN
-	1    5050 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D_G3
+L Device:D D_F2
 U 1 1 5F74767E
-P 5350 3900
-F 0 "D_G3" V 5396 3980 50  0000 L CNN
-F 1 "D" V 5305 3980 50  0000 L CNN
-F 2 "foostan:D3_TH_SMD" H 5350 3900 50  0001 C CNN
-F 3 "~" H 5350 3900 50  0001 C CNN
-	1    5350 3900
+P 6050 3250
+F 0 "D_F2" V 6096 3330 50  0000 L CNN
+F 1 "D" V 6005 3330 50  0000 L CNN
+F 2 "foostan:D3_TH_SMD" H 6050 3250 50  0001 C CNN
+F 3 "~" H 6050 3250 50  0001 C CNN
+	1    6050 3250
 	0    -1   -1   0   
 $EndComp
 $Comp
-L foostan:SW_PUSH SW_G3
+L foostan:SW_PUSH SW_F2
 U 1 1 5F747684
-P 5050 3750
-F 0 "SW_G3" H 5050 4005 50  0000 C CNN
-F 1 "SW_PUSH" H 5050 3914 50  0000 C CNN
-F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 5050 3750 50  0001 C CNN
-F 3 "" H 5050 3750 50  0000 C CNN
-	1    5050 3750
+P 5750 3100
+F 0 "SW_F2" H 5750 3355 50  0000 C CNN
+F 1 "SW_PUSH" H 5750 3264 50  0000 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 5750 3100 50  0001 C CNN
+F 3 "" H 5750 3100 50  0000 C CNN
+	1    5750 3100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -891,26 +823,24 @@ F 3 "~" H 8150 3250 50  0001 C CNN
 	1    8150 3250
 	0    -1   -1   0   
 $EndComp
-Text GLabel 4750 2150 0    50   Input ~ 0
-colG
-Text GLabel 2700 5800 0    50   Input ~ 0
-C6
-Text GLabel 3200 5800 2    50   Input ~ 0
-colD
-Wire Wire Line
-	2700 5800 3200 5800
 Text GLabel 2700 6000 0    50   Input ~ 0
-D7
+C6
 Text GLabel 3200 6000 2    50   Input ~ 0
-colE
+colD
 Wire Wire Line
 	2700 6000 3200 6000
 Text GLabel 2700 6200 0    50   Input ~ 0
-E6
+D7
 Text GLabel 3200 6200 2    50   Input ~ 0
-colF
+colE
 Wire Wire Line
 	2700 6200 3200 6200
+Text GLabel 2700 6400 0    50   Input ~ 0
+E6
+Text GLabel 3200 6400 2    50   Input ~ 0
+colF
+Wire Wire Line
+	2700 6400 3200 6400
 Text GLabel 2900 2700 2    50   Input ~ 0
 C6
 Text GLabel 2900 2800 2    50   Input ~ 0
@@ -919,10 +849,6 @@ Text GLabel 2900 2900 2    50   Input ~ 0
 E6
 Text GLabel 2900 3000 2    50   Input ~ 0
 B4
-Text GLabel 2700 6400 0    50   Input ~ 0
-B4
-Text GLabel 3200 6400 2    50   Input ~ 0
-colG
 Text GLabel 2900 3100 2    50   Input ~ 0
 B5
 Text GLabel 2900 2100 2    50   Input ~ 0
@@ -957,12 +883,12 @@ Text GLabel 1550 5400 0    50   Input ~ 0
 row1
 Text GLabel 5050 6350 0    50   Input ~ 0
 D3
-Text GLabel 2700 5000 0    50   Input ~ 0
+Text GLabel 2700 5200 0    50   Input ~ 0
 D2
-Text GLabel 3200 5000 2    50   Input ~ 0
+Text GLabel 3200 5200 2    50   Input ~ 0
 data
 Wire Wire Line
-	2700 5000 3200 5000
+	2700 5200 3200 5200
 Wire Wire Line
 	2050 6400 1550 6400
 Text GLabel 2050 6400 2    50   Input ~ 0
@@ -1027,37 +953,20 @@ F6
 Text GLabel 2050 5600 2    50   Input ~ 0
 F7
 Wire Wire Line
-	5050 6950 5550 6950
-Wire Wire Line
 	5050 6750 5550 6750
 Text GLabel 5050 6750 0    50   Input ~ 0
-F4
-Text GLabel 5050 6950 0    50   Input ~ 0
-F5
+B4
 $Comp
-L Mechanical:MountingHole_Pad F4
-U 1 1 5F7D88A6
+L Mechanical:MountingHole_Pad B4
+U 1 1 5F7DA890
 P 5650 6750
-F 0 "F4" V 5696 6899 50  0000 L CNN
+F 0 "B4" V 5696 6899 50  0000 L CNN
 F 1 "MountingHole_Pad" V 5605 6899 50  0000 L CNN
 F 2 "foostan:1pin_conn" H 5650 6750 50  0001 C CNN
 F 3 "~" H 5650 6750 50  0001 C CNN
 	1    5650 6750
 	0    1    -1   0   
 $EndComp
-$Comp
-L Mechanical:MountingHole_Pad F5
-U 1 1 5F7DA890
-P 5650 6950
-F 0 "F5" V 5696 7099 50  0000 L CNN
-F 1 "MountingHole_Pad" V 5605 7099 50  0000 L CNN
-F 2 "foostan:1pin_conn" H 5650 6950 50  0001 C CNN
-F 3 "~" H 5650 6950 50  0001 C CNN
-	1    5650 6950
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	2700 6400 3200 6400
 Wire Wire Line
 	5050 6350 5550 6350
 $Comp
@@ -1078,12 +987,12 @@ F5
 $Comp
 L Mechanical:MountingHole_Pad GND1
 U 1 1 5F8A75FD
-P 5650 7350
-F 0 "GND1" V 5604 7500 50  0000 L CNN
-F 1 "MountingHole_Pad" V 5695 7500 50  0000 L CNN
-F 2 "foostan:1pin_conn" H 5650 7350 50  0001 C CNN
-F 3 "~" H 5650 7350 50  0001 C CNN
-	1    5650 7350
+P 5650 7150
+F 0 "GND1" V 5604 7300 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5695 7300 50  0000 L CNN
+F 2 "foostan:1pin_conn" H 5650 7150 50  0001 C CNN
+F 3 "~" H 5650 7150 50  0001 C CNN
+	1    5650 7150
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1119,16 +1028,16 @@ $EndComp
 Wire Wire Line
 	5550 6150 5050 6150
 Wire Wire Line
-	5550 7350 5050 7350
+	5550 7150 5050 7150
 $Comp
 L power:GND #PWR04
 U 1 1 5F995F04
-P 5050 7350
-F 0 "#PWR04" H 5050 7100 50  0001 C CNN
-F 1 "GND" H 5055 7177 50  0000 C CNN
-F 2 "" H 5050 7350 50  0001 C CNN
-F 3 "" H 5050 7350 50  0001 C CNN
-	1    5050 7350
+P 5050 7150
+F 0 "#PWR04" H 5050 6900 50  0001 C CNN
+F 1 "GND" H 5055 6977 50  0000 C CNN
+F 2 "" H 5050 7150 50  0001 C CNN
+F 3 "" H 5050 7150 50  0001 C CNN
+	1    5050 7150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1191,14 +1100,9 @@ Wire Wire Line
 	8950 5050 8950 4400
 Connection ~ 8950 4400
 Wire Wire Line
-	7450 5350 6750 5350
-Connection ~ 7450 5350
-Wire Wire Line
 	8850 2750 9550 2750
 Wire Wire Line
 	9550 2750 9650 2750
-Wire Wire Line
-	4750 2150 4750 3100
 $Comp
 L Device:D D_C3
 U 1 1 5F858443
@@ -1210,23 +1114,11 @@ F 3 "~" H 8150 3900 50  0001 C CNN
 	1    8150 3900
 	0    -1   -1   0   
 $EndComp
-Connection ~ 4750 3100
 Wire Wire Line
-	4750 3100 4750 3750
-Wire Wire Line
-	5350 4050 6050 4050
-Connection ~ 5450 3100
-Wire Wire Line
-	5450 3100 5450 3750
+	6050 3400 6750 3400
 Connection ~ 5450 3750
 Wire Wire Line
-	5450 3750 5450 5050
-Wire Wire Line
-	6050 5350 6750 5350
-Wire Wire Line
-	6150 2150 6150 2450
-Connection ~ 6050 3400
-Connection ~ 6050 4050
+	5450 3750 5450 4400
 Connection ~ 6150 2450
 Wire Wire Line
 	6150 2450 6150 3100
@@ -1236,14 +1128,10 @@ Wire Wire Line
 Connection ~ 6150 3750
 Wire Wire Line
 	6150 3750 6150 4400
-Connection ~ 6150 4400
-Wire Wire Line
-	6150 4400 6150 5050
 Wire Wire Line
 	6750 4700 7450 4700
 Wire Wire Line
 	6850 2150 6850 2450
-Connection ~ 6750 3400
 Connection ~ 6750 4050
 Connection ~ 6850 2450
 Wire Wire Line
@@ -1262,8 +1150,6 @@ Wire Wire Line
 	7450 4700 8150 4700
 Wire Wire Line
 	7550 2150 7550 2450
-Wire Wire Line
-	5450 2150 5450 3100
 Connection ~ 7550 2450
 Wire Wire Line
 	7550 2450 7550 3100
@@ -1309,24 +1195,69 @@ Wire Wire Line
 	8150 4050 7450 4050
 Connection ~ 8150 4050
 Connection ~ 7450 4050
-Connection ~ 6750 5350
 Wire Wire Line
 	8150 3400 7450 3400
 Connection ~ 8150 3400
 Connection ~ 7450 3400
 Wire Wire Line
-	5050 7150 5550 7150
-Text GLabel 5050 7150 0    50   Input ~ 0
+	5050 6950 5550 6950
+Text GLabel 5050 6950 0    50   Input ~ 0
 B5
 $Comp
 L Mechanical:MountingHole_Pad B5
 U 1 1 6008F413
-P 5650 7150
-F 0 "B5" V 5696 7299 50  0000 L CNN
-F 1 "MountingHole_Pad" V 5605 7299 50  0000 L CNN
-F 2 "foostan:1pin_conn" H 5650 7150 50  0001 C CNN
-F 3 "~" H 5650 7150 50  0001 C CNN
-	1    5650 7150
+P 5650 6950
+F 0 "B5" V 5696 7099 50  0000 L CNN
+F 1 "MountingHole_Pad" V 5605 7099 50  0000 L CNN
+F 2 "foostan:1pin_conn" H 5650 6950 50  0001 C CNN
+F 3 "~" H 5650 6950 50  0001 C CNN
+	1    5650 6950
 	0    1    -1   0   
 $EndComp
+Wire Wire Line
+	5450 2150 5450 3100
+Wire Wire Line
+	6150 2150 6150 2450
+Connection ~ 6750 4700
+Connection ~ 5450 3100
+Wire Wire Line
+	5450 3100 5450 3750
+Connection ~ 6750 3400
+$Comp
+L power:VCC #PWR06
+U 1 1 601CCD3A
+P 4600 5000
+F 0 "#PWR06" H 4600 4850 50  0001 C CNN
+F 1 "VCC" H 4615 5173 50  0000 C CNN
+F 2 "" H 4600 5000 50  0001 C CNN
+F 3 "" H 4600 5000 50  0001 C CNN
+	1    4600 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L local:joystick U2
+U 1 1 601D4158
+P 4900 5150
+F 0 "U2" H 5128 5201 50  0000 L CNN
+F 1 "joystick" H 5128 5110 50  0000 L CNN
+F 2 "local:J08K" H 4900 4850 50  0001 C CNN
+F 3 "" H 4900 4850 50  0001 C CNN
+	1    4900 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 601D9867
+P 4600 5300
+F 0 "#PWR07" H 4600 5050 50  0001 C CNN
+F 1 "GND" H 4605 5127 50  0000 C CNN
+F 2 "" H 4600 5300 50  0001 C CNN
+F 3 "" H 4600 5300 50  0001 C CNN
+	1    4600 5300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4600 5100 0    50   Input ~ 0
+F4
+Text GLabel 4600 5200 0    50   Input ~ 0
+F5
 $EndSCHEMATC
