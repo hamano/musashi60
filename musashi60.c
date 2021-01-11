@@ -28,13 +28,29 @@
 #define POINTING_H_PIN F4
 #define POINTING_V_PIN F5
 #define POINTING_SPEED 6
-#define POINTING_MAX ((1 << (9 - POINING_SPEED)) - 1)
+#define POINTING_MAX ((1 << (9 - POINTING_SPEED)) - 1)
 
 report_mouse_t mouseReport = {};
+int hand;
 
 void pointing_device_init(void) {
-  setPinInput(POINTING_H_PIN);
-  setPinInput(POINTING_V_PIN);
+    //debug_enable = true;
+    hand = is_keyboard_left();
+    setPinInput(POINTING_H_PIN);
+    setPinInput(POINTING_V_PIN);
+}
+
+void musashi60_mouse_task(int16_t x, int16_t y) {
+    mouseReport.x = x;
+    mouseReport.y = y;
+    pointing_device_set_report(mouseReport);
+    pointing_device_send();
+}
+
+void musashi60_wheel_task(int16_t x, int16_t y) {
+    mouseReport.v = -1 * y;
+    pointing_device_set_report(mouseReport);
+    pointing_device_send();
 }
 
 void pointing_device_task(void) {
@@ -49,10 +65,13 @@ void pointing_device_task(void) {
   }
   if (x || y) {
     dprintf("x, y: %d, %d\n", x, y);
-    mouseReport.x = x;
-    mouseReport.y = y;
-    pointing_device_set_report(mouseReport);
-    pointing_device_send();
+    if (hand) {
+      // left
+      musashi60_wheel_task(x, y);
+    } else {
+      // right
+      musashi60_mouse_task(x, y);
+    }
   }
 }
 
