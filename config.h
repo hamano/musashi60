@@ -42,7 +42,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
 #define MATRIX_ROW_PINS { F6, F7, B1, B3, B2 }
-#define MATRIX_COL_PINS { D1, D0, D4, C6, D7, E6, B4 }
+#define MATRIX_COL_PINS { D1, D0, D4, C6, D7, E6 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
@@ -251,4 +251,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Bootmagic Lite key configuration */
 // #define BOOTMAGIC_LITE_ROW 0
 // #define BOOTMAGIC_LITE_COLUMN 0
-#define TAPPING_TERM 180
+#define TAPPING_TERM 170
