@@ -53,15 +53,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_RAISE] = LAYOUT(
             KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,  KC_F6,  KC_F7,  KC_F8,  KC_F9,  KC_F10,         \
     KC_APP, KC_EXLM,KC_AT,  KC_HASH,KC_DLR, KC_PERC,CT_PGUP,KC_PGDN,KC_PGUP,KC_LBRC,KC_RBRC,KC_NO,  \
-    KC_PIPE,KC_MS_L,KC_MS_D,KC_MS_R,KC_NO,  KC_NO,  KC_LEFT,KC_DOWN,KC_UP,  KC_RGHT,KC_NO,  KC_PIPE,\
-    KC_BSLS,KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  CT_PGUP,KC_PGDN,KC_PGUP,CT_PGDN,KC_NO,  KC_BSLS,\
+    KC_PIPE,KC_MS_L,KC_MS_D,KC_MS_R,KC_NO,  KC_NO,  KC_LEFT,KC_DOWN,KC_UP,  KC_RGHT,KC_LCBR,KC_PIPE,\
+    KC_BSLS,KC_NO,  KC_NO,  KC_NO,  KC_NO,  KC_NO,  CT_PGUP,KC_PGDN,KC_PGUP,CT_PGDN,KC_RCBR,KC_BSLS,\
                     _______,_______,KC_TAB, _______,_______,_______,_______,_______                 \
   ),
   [_LOWER] = LAYOUT(
             KC_F11, KC_F12, KC_F13, KC_F14, KC_F15, KC_VOLU,KC_VOLD,KC_MUTE,DEBUG,  RESET,          \
-    KC_APP, KC_1,   KC_2,   KC_3,   KC_4,   KC_5,   CT_PGUP,KC_PGDN,KC_PGUP,KC_LCBR,KC_RCBR,KC_NO,  \
-    KC_VOLD,KC_MS_L,KC_MS_D,KC_MS_R,_______,KC_ESC, KC_MS_L,KC_MS_D,KC_MS_U,KC_MS_R,KC_NO,  KC_PIPE,\
-    KC_NO  ,KC_NO,  KC_NO,  KC_NO,  _______,KC_TAB, KC_ENT, KC_BTN1,KC_BTN3,KC_BTN2,KC_NO,  KC_BSLS,\
+    KC_APP, KC_1,   KC_2,   KC_3,   KC_4,   KC_5,   CT_PGUP,KC_PGDN,KC_PGUP,KC_LPRN,KC_RPRN,KC_NO,  \
+    KC_VOLD,KC_MS_L,KC_MS_D,KC_MS_R,_______,KC_ESC, KC_MS_L,KC_MS_D,KC_MS_U,KC_MS_R,KC_LBRC,KC_TILD,\
+    KC_NO  ,KC_NO,  KC_NO,  KC_NO,  _______,KC_TAB, KC_ENT, KC_BTN1,KC_BTN3,KC_BTN2,KC_RBRC,KC_GRV, \
                     _______,_______,_______,_______,_______,KC_ENT, _______,_______                 \
   )
 };
