@@ -30,8 +30,9 @@
 #define POINTING_SPEED 6
 #define POINTING_MAX ((1 << (9 - POINTING_SPEED)) - 1)
 
-report_mouse_t mouseReport = {};
+static report_mouse_t mouseReport = {};
 int hand;
+
 
 void pointing_device_init(void) {
     //debug_enable = true;
@@ -44,13 +45,11 @@ void musashi60_mouse_task(int16_t x, int16_t y) {
     mouseReport.x = x;
     mouseReport.y = y;
     pointing_device_set_report(mouseReport);
-    pointing_device_send();
 }
 
 void musashi60_wheel_task(int16_t x, int16_t y) {
     mouseReport.v = -1 * y;
     pointing_device_set_report(mouseReport);
-    pointing_device_send();
 }
 
 void pointing_device_task(void) {
@@ -73,6 +72,7 @@ void pointing_device_task(void) {
       musashi60_mouse_task(x, y);
     }
   }
+  pointing_device_send();
 }
 
 #endif
