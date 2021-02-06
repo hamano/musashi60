@@ -4,6 +4,8 @@
 #include "config.h"
 #include "matrix.h"
 #include "quantum.h"
+#include "musashi60.h"
+#include "print.h"
 
 #define ROWS_PER_HAND (MATRIX_ROWS / 2)
 
@@ -135,7 +137,8 @@ typedef struct _Serial_s2m_buffer_t {
 #    ifdef ENCODER_ENABLE
     uint8_t      encoder_state[NUMBER_OF_ENCODERS];
 #    endif
-
+    uint8_t axis_x;
+    uint8_t axis_y;
 } Serial_s2m_buffer_t;
 
 typedef struct _Serial_m2s_buffer_t {
@@ -251,6 +254,11 @@ bool transport_master(matrix_row_t matrix[]) {
     // Write wpm to slave
     serial_m2s_buffer.current_wpm = get_current_wpm();
 #    endif
+
+#    ifdef POINTING_DEVICE_ENABLE
+    musashi60_set_mouse(serial_s2m_buffer.axis_x, serial_s2m_buffer.axis_y);
+#    endif
+
     return true;
 }
 
@@ -274,3 +282,8 @@ void transport_slave(matrix_row_t matrix[]) {
 }
 
 #endif
+
+void musashi60_send_axis(uint8_t x, uint8_t y) {
+    serial_s2m_buffer.axis_x = x;
+    serial_s2m_buffer.axis_y = y;
+}
