@@ -48,3 +48,7 @@
     { RA4, RB4, RC4, RD4, RE4, RF4 }, \
     { RA5, RB5, RC5, RD5, XXX, XXX }  \
 }
+
+void musashi60_send_axis(uint8_t x, uint8_t y);
+void musashi60_set_mouse(uint8_t x, uint8_t y);
+void musashi60_set_wheel(uint8_t x, uint8_t y);

@@ -23,6 +23,15 @@
 // You can leave any or all of these undefined.
 // These are only required if you want to perform custom actions.
 
+static int is_left;
+static int is_master;
+
+void keyboard_pre_init_kb(void) {
+    //debug_enable = true;
+    is_left = is_keyboard_left();
+    is_master = is_keyboard_master();
+}
+
 #ifdef POINTING_DEVICE_ENABLE
 
 #define POINTING_H_PIN F4
@@ -31,48 +40,45 @@
 #define POINTING_MAX ((1 << (9 - POINTING_SPEED)) - 1)
 
 static report_mouse_t mouseReport = {};
-int hand;
-
 
 void pointing_device_init(void) {
-    //debug_enable = true;
-    hand = is_keyboard_left();
     setPinInput(POINTING_H_PIN);
     setPinInput(POINTING_V_PIN);
 }
 
-void musashi60_mouse_task(int16_t x, int16_t y) {
-    mouseReport.x = x;
-    mouseReport.y = y;
-    pointing_device_set_report(mouseReport);
+void musashi60_set_mouse(uint8_t x, uint8_t y) {
+    mouseReport.x = ( x >> 4 ) - 8;
+    mouseReport.y = ( y >> 4 ) - 8;
+    if (mouseReport.x < 0) mouseReport.x++;
+    if (mouseReport.y < 0) mouseReport.y++;
+    if (mouseReport.x || mouseReport.y ) {
+        dprintf("set_mouse: %d, %d\n", mouseReport.x, mouseReport.y);
+	pointing_device_set_report(mouseReport);
+    }
 }
 
-void musashi60_wheel_task(int16_t x, int16_t y) {
-    mouseReport.v = -1 * y;
-    pointing_device_set_report(mouseReport);
+void musashi60_set_wheel(uint8_t x, uint8_t y) {
+    mouseReport.h = ( x >> 6 ) - 2;
+    mouseReport.v = ( y >> 6 ) - 2;
+    if (mouseReport.h < 0) mouseReport.h++;
+    if (mouseReport.v < 0) mouseReport.v++;
+    mouseReport.v *= -1;
+    if ( mouseReport.h || mouseReport.v ) {
+        dprintf("set_wheel: %d\n", mouseReport.v);
+        pointing_device_set_report(mouseReport);
+    }
 }
 
 void pointing_device_task(void) {
-  int16_t x,y;
-  x = (analogReadPin(POINTING_H_PIN) >> POINTING_SPEED) - POINTING_MAX;
-  y = (analogReadPin(POINTING_V_PIN) >> POINTING_SPEED) - POINTING_MAX;
-  if (x > 0) {
-    x--;
-  }
-  if (y > 0) {
-    y--;
-  }
-  if (x || y) {
-    dprintf("x, y: %d, %d\n", x, y);
-    if (hand) {
-      // left
-      musashi60_wheel_task(x, y);
+    uint8_t x, y;
+    x = (analogReadPin(POINTING_H_PIN) >> 2);
+    y = (analogReadPin(POINTING_V_PIN) >> 2);
+    if ( is_master ) {
+        musashi60_set_wheel(x, y);
     } else {
-      // right
-      musashi60_mouse_task(x, y);
+        musashi60_send_axis(x, y);
     }
-  }
-  pointing_device_send();
+    pointing_device_send();
 }
 
 #endif
