@@ -24,20 +24,19 @@ enum layer_names {
 
 // Defines the keycodes used by our macros in process_record_user
 enum custom_keycodes {
-    QMKBEST = SAFE_RANGE,
-    QMKURL
+    SMILE = SAFE_RANGE
 };
 
-#define RAISE LT(_RAISE, KC_BSPC)     // Tap for Space, hold for Raise
-#define LOWER LT(_LOWER, KC_BSPC)     // Tap for Space, hold for Lower
-#define MT_LGUI MT(MOD_LGUI, KC_QUOT) // Tap for MUHENKAN, hold for LGUI
+#define RAISE LT(_RAISE, KC_BSPC)     // Tap for BackSpace, hold for Raise
+#define LOWER LT(_LOWER, KC_BSPC)     // Tap for BackSpace, hold for Lower
+#define MT_LGUI MT(MOD_LGUI, KC_BSLS) // Tap for BackSlash, hold for LGUI
 #define MT_RGUI MT(MOD_RGUI, KC_MINS) // Tap for HENKAN, hold for RGUI
 #define MT_LALT MT(MOD_LALT, KC_MHEN) // Tap for MUHENKAN, hold for LALT
 #define MT_RALT MT(MOD_RALT, KC_HENK) // Tap for HENKAN, hold for RALT
 #define MT_LCTL MT(MOD_LCTL, KC_TAB)  // Tap for Tab, hold for LCTL
 #define MT_RCTL MT(MOD_RCTL, KC_ENT)  // Tap for Enter, hold for RCTL
 #define MT_LSFT MT(MOD_LSFT, KC_SPC)  // Tap for Space, hold for LSFT
-#define MT_RSFT MT(MOD_RSFT, KC_SPC)  // Tap for BackSpace, hold for RSFT
+#define MT_RSFT MT(MOD_RSFT, KC_SPC)  // Tap for Space, hold for RSFT
 #define CT_PGUP LCTL(KC_PGUP) // Ctrl + PageUp
 #define CT_PGDN LCTL(KC_PGDN) // Ctrl + PageDown
 #define ALT_GRV LALT(KC_GRV)
@@ -66,29 +65,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   )
 };
 
-/*
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case QMKBEST:
-            if (record->event.pressed) {
-                // when keycode QMKBEST is pressed
-                SEND_STRING("QMK is the best thing ever!");
-            } else {
-                // when keycode QMKBEST is released
-            }
-            break;
-        case QMKURL:
-            if (record->event.pressed) {
-                // when keycode QMKURL is pressed
-                SEND_STRING("https://qmk.fm/\n");
-            } else {
-                // when keycode QMKURL is released
-            }
-            break;
+    case SMILE:
+        if (record->event.pressed) {
+            SEND_STRING(":)");
+        } else {
+            // when keycode QMKBEST is released
+        }
+        break;
     }
     return true;
 }
 
+/*
 void matrix_init_user(void) {
 
 }
