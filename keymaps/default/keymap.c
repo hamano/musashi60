@@ -52,14 +52,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
             KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,  KC_F6,  KC_F7,  KC_F8,  KC_F9,  KC_F10,         \
     KC_APP, KC_EXLM,KC_AT,  KC_HASH,KC_DLR, KC_PERC,KC_CIRC,KC_AMPR,KC_ASTR,KC_LPRN,KC_RPRN,KC_PIPE,\
     KC_EQL, KC_NO,  KC_NO,  KC_NO,  KC_HOME,KC_END, KC_LEFT,KC_DOWN,KC_UP,  KC_RGHT,KC_HOME,KC_EQL ,\
-    KC_LCBR,KC_BTN1,KC_BTN3,KC_BTN2,KC_INS, KC_DEL, CT_PGUP,KC_PGDN,KC_PGUP,CT_PGDN,KC_END, KC_RCBR,\
+    KC_LBRC,KC_BTN1,KC_BTN3,KC_BTN2,KC_INS, KC_DEL, CT_PGUP,KC_PGDN,KC_PGUP,CT_PGDN,KC_END, KC_RBRC,\
                     _______,_______,_______,_______,_______,_______,_______,_______                 \
   ),
   [_LOWER] = LAYOUT(
             KC_F11, KC_F12, KC_F13, KC_F14, KC_F15, KC_VOLU,KC_VOLD,KC_MUTE,DEBUG,  RESET,          \
     KC_APP, KC_EXLM,KC_AT,  KC_HASH,KC_DLR, KC_PERC,KC_CIRC,KC_AMPR,KC_ASTR,KC_LPRN,KC_RPRN,KC_BSLS,\
     KC_PLUS,KC_1,   KC_2,   KC_3,   KC_4,   KC_5,   CT_PGUP,KC_PGDN,KC_PGUP,CT_PGDN,KC_INS, KC_PLUS,\
-    KC_LBRC,KC_6,   KC_7,   KC_8,   KC_9,   KC_0,   _______,_______,_______,_______,KC_DEL, KC_RBRC,\
+    KC_LCBR,KC_6,   KC_7,   KC_8,   KC_9,   KC_0,   _______,_______,_______,_______,KC_DEL, KC_RCBR,\
                     _______,_______,_______,_______,_______,_______,_______,_______	                \
   )
 };
