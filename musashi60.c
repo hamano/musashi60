@@ -27,7 +27,7 @@ static int is_left;
 static int is_master;
 
 void keyboard_pre_init_kb(void) {
-    //debug_enable = true;
+    debug_enable = true;
     is_left = is_keyboard_left();
     is_master = is_keyboard_master();
 }
@@ -36,6 +36,7 @@ void keyboard_pre_init_kb(void) {
 
 #define POINTING_H_PIN F4
 #define POINTING_V_PIN F5
+#define POINTING_S_PIN B5
 #define POINTING_SPEED 6
 #define POINTING_MAX ((1 << (9 - POINTING_SPEED)) - 1)
 
@@ -44,16 +45,17 @@ static report_mouse_t mouseReport = {};
 void pointing_device_init(void) {
     setPinInput(POINTING_H_PIN);
     setPinInput(POINTING_V_PIN);
+    setPinInputHigh(POINTING_S_PIN);
 }
 
-void musashi60_set_mouse(uint8_t x, uint8_t y) {
-    mouseReport.x = ( x >> 4 ) - 8;
-    mouseReport.y = ( y >> 4 ) - 8;
+void musashi60_set_mouse(uint8_t x, uint8_t y, uint8_t s) {
+    mouseReport.x = ( x >> 3 ) - 16;
+    mouseReport.y = ( y >> 3 ) - 16;
     if (mouseReport.x < 0) mouseReport.x++;
     if (mouseReport.y < 0) mouseReport.y++;
     if (mouseReport.x || mouseReport.y ) {
-        dprintf("set_mouse: %d, %d\n", mouseReport.x, mouseReport.y);
-	pointing_device_set_report(mouseReport);
+        dprintf("set_mouse: %d, %d, %d\n", mouseReport.x, mouseReport.y, s);
+        pointing_device_set_report(mouseReport);
     }
 }
 
@@ -70,11 +72,13 @@ void musashi60_set_wheel(uint8_t x, uint8_t y) {
 }
 
 void pointing_device_task(void) {
-    uint8_t x, y;
-    x = (analogReadPin(POINTING_H_PIN) >> 2);
-    y = (analogReadPin(POINTING_V_PIN) >> 2);
+    uint8_t x, y, s = 0;
+    x = (analogReadPin(POINTING_H_PIN) >> 2) + 8; // adjust center=127
+    y = (analogReadPin(POINTING_V_PIN) >> 2) + 8; // adjust center=127
+    s = readPin(POINTING_S_PIN);
+    //dprintf("d x, y: %d, %d\n", x, y);
     if ( is_master ) {
-        musashi60_set_wheel(x, y);
+        musashi60_set_mouse(x, y, s);
     } else {
         musashi60_send_axis(x, y);
     }
