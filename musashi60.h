@@ -49,6 +49,7 @@
     { RA5, RB5, RC5, RD5, XXX, XXX }  \
 }
 
+void musashi60_calibration(void);
 void musashi60_send_axis(uint8_t x, uint8_t y);
 void musashi60_set_mouse(uint8_t x, uint8_t y, uint8_t s);
 void musashi60_set_wheel(uint8_t x, uint8_t y);
