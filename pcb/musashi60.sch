@@ -1216,7 +1216,7 @@ U 1 1 604A6B52
 P 4550 3900
 F 0 "U3" H 4778 3951 50  0000 L CNN
 F 1 "joystick_s" H 4778 3860 50  0000 L CNN
-F 2 "local:Joycon_Stick" H 4550 3600 50  0001 C CNN
+F 2 "local:Joycon_Stick_Short" H 4550 3600 50  0001 C CNN
 F 3 "" H 4550 3600 50  0001 C CNN
 	1    4550 3900
 	1    0    0    -1  
