@@ -881,8 +881,6 @@ Wire Wire Line
 	2050 5400 1550 5400
 Text GLabel 1550 5400 0    50   Input ~ 0
 row1
-Text GLabel 5050 6350 0    50   Input ~ 0
-D3
 Text GLabel 2700 5200 0    50   Input ~ 0
 D2
 Text GLabel 3200 5200 2    50   Input ~ 0
@@ -952,105 +950,14 @@ Text GLabel 2050 5400 2    50   Input ~ 0
 F6
 Text GLabel 2050 5600 2    50   Input ~ 0
 F7
-Wire Wire Line
-	5050 6750 5550 6750
-Text GLabel 5050 6750 0    50   Input ~ 0
-B4
-$Comp
-L Mechanical:MountingHole_Pad B4
-U 1 1 5F7DA890
-P 5650 6750
-F 0 "B4" V 5696 6899 50  0000 L CNN
-F 1 "MountingHole_Pad" V 5605 6899 50  0000 L CNN
-F 2 "foostan:1pin_conn" H 5650 6750 50  0001 C CNN
-F 3 "~" H 5650 6750 50  0001 C CNN
-	1    5650 6750
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	5050 6350 5550 6350
-$Comp
-L Mechanical:MountingHole_Pad D3
-U 1 1 5F6F0153
-P 5650 6350
-F 0 "D3" V 5604 6500 50  0000 L CNN
-F 1 "MountingHole_Pad" V 5695 6500 50  0000 L CNN
-F 2 "foostan:1pin_conn" H 5650 6350 50  0001 C CNN
-F 3 "~" H 5650 6350 50  0001 C CNN
-	1    5650 6350
-	0    1    1    0   
-$EndComp
 Text GLabel 1500 2400 0    50   Input ~ 0
 F4
 Text GLabel 1500 2500 0    50   Input ~ 0
 F5
-$Comp
-L Mechanical:MountingHole_Pad GND1
-U 1 1 5F8A75FD
-P 5650 6950
-F 0 "GND1" V 5604 7100 50  0000 L CNN
-F 1 "MountingHole_Pad" V 5695 7100 50  0000 L CNN
-F 2 "foostan:1pin_conn" H 5650 6950 50  0001 C CNN
-F 3 "~" H 5650 6950 50  0001 C CNN
-	1    5650 6950
-	0    1    1    0   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad VCC1
-U 1 1 5F8B4206
-P 5650 6150
-F 0 "VCC1" V 5604 6300 50  0000 L CNN
-F 1 "MountingHole_Pad" V 5695 6300 50  0000 L CNN
-F 2 "foostan:1pin_conn" H 5650 6150 50  0001 C CNN
-F 3 "~" H 5650 6150 50  0001 C CNN
-	1    5650 6150
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2850 3975 3175 3975
 Text GLabel 3175 3975 2    50   Input ~ 0
 data
-Text GLabel 5050 6550 0    50   Input ~ 0
-D2
-Wire Wire Line
-	5050 6550 5550 6550
-$Comp
-L Mechanical:MountingHole_Pad D2
-U 1 1 5F900118
-P 5650 6550
-F 0 "D2" V 5604 6700 50  0000 L CNN
-F 1 "MountingHole_Pad" V 5695 6700 50  0000 L CNN
-F 2 "foostan:1pin_conn" H 5650 6550 50  0001 C CNN
-F 3 "~" H 5650 6550 50  0001 C CNN
-	1    5650 6550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5550 6150 5050 6150
-Wire Wire Line
-	5550 6950 5050 6950
-$Comp
-L power:GND #PWR04
-U 1 1 5F995F04
-P 5050 6950
-F 0 "#PWR04" H 5050 6700 50  0001 C CNN
-F 1 "GND" H 5055 6777 50  0000 C CNN
-F 2 "" H 5050 6950 50  0001 C CNN
-F 3 "" H 5050 6950 50  0001 C CNN
-	1    5050 6950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR03
-U 1 1 5F996DCC
-P 5050 6150
-F 0 "#PWR03" H 5050 6000 50  0001 C CNN
-F 1 "VCC" H 5065 6323 50  0000 C CNN
-F 2 "" H 5050 6150 50  0001 C CNN
-F 3 "" H 5050 6150 50  0001 C CNN
-	1    5050 6150
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:Jumper JP_RIGHT1
 U 1 1 5F795429
