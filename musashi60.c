@@ -36,6 +36,7 @@ static int is_left;
 static int is_master;
 static int8_t js_cal_x;
 static int8_t js_cal_y;
+static int no_js;
 
 void keyboard_pre_init_kb(void) {
     debug_enable = true;
@@ -53,17 +54,22 @@ void pointing_device_init(void) {
 void musashi60_calibration() {
     int x = 0;
     int y = 0;
+    int s = 0;
     dprintf("start calibration\n");
     for ( int i=0; i<10; i++) {
         x += analogReadPin(POINTING_H_PIN) >> 2;
         y += analogReadPin(POINTING_V_PIN) >> 2;
+        s += readPin(POINTING_S_PIN);
     }
     x /= 10;
     y /= 10;
     dprintf("avg: %d, %d\n", x, y);
     js_cal_x = 127 - x;
     js_cal_y = 127 - y;
-    dprintf("cal: %d, %d\n", js_cal_x, js_cal_x);
+    dprintf("cal: %d, %d, %d\n", js_cal_x, js_cal_x, s);
+    if ( s == 0 ) {
+        no_js = s;
+    }
 }
 
 void musashi60_set_mouse(uint8_t x, uint8_t y, uint8_t s) {
@@ -91,9 +97,13 @@ void musashi60_set_wheel(uint8_t x, uint8_t y) {
 
 void pointing_device_task(void) {
     uint8_t x, y, s = 0;
+    if ( no_js ) {
+        return;
+    }
     x = (analogReadPin(POINTING_H_PIN) >> 2) + js_cal_x; // adjust center=127
     y = (analogReadPin(POINTING_V_PIN) >> 2) + js_cal_y; // adjust center=127
     s = readPin(POINTING_S_PIN);
+    uprintf("d x, y, no_js: %d, %d, %d\n", x, y, s);
     //dprintf("d x, y: %d, %d\n", x, y);
     if ( is_master ) {
         musashi60_set_mouse(x, y, s);
