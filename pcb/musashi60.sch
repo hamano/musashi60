@@ -179,8 +179,6 @@ Text GLabel 2900 2600 2    50   Input ~ 0
 D4
 Wire Wire Line
 	8250 2150 8250 2450
-Wire Wire Line
-	8950 2150 8950 2450
 Connection ~ 8850 5350
 Connection ~ 8850 4700
 Connection ~ 8850 4050
@@ -334,23 +332,23 @@ $EndComp
 $Comp
 L foostan:SW_PUSH SW_A4
 U 1 1 5F6A8BBB
-P 9250 4400
-F 0 "SW_A4" H 9250 4655 50  0000 C CNN
-F 1 "SW_PUSH" H 9250 4564 50  0000 C CNN
-F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 9250 4400 50  0001 C CNN
-F 3 "" H 9250 4400 50  0000 C CNN
-	1    9250 4400
+P 5050 4400
+F 0 "SW_A4" H 5050 4655 50  0000 C CNN
+F 1 "SW_PUSH" H 5050 4564 50  0000 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 5050 4400 50  0001 C CNN
+F 3 "" H 5050 4400 50  0000 C CNN
+	1    5050 4400
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan:SW_PUSH SW_A1
+L foostan:SW_PUSH SW_F1
 U 1 1 5F6AA817
-P 9250 2450
-F 0 "SW_A1" H 9250 2705 50  0000 C CNN
-F 1 "SW_PUSH" H 9250 2614 50  0000 C CNN
-F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 9250 2450 50  0001 C CNN
-F 3 "" H 9250 2450 50  0000 C CNN
-	1    9250 2450
+P 5750 2450
+F 0 "SW_F1" H 5750 2705 50  0000 C CNN
+F 1 "SW_PUSH" H 5750 2614 50  0000 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 5750 2450 50  0001 C CNN
+F 3 "" H 5750 2450 50  0000 C CNN
+	1    5750 2450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -377,38 +375,30 @@ F 3 "~" H 9550 3250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8850 4050 9550 4050
-Connection ~ 9550 4050
-Wire Wire Line
-	8850 4700 9550 4700
-Connection ~ 9550 4700
-Connection ~ 9550 3400
-Connection ~ 9550 2750
 Wire Wire Line
 	8850 3400 9550 3400
-Wire Wire Line
-	9550 3400 9650 3400
 Text GLabel 8950 2150 0    50   Input ~ 0
 colA
 $Comp
-L Device:D D_A1
+L Device:D D_F1
 U 1 1 5F6AA821
-P 9550 2600
-F 0 "D_A1" V 9596 2680 50  0000 L CNN
-F 1 "D" V 9505 2680 50  0000 L CNN
-F 2 "foostan:D3_TH_SMD" H 9550 2600 50  0001 C CNN
-F 3 "~" H 9550 2600 50  0001 C CNN
-	1    9550 2600
+P 6050 2600
+F 0 "D_F1" V 6096 2680 50  0000 L CNN
+F 1 "D" V 6005 2680 50  0000 L CNN
+F 2 "foostan:D3_TH_SMD" H 6050 2600 50  0001 C CNN
+F 3 "~" H 6050 2600 50  0001 C CNN
+	1    6050 2600
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:D D_A4
 U 1 1 5F6A8BC5
-P 9550 4550
-F 0 "D_A4" V 9596 4630 50  0000 L CNN
-F 1 "D" V 9505 4630 50  0000 L CNN
-F 2 "foostan:D3_TH_SMD" H 9550 4550 50  0001 C CNN
-F 3 "~" H 9550 4550 50  0001 C CNN
-	1    9550 4550
+P 5350 4550
+F 0 "D_A4" V 5396 4630 50  0000 L CNN
+F 1 "D" V 5305 4630 50  0000 L CNN
+F 2 "foostan:D3_TH_SMD" H 5350 4550 50  0001 C CNN
+F 3 "~" H 5350 4550 50  0001 C CNN
+	1    5350 4550
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -459,12 +449,6 @@ F 3 "" H 9250 5050 50  0000 C CNN
 $EndComp
 Text GLabel 9650 4700 2    50   Input ~ 0
 row4
-Text GLabel 9650 4050 2    50   Input ~ 0
-row3
-Text GLabel 9650 3400 2    50   Input ~ 0
-row2
-Text GLabel 9650 2750 2    50   Input ~ 0
-row1
 Connection ~ 8250 2450
 Wire Wire Line
 	8250 2450 8250 3100
@@ -475,15 +459,10 @@ Connection ~ 8250 3750
 Wire Wire Line
 	8250 3750 8250 4400
 Connection ~ 8250 4400
-Connection ~ 8950 2450
-Wire Wire Line
-	8950 2450 8950 3100
 Connection ~ 8950 3100
 Wire Wire Line
 	8950 3100 8950 3750
 Connection ~ 8950 3750
-Wire Wire Line
-	8950 3750 8950 4400
 Wire Wire Line
 	8250 4400 8250 5050
 $Comp
@@ -995,21 +974,10 @@ Wire Wire Line
 	1550 6400 1550 6850
 Connection ~ 1550 6400
 Wire Wire Line
-	9550 4050 9650 4050
-Wire Wire Line
-	9550 4700 9650 4700
-Wire Wire Line
 	8150 5350 7450 5350
 Connection ~ 8150 5350
 Wire Wire Line
 	9550 5350 9650 5350
-Wire Wire Line
-	8950 5050 8950 4400
-Connection ~ 8950 4400
-Wire Wire Line
-	8850 2750 9550 2750
-Wire Wire Line
-	9550 2750 9650 2750
 $Comp
 L Device:D D_C3
 U 1 1 5F858443
@@ -1106,10 +1074,6 @@ Wire Wire Line
 	8150 3400 7450 3400
 Connection ~ 8150 3400
 Connection ~ 7450 3400
-Text GLabel 4250 3900 0    50   Input ~ 0
-B5
-Wire Wire Line
-	5450 2150 5450 2450
 Wire Wire Line
 	6150 2150 6150 2450
 Connection ~ 6750 4700
@@ -1117,123 +1081,101 @@ Connection ~ 5450 3100
 Wire Wire Line
 	5450 3100 5450 3750
 Connection ~ 6750 3400
+Wire Wire Line
+	5450 2150 5450 2450
+Wire Wire Line
+	2700 6600 3200 6600
+Text GLabel 3200 6600 2    50   Input ~ 0
+colG
+Text GLabel 2700 6600 0    50   Input ~ 0
+B4
+Connection ~ 9550 4050
+Wire Wire Line
+	9550 4050 9650 4050
+Text GLabel 9650 2750 2    50   Input ~ 0
+row1
+Connection ~ 9550 3400
+Wire Wire Line
+	9550 3400 9650 3400
+Text GLabel 4750 2150 0    50   Input ~ 0
+colG
+Connection ~ 4750 3100
+Wire Wire Line
+	4750 2150 4750 3100
+Wire Wire Line
+	4750 3100 4750 3750
+Connection ~ 6050 4050
+Connection ~ 6050 3400
 $Comp
-L local:joystick_s U3
-U 1 1 604A6B52
-P 4550 3900
-F 0 "U3" H 4778 3951 50  0000 L CNN
-F 1 "joystick_s" H 4778 3860 50  0000 L CNN
-F 2 "local:Joycon_Stick_Short" H 4550 3600 50  0001 C CNN
-F 3 "" H 4550 3600 50  0001 C CNN
-	1    4550 3900
+L foostan:SW_PUSH SW_G2
+U 1 1 60A7871B
+P 5050 3100
+F 0 "SW_G2" H 5050 3355 50  0000 C CNN
+F 1 "SW_PUSH" H 5050 3264 50  0000 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 5050 3100 50  0001 C CNN
+F 3 "" H 5050 3100 50  0000 C CNN
+	1    5050 3100
 	1    0    0    -1  
 $EndComp
-Text GLabel 4250 4100 0    50   Input ~ 0
-F4
-Text GLabel 4250 3800 0    50   Input ~ 0
-F5
 $Comp
-L power:VCC #PWR0108
-U 1 1 604BCAF5
-P 4250 3700
-F 0 "#PWR0108" H 4250 3550 50  0001 C CNN
-F 1 "VCC" H 4265 3873 50  0000 C CNN
-F 2 "" H 4250 3700 50  0001 C CNN
-F 3 "" H 4250 3700 50  0001 C CNN
-	1    4250 3700
+L foostan:SW_PUSH SW_G3
+U 1 1 60A786E9
+P 5050 3750
+F 0 "SW_G3" H 5050 4005 50  0000 C CNN
+F 1 "SW_PUSH" H 5050 3914 50  0000 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 5050 3750 50  0001 C CNN
+F 3 "" H 5050 3750 50  0000 C CNN
+	1    5050 3750
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0109
-U 1 1 604D24B1
-P 4000 4000
-F 0 "#PWR0109" H 4000 3750 50  0001 C CNN
-F 1 "GND" H 4005 3827 50  0000 C CNN
-F 2 "" H 4000 4000 50  0001 C CNN
-F 3 "" H 4000 4000 50  0001 C CNN
-	1    4000 4000
-	1    0    0    -1  
+L Device:D D_G3
+U 1 1 60A786F3
+P 5350 3900
+F 0 "D_G3" V 5396 3980 50  0000 L CNN
+F 1 "D" V 5305 3980 50  0000 L CNN
+F 2 "foostan:D3_TH_SMD" H 5350 3900 50  0001 C CNN
+F 3 "~" H 5350 3900 50  0001 C CNN
+	1    5350 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D D_G2
+U 1 1 60A78711
+P 5350 3250
+F 0 "D_G2" V 5396 3330 50  0000 L CNN
+F 1 "D" V 5305 3330 50  0000 L CNN
+F 2 "foostan:D3_TH_SMD" H 5350 3250 50  0001 C CNN
+F 3 "~" H 5350 3250 50  0001 C CNN
+	1    5350 3250
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4250 4000 4000 4000
-$Comp
-L Device:Jumper JP_NOJS1
-U 1 1 604EEF7A
-P 3000 7000
-F 0 "JP_NOJS1" H 3000 6868 50  0000 C CNN
-F 1 "Jumper" H 3000 6777 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3000 7000 50  0001 C CNN
-F 3 "~" H 3000 7000 50  0001 C CNN
-	1    3000 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0110
-U 1 1 604EF580
-P 3300 7000
-F 0 "#PWR0110" H 3300 6750 50  0001 C CNN
-F 1 "GND" H 3305 6827 50  0000 C CNN
-F 2 "" H 3300 7000 50  0001 C CNN
-F 3 "" H 3300 7000 50  0001 C CNN
-	1    3300 7000
-	1    0    0    -1  
-$EndComp
-Text GLabel 2700 7000 0    50   Input ~ 0
-B5
-$Comp
-L foostan:SW_PUSH SW_F1
-U 1 1 605FBDAB
-P 5750 2450
-F 0 "SW_F1" H 5750 2705 50  0000 C CNN
-F 1 "SW_PUSH" H 5750 2614 50  0000 C CNN
-F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 5750 2450 50  0001 C CNN
-F 3 "" H 5750 2450 50  0000 C CNN
-	1    5750 2450
-	1    0    0    -1  
-$EndComp
+	5350 4050 6050 4050
+Wire Wire Line
+	5350 3400 6050 3400
+Text GLabel 9650 3400 2    50   Input ~ 0
+row2
+Text GLabel 9650 4050 2    50   Input ~ 0
+row3
 Connection ~ 5450 2450
 Wire Wire Line
 	5450 2450 5450 3100
-$Comp
-L Device:D D_F1
-U 1 1 605FD473
-P 6050 2600
-F 0 "D_F1" V 6096 2680 50  0000 L CNN
-F 1 "D" V 6005 2680 50  0000 L CNN
-F 2 "foostan:D3_TH_SMD" H 6050 2600 50  0001 C CNN
-F 3 "~" H 6050 2600 50  0001 C CNN
-	1    6050 2600
-	0    -1   -1   0   
-$EndComp
+Wire Wire Line
+	8950 2150 8950 3100
+Wire Wire Line
+	8850 2750 9650 2750
 Wire Wire Line
 	6750 2750 6050 2750
 Connection ~ 6750 2750
-$Comp
-L foostan:SW_PUSH SW_E5
-U 1 1 6060C4D7
-P 6450 5050
-F 0 "SW_E5" H 6450 5305 50  0000 C CNN
-F 1 "SW_PUSH" H 6450 5214 50  0000 C CNN
-F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 6450 5050 50  0001 C CNN
-F 3 "" H 6450 5050 50  0000 C CNN
-	1    6450 5050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	6150 4400 6150 5050
-Connection ~ 6150 4400
-$Comp
-L Device:D D_E5
-U 1 1 60616038
-P 6750 5200
-F 0 "D_E5" V 6796 5280 50  0000 L CNN
-F 1 "D" V 6705 5280 50  0000 L CNN
-F 2 "foostan:D3_TH_SMD" H 6750 5200 50  0001 C CNN
-F 3 "~" H 6750 5200 50  0001 C CNN
-	1    6750 5200
-	0    -1   -1   0   
-$EndComp
+	8850 4700 9650 4700
 Wire Wire Line
-	7450 5350 6750 5350
-Connection ~ 7450 5350
+	8950 3750 8950 5050
+Wire Wire Line
+	4750 3750 4750 4400
+Connection ~ 4750 3750
+Wire Wire Line
+	6050 4700 5350 4700
+Connection ~ 6050 4700
 $EndSCHEMATC
