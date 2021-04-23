@@ -34,5 +34,5 @@ SPLIT_KEYBOARD = yes
 SPLIT_TRANSPORT = custom
 SRC += transport.c
 QUANTUM_LIB_SRC += serial.c
-POINTING_DEVICE_ENABLE = yes
+POINTING_DEVICE_ENABLE = no
 SRC += analog.c
