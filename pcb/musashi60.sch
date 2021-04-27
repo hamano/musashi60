@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Musashi50"
 Date ""
-Rev "8"
+Rev "B"
 Comp "HAMANO Tsukasa"
 Comment1 ""
 Comment2 ""
@@ -330,10 +330,10 @@ F 3 "~" H 9550 3900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L foostan:SW_PUSH SW_A4
+L foostan:SW_PUSH SW_G4
 U 1 1 5F6A8BBB
 P 5050 4400
-F 0 "SW_A4" H 5050 4655 50  0000 C CNN
+F 0 "SW_G4" H 5050 4655 50  0000 C CNN
 F 1 "SW_PUSH" H 5050 4564 50  0000 C CNN
 F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 5050 4400 50  0001 C CNN
 F 3 "" H 5050 4400 50  0000 C CNN
@@ -391,10 +391,10 @@ F 3 "~" H 6050 2600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D D_A4
+L Device:D D_G4
 U 1 1 5F6A8BC5
 P 5350 4550
-F 0 "D_A4" V 5396 4630 50  0000 L CNN
+F 0 "D_G4" V 5396 4630 50  0000 L CNN
 F 1 "D" V 5305 4630 50  0000 L CNN
 F 2 "foostan:D3_TH_SMD" H 5350 4550 50  0001 C CNN
 F 3 "~" H 5350 4550 50  0001 C CNN
