@@ -1101,7 +1101,7 @@ Text GLabel 4750 2150 0    50   Input ~ 0
 colG
 Connection ~ 4750 3100
 Wire Wire Line
-	4750 2150 4750 3100
+	4750 2150 4750 2450
 Wire Wire Line
 	4750 3100 4750 3750
 Connection ~ 6050 4050
@@ -1178,4 +1178,32 @@ Connection ~ 4750 3750
 Wire Wire Line
 	6050 4700 5350 4700
 Connection ~ 6050 4700
+$Comp
+L foostan:SW_PUSH SW_G1
+U 1 1 60DF9883
+P 5050 2450
+F 0 "SW_G1" H 5050 2705 50  0000 C CNN
+F 1 "SW_PUSH" H 5050 2614 50  0000 C CNN
+F 2 "local:CherryMX_Direct_Hotswap_Reversible" H 5050 2450 50  0001 C CNN
+F 3 "" H 5050 2450 50  0000 C CNN
+	1    5050 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 4750 2450
+Wire Wire Line
+	4750 2450 4750 3100
+$Comp
+L Device:D D_G1
+U 1 1 60DFA810
+P 5350 2600
+F 0 "D_G1" V 5396 2680 50  0000 L CNN
+F 1 "D" V 5305 2680 50  0000 L CNN
+F 2 "foostan:D3_TH_SMD" H 5350 2600 50  0001 C CNN
+F 3 "~" H 5350 2600 50  0001 C CNN
+	1    5350 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6050 2750 5350 2750
+Connection ~ 6050 2750
 $EndSCHEMATC
