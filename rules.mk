@@ -31,8 +31,11 @@ AUDIO_ENABLE = no           # Audio output
 FAUXCLICKY_ENABLE = no      # Use buzzer to emulate clicky switches
 HD44780_ENABLE = no         # Enable support for HD44780 based LCDs
 SPLIT_KEYBOARD = yes
-SPLIT_TRANSPORT = custom
-SRC += transport.c
-QUANTUM_LIB_SRC += serial.c
+#SPLIT_TRANSPORT = custom
+#SRC += transport.c
+#QUANTUM_LIB_SRC += serial.c
 POINTING_DEVICE_ENABLE = no
 SRC += analog.c
+
+CONSOLE_ENABLE = yes         # Console for debug
+DEFAULT_FOLDER = musashi60/revB
