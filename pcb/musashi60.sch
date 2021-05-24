@@ -36,18 +36,18 @@ Text GLabel 1500 2800 0    50   Input ~ 0
 B1
 Text GLabel 1500 2900 0    50   Input ~ 0
 B3
-Text GLabel 2700 5400 0    50   Input ~ 0
+Text GLabel 2450 5300 0    50   Input ~ 0
 D1
-Text GLabel 3200 5400 2    50   Input ~ 0
+Text GLabel 1300 5300 0    50   Input ~ 0
 colA
 Wire Wire Line
-	2700 5400 3200 5400
-Text GLabel 2700 5600 0    50   Input ~ 0
+	2450 5300 3650 5300
+Text GLabel 2450 5500 0    50   Input ~ 0
 D0
-Text GLabel 3200 5600 2    50   Input ~ 0
+Text GLabel 1300 5500 0    50   Input ~ 0
 colB
 Wire Wire Line
-	2700 5600 3200 5600
+	2450 5500 3800 5500
 Text GLabel 1500 3000 0    50   Input ~ 0
 B2
 NoConn ~ 1500 2000
@@ -169,12 +169,12 @@ F 3 "" H 1450 3950 50  0000 C CNN
 	1    1450 3950
 	1    0    0    -1  
 $EndComp
-Text GLabel 2700 5800 0    50   Input ~ 0
+Text GLabel 2450 5700 0    50   Input ~ 0
 D4
-Text GLabel 3200 5800 2    50   Input ~ 0
+Text GLabel 1300 5700 0    50   Input ~ 0
 colC
 Wire Wire Line
-	2700 5800 3200 5800
+	2450 5700 2950 5700
 Text GLabel 2900 2600 2    50   Input ~ 0
 D4
 Wire Wire Line
@@ -802,24 +802,24 @@ F 3 "~" H 8150 3250 50  0001 C CNN
 	1    8150 3250
 	0    -1   -1   0   
 $EndComp
-Text GLabel 2700 6000 0    50   Input ~ 0
+Text GLabel 2450 5900 0    50   Input ~ 0
 C6
-Text GLabel 3200 6000 2    50   Input ~ 0
+Text GLabel 1300 5900 0    50   Input ~ 0
 colD
 Wire Wire Line
-	2700 6000 3200 6000
-Text GLabel 2700 6200 0    50   Input ~ 0
+	2450 5900 2950 5900
+Text GLabel 2450 6100 0    50   Input ~ 0
 D7
-Text GLabel 3200 6200 2    50   Input ~ 0
+Text GLabel 1300 6100 0    50   Input ~ 0
 colE
 Wire Wire Line
-	2700 6200 3200 6200
-Text GLabel 2700 6400 0    50   Input ~ 0
+	2450 6100 2950 6100
+Text GLabel 2450 6300 0    50   Input ~ 0
 E6
-Text GLabel 3200 6400 2    50   Input ~ 0
+Text GLabel 1300 6300 0    50   Input ~ 0
 colF
 Wire Wire Line
-	2700 6400 3200 6400
+	2450 6300 2950 6300
 Text GLabel 2900 2700 2    50   Input ~ 0
 C6
 Text GLabel 2900 2800 2    50   Input ~ 0
@@ -835,50 +835,40 @@ D2
 Text GLabel 2900 2000 2    50   Input ~ 0
 D3
 Wire Wire Line
-	2050 6200 1550 6200
-Text GLabel 1550 6200 0    50   Input ~ 0
-row5
-Text GLabel 2050 6200 2    50   Input ~ 0
+	1800 6500 1300 6500
+Text GLabel 1800 6500 2    50   Input ~ 0
 B2
 Wire Wire Line
-	2050 6000 1550 6000
-Text GLabel 1550 6000 0    50   Input ~ 0
-row4
-Text GLabel 2050 6000 2    50   Input ~ 0
+	1800 6300 1300 6300
+Text GLabel 1800 6300 2    50   Input ~ 0
 B3
 Wire Wire Line
-	2050 5800 1550 5800
-Text GLabel 1550 5800 0    50   Input ~ 0
-row3
-Text GLabel 2050 5800 2    50   Input ~ 0
+	1800 6100 1300 6100
+Text GLabel 1800 6100 2    50   Input ~ 0
 B1
 Wire Wire Line
-	2050 5600 1550 5600
-Text GLabel 1550 5600 0    50   Input ~ 0
-row2
+	1800 5900 1300 5900
 Wire Wire Line
-	2050 5400 1550 5400
-Text GLabel 1550 5400 0    50   Input ~ 0
-row1
-Text GLabel 2700 5200 0    50   Input ~ 0
+	1800 5700 1300 5700
+Text GLabel 2450 5100 0    50   Input ~ 0
 D2
-Text GLabel 3200 5200 2    50   Input ~ 0
+Text GLabel 2950 5100 2    50   Input ~ 0
 data
 Wire Wire Line
-	2700 5200 3200 5200
+	2450 5100 2950 5100
 Wire Wire Line
-	2050 6400 1550 6400
-Text GLabel 2050 6400 2    50   Input ~ 0
+	1800 6700 1300 6700
+Text GLabel 1800 6700 2    50   Input ~ 0
 B6
 $Comp
 L Device:Jumper JP_LEFT1
 U 1 1 5F738159
-P 1250 6400
-F 0 "JP_LEFT1" H 1250 6268 50  0000 C CNN
-F 1 "Jumper" H 1250 6177 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1250 6400 50  0001 C CNN
-F 3 "~" H 1250 6400 50  0001 C CNN
-	1    1250 6400
+P 1000 6700
+F 0 "JP_LEFT1" H 1000 6568 50  0001 C CNN
+F 1 "JP_LEFT" H 1000 6477 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1000 6700 50  0001 C CNN
+F 3 "~" H 1000 6700 50  0001 C CNN
+	1    1000 6700
 	1    0    0    -1  
 $EndComp
 Text GLabel 1500 3100 0    50   Input ~ 0
@@ -925,9 +915,7 @@ Wire Wire Line
 Wire Wire Line
 	3050 3925 3050 4125
 NoConn ~ 2850 3825
-Text GLabel 2050 5400 2    50   Input ~ 0
-F6
-Text GLabel 2050 5600 2    50   Input ~ 0
+Text GLabel 1800 5900 2    50   Input ~ 0
 F7
 Text GLabel 1500 2400 0    50   Input ~ 0
 F4
@@ -940,39 +928,39 @@ data
 $Comp
 L Device:Jumper JP_RIGHT1
 U 1 1 5F795429
-P 1250 6850
-F 0 "JP_RIGHT1" H 1250 6718 50  0000 C CNN
-F 1 "Jumper" H 1250 6627 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1250 6850 50  0001 C CNN
-F 3 "~" H 1250 6850 50  0001 C CNN
-	1    1250 6850
+P 1000 7150
+F 0 "JP_RIGHT1" H 1000 7018 50  0001 C CNN
+F 1 "JP_RIGHT" H 1000 6927 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1000 7150 50  0001 C CNN
+F 3 "~" H 1000 7150 50  0001 C CNN
+	1    1000 7150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR05
 U 1 1 5F79542F
-P 950 6850
-F 0 "#PWR05" H 950 6600 50  0001 C CNN
-F 1 "GND" H 955 6677 50  0000 C CNN
-F 2 "" H 950 6850 50  0001 C CNN
-F 3 "" H 950 6850 50  0001 C CNN
-	1    950  6850
+P 700 7150
+F 0 "#PWR05" H 700 6900 50  0001 C CNN
+F 1 "GND" H 705 6977 50  0000 C CNN
+F 2 "" H 700 7150 50  0001 C CNN
+F 3 "" H 700 7150 50  0001 C CNN
+	1    700  7150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR02
 U 1 1 5F7A2499
-P 950 6400
-F 0 "#PWR02" H 950 6250 50  0001 C CNN
-F 1 "VCC" H 965 6573 50  0000 C CNN
-F 2 "" H 950 6400 50  0001 C CNN
-F 3 "" H 950 6400 50  0001 C CNN
-	1    950  6400
+P 700 6700
+F 0 "#PWR02" H 700 6550 50  0001 C CNN
+F 1 "VCC" H 715 6873 50  0000 C CNN
+F 2 "" H 700 6700 50  0001 C CNN
+F 3 "" H 700 6700 50  0001 C CNN
+	1    700  6700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 6400 1550 6850
-Connection ~ 1550 6400
+	1300 6700 1300 7150
+Connection ~ 1300 6700
 Wire Wire Line
 	8150 5350 7450 5350
 Connection ~ 8150 5350
@@ -1084,10 +1072,10 @@ Connection ~ 6750 3400
 Wire Wire Line
 	5450 2150 5450 2450
 Wire Wire Line
-	2700 6600 3200 6600
-Text GLabel 3200 6600 2    50   Input ~ 0
+	2450 6500 2950 6500
+Text GLabel 1300 6500 0    50   Input ~ 0
 colG
-Text GLabel 2700 6600 0    50   Input ~ 0
+Text GLabel 2450 6500 0    50   Input ~ 0
 B4
 Connection ~ 9550 4050
 Wire Wire Line
@@ -1206,4 +1194,63 @@ $EndComp
 Wire Wire Line
 	6050 2750 5350 2750
 Connection ~ 6050 2750
+$Comp
+L foostan:OLED OL1
+U 1 1 60E710A5
+P 3900 4550
+F 0 "OL1" H 4528 4619 51  0000 L CNN
+F 1 "OLED" H 4528 4529 47  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3900 4650 60  0001 C CNN
+F 3 "" H 3900 4650 60  0001 C CNN
+	1    3900 4550
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2950 5700 2    50   Input ~ 0
+row1
+Text GLabel 2950 5900 2    50   Input ~ 0
+row2
+Text GLabel 2950 6100 2    50   Input ~ 0
+row3
+Text GLabel 2950 6300 2    50   Input ~ 0
+row4
+Text GLabel 2950 6500 2    50   Input ~ 0
+row5
+Wire Wire Line
+	1800 5500 1300 5500
+Wire Wire Line
+	1800 5300 1300 5300
+Text GLabel 1800 5300 2    50   Input ~ 0
+F4
+Text GLabel 1800 5500 2    50   Input ~ 0
+F5
+Text GLabel 1800 5700 2    50   Input ~ 0
+F6
+Wire Wire Line
+	3800 5500 3800 5300
+$Comp
+L power:VCC #PWR03
+U 1 1 60F35351
+P 3950 5500
+F 0 "#PWR03" H 3950 5350 50  0001 C CNN
+F 1 "VCC" H 3965 5673 50  0000 C CNN
+F 2 "" H 3950 5500 50  0001 C CNN
+F 3 "" H 3950 5500 50  0001 C CNN
+	1    3950 5500
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 60F37C22
+P 4100 5500
+F 0 "#PWR04" H 4100 5250 50  0001 C CNN
+F 1 "GND" H 4105 5327 50  0000 C CNN
+F 2 "" H 4100 5500 50  0001 C CNN
+F 3 "" H 4100 5500 50  0001 C CNN
+	1    4100 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5300 3950 5500
+Wire Wire Line
+	4100 5300 4100 5500
 $EndSCHEMATC
