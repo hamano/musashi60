@@ -38,4 +38,4 @@ POINTING_DEVICE_ENABLE = no
 SRC += analog.c
 
 CONSOLE_ENABLE = yes         # Console for debug
-DEFAULT_FOLDER = musashi60/revB
+DEFAULT_FOLDER = musashi60/revC
