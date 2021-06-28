@@ -1,0 +1,57 @@
+(module OLED_Reversible (layer F.Cu) (tedit 6108BB4F)
+  (descr "Connecteur 6 pins")
+  (tags "CONN DEV")
+  (fp_text reference J3 (at 0 -22.86) (layer F.Fab) hide
+    (effects (font (size 0.8128 0.8128) (thickness 0.15)))
+  )
+  (fp_text value OLED_Reversible (at 0 -24.13 -180) (layer F.SilkS) hide
+    (effects (font (size 0.8128 0.8128) (thickness 0.15)))
+  )
+  (fp_line (start -6.35 -17.78) (end -6.35 -15.24) (layer B.SilkS) (width 0.12))
+  (fp_line (start 6.35 -15.24) (end 6.35 -17.78) (layer B.SilkS) (width 0.12))
+  (fp_line (start 6.35 -17.78) (end -6.35 -17.78) (layer B.SilkS) (width 0.12))
+  (fp_line (start -6.35 -15.24) (end 6.35 -15.24) (layer B.SilkS) (width 0.12))
+  (fp_line (start -6.35 -15.24) (end -6.35 -17.78) (layer F.SilkS) (width 0.12))
+  (fp_line (start 6.35 -15.24) (end -6.35 -15.24) (layer F.SilkS) (width 0.12))
+  (fp_line (start 6.35 -17.78) (end 6.35 -15.24) (layer F.SilkS) (width 0.12))
+  (fp_line (start 6 -17.78) (end -6 -17.78) (layer Dwgs.User) (width 0.12))
+  (fp_line (start 6 -17.78) (end 6 20.22) (layer Dwgs.User) (width 0.12))
+  (fp_line (start 6 20.22) (end -6 20.22) (layer Dwgs.User) (width 0.12))
+  (fp_line (start -6 20.22) (end -6 -17.78) (layer Dwgs.User) (width 0.12))
+  (fp_line (start -6.35 -17.78) (end 6.35 -17.78) (layer F.SilkS) (width 0.12))
+  (fp_line (start 6.35 -18.415) (end 6.35 20.955) (layer Eco1.User) (width 0.12))
+  (fp_line (start 6.35 20.955) (end -6.35 20.955) (layer Eco1.User) (width 0.12))
+  (fp_line (start -6.35 20.955) (end -6.35 -18.415) (layer Eco1.User) (width 0.12))
+  (fp_line (start -6.35 -18.415) (end 6.35 -18.415) (layer Eco1.User) (width 0.12))
+  (fp_text user OLED (at 0 -3.81 -180) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text user GND (at -3.81 -13.97 180) (layer F.SilkS) hide
+    (effects (font (size 0.8 0.8) (thickness 0.15)))
+  )
+  (fp_text user VCC (at -1.27 -13.97 180) (layer F.SilkS) hide
+    (effects (font (size 0.8 0.8) (thickness 0.15)))
+  )
+  (fp_text user SCL (at 1.27 -13.97 180) (layer F.SilkS) hide
+    (effects (font (size 0.8 0.8) (thickness 0.15)))
+  )
+  (fp_text user SDA (at 3.81 -13.97 180) (layer F.SilkS) hide
+    (effects (font (size 0.8 0.8) (thickness 0.15)))
+  )
+  (fp_text user SDA (at -3.81 -13.97) (layer B.SilkS) hide
+    (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
+  )
+  (fp_text user VCC (at 1.27 -13.97) (layer B.SilkS) hide
+    (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
+  )
+  (fp_text user GND (at 3.81 -13.97) (layer B.SilkS) hide
+    (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
+  )
+  (fp_text user SCL (at -1.27 -13.97) (layer B.SilkS) hide
+    (effects (font (size 0.8 0.8) (thickness 0.15)) (justify mirror))
+  )
+  (pad 1 thru_hole circle (at 3.81 -16.51 180) (size 1.397 1.397) (drill 0.8128) (layers *.Cu B.Mask))
+  (pad 2 thru_hole circle (at 1.27 -16.51 180) (size 1.397 1.397) (drill 0.8128) (layers *.Cu B.Mask))
+  (pad 3 thru_hole circle (at -1.27 -16.51 180) (size 1.397 1.397) (drill 0.8128) (layers *.Cu B.Mask))
+  (pad 4 thru_hole circle (at -3.81 -16.51 180) (size 1.397 1.397) (drill 0.8128) (layers *.Cu B.Mask))
+)
