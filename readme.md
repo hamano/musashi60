@@ -1,6 +1,9 @@
-# Musashi60
+# Musashi60 - Open Hardware Keyboard
 
 ![musashi60-logo](image/musashi60-logo.png)
+
+![qmk-badge](image/qmk-badge-dark.png)
+
 
 A short description of the keyboard/project
 
