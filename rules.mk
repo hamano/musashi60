@@ -35,7 +35,8 @@ SPLIT_KEYBOARD = yes
 #SRC += transport.c
 #QUANTUM_LIB_SRC += serial.c
 POINTING_DEVICE_ENABLE = no
-SRC += analog.c
 
 CONSOLE_ENABLE = yes         # Console for debug
 DEFAULT_FOLDER = musashi60/revC
+#OLED_DRIVER_ENABLE = yes
+#SRC += oled.c
