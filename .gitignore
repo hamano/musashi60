@@ -1,0 +1,4 @@
+pcb/*.bak
+pcb/*-bak
+pcb/*-cache
+case/*.gcode
