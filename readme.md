@@ -2,7 +2,7 @@
 
 ![musashi60-logo](image/musashi60-logo.png)
 
-![qmk-badge](image/qmk-badge-dark.png){:height="10%" width="10%"}
+<img src="image/qmk-badge-dark.png" width="10%">
 
 
 A short description of the keyboard/project
