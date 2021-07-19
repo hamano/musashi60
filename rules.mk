@@ -37,6 +37,6 @@ SPLIT_KEYBOARD = yes
 POINTING_DEVICE_ENABLE = no
 
 CONSOLE_ENABLE = yes         # Console for debug
-DEFAULT_FOLDER = musashi60/revC
+DEFAULT_FOLDER = musashi60/revD
 #OLED_DRIVER_ENABLE = yes
 #SRC += oled.c
