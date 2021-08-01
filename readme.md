@@ -6,8 +6,11 @@
 
 ## Overview
 
-A short description of the keyboard/project
+Musashi60 is open-hardware splitted keyboard.
 
+* Keys: 60
+* Layout: Ergonomic column-staggered
+* All parts can be made or procured by yourself. see [parts](#parts).
 * Keyboard Maintainer: [HAMANO Tsukasa](https://github.com/hamano)
 * Hardware Supported: The PCBs, controllers supported
 * Hardware Availability: Links to where you can find this hardware
@@ -22,3 +25,15 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 ![gallery1](image/gallery1.jpg)
 
+
+## Parts list
+
+- Pro micro
+- PCB
+- case
+- plate
+- screw
+
+## Build guide
+
+Comming soon...
