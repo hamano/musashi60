@@ -1,7 +1,7 @@
 
 module keyswitch_hole(x=0, y=0, a=0) {
     translate([x, y, 0]) {
-        rotate([0, 0, a]) {
+        rotate([0, 0, 90+a]) {
             linear_extrude(height = 2) {
             square([14, 14], center = true);
             translate([-8, 3, 0]) square([1, 3]);
