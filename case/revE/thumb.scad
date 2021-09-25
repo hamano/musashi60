@@ -2,18 +2,18 @@
 use <common.scad>;
 
 thumb_plate_points = [
-                [-8,-22],
-                [-8, -2],
-                [82, -2],
-                [82, -38],
+                [-3,-22],
+                [-3, -2],
+                [80, -2],
+                [80, -38],
                 [68, -38],
                 [38, -22],
                 ];
 
 thumb_plate_sc_points = [
-                [-8+3, -12],
-                [82-3, -2-3],
-                [82-3, -38+3],
+                [-3+3, -12],
+                [80-3, -2-3],
+                [80-3, -38+3],
                 ];
 
 module plate_nohole() {
@@ -106,10 +106,14 @@ module case() {
 }
 
 module thumb_case_hole() {
-    translate([30,0,10])
-    rotate([90,0,0])
-    linear_extrude(height=4)
-    circle(4);
+    translate([50,0,0])
+    rotate([-90,0,0])
+    linear_extrude(height=4){
+        translate([0, 10])
+        circle(5);
+        translate([-5,10])
+        square([10, 30]);
+    }
 }
 
 module thumb_case() {
@@ -124,8 +128,8 @@ module thumb_case() {
 
 }
 
-//`thumb_case();
+thumb_case();
 
 //translate([0,10])
-rotate([180,0,0])
-thumb_plate();
+//rotate([180,0,0])
+//thumb_plate();
