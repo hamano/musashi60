@@ -5,22 +5,22 @@ UNIT_H = UNIT / 2;
 UNIT_Q = UNIT / 4;
 UNIT_E = UNIT / 8;
 
-KEY_OFFSET_X = 9;
-KEY_OFFSET_Y = UNIT_Q + 2;
-echo(UNIT_H);
+KEY_OFFSET_X = 12;
+KEY_OFFSET_Y = 10;
+
 finger_plate_points = [
     [-60,2],
-    [82, 2],
-    [82, 5+UNIT*4],
-    [20, 20+UNIT*4],
-    [0, 20+UNIT*4],
+    [80, 2],
+    [80, 5+UNIT*4],
+    [20, 22+UNIT*4],
+    [0,  22+UNIT*4],
     [-60, 5+UNIT*4],
 ];
 
 finger_plate_sc_points = [
-    [-60+3, 2+4],
-    [82-3, 2+4],
-    [82-3, 5+UNIT*4 - 3],
+    [-60+3, 2+3],
+    [80-3, 2+3],
+    [80-3, 5+UNIT*4 - 3],
     [-60+3, 5+UNIT*4 - 3],
 ];
 
@@ -38,22 +38,42 @@ module keyswitch_col(x=0,y=0,c=3,a=0) {
 
 module finger_plate_holes() {
     // G
-    keyswitch_col(KEY_OFFSET_X-19*3, KEY_OFFSET_Y + UNIT_Q, 4, -5);
-      //keyswitch_col(KEY_OFFSET_X-19*3, KEY_OFFSET_Y + UNIT_Q+UNIT*2+UNIT_E, 2, -5);
+    GX = KEY_OFFSET_X - UNIT * 3;
+    GY = KEY_OFFSET_Y + UNIT_Q;
+    echo("G: ", GX, GY);
+    keyswitch_col(GX, GY, 4);
     // F
-    keyswitch_col(KEY_OFFSET_X-19*2, KEY_OFFSET_Y + UNIT_H, 4, -5);
-      //keyswitch_col(KEY_OFFSET_X-19*2, KEY_OFFSET_Y + UNIT_H + UNIT * 2 + UNIT_E, 2, -5);
+    FX = KEY_OFFSET_X- UNIT * 2;
+    FY = KEY_OFFSET_Y + UNIT_H;
+    echo("F: ", FX, FY);
+    keyswitch_col(FX, FY, 4);
     // E
-    keyswitch_col(KEY_OFFSET_X-19, KEY_OFFSET_Y + UNIT_H + UNIT_Q + UNIT_E, 4, -5);
+    EX = KEY_OFFSET_X - UNIT;
+    EY = KEY_OFFSET_Y + UNIT_H + UNIT_Q;
+    echo("E: ", EX, EY);
+    keyswitch_col(EX, EY, 4);
     // D
-    keyswitch_col(KEY_OFFSET_X, KEY_OFFSET_Y + UNIT + UNIT_E, 4, -5);
+    DX = KEY_OFFSET_X;
+    DY = KEY_OFFSET_Y + UNIT;
+    echo("D: ", DX, DY);
+    keyswitch_col(DX, DY, 4);
     // C
-    keyswitch_col(KEY_OFFSET_X+19, KEY_OFFSET_Y + UNIT_H + UNIT_Q + UNIT_E, 4, -5);
+    CX = KEY_OFFSET_X+ UNIT;
+    CY = KEY_OFFSET_Y + UNIT_H + UNIT_Q;
+    echo("C: ", CX, CY);
+    keyswitch_col(CX, CY, 4);
     // B
-    keyswitch_col(KEY_OFFSET_X+19+19, KEY_OFFSET_Y+ UNIT_H + UNIT_E, 4, -5);
+    BX = KEY_OFFSET_X+UNIT * 2;
+    BY = KEY_OFFSET_Y+ UNIT_H;
+    echo("B: ", BX, BY);
+    keyswitch_col(BX, BY, 4);
     // A
-    keyswitch_col(KEY_OFFSET_X+19+19+19, KEY_OFFSET_Y+UNIT, 1, -5);
-      keyswitch_col(KEY_OFFSET_X+19+19+19, KEY_OFFSET_Y +UNIT * 2 + UNIT_Q, 1, -5);
+    AX = KEY_OFFSET_X+UNIT*3;
+    AY = KEY_OFFSET_Y+UNIT_H+UNIT_Q;
+    echo("A: ", AX, AY);
+    keyswitch_col(AX, AY, 1);
+    echo("A2: ", AX, AY + UNIT + UNIT_Q);
+    keyswitch_col(AX, AY + UNIT + UNIT_Q, 1);  
     for(p=finger_plate_sc_points){
         linear_extrude(height=5)
             translate(p)
@@ -135,15 +155,36 @@ module finger_case_nohole() {
 }
 
 module finger_case_hole() {
-    //cable hole
-    translate([30,0,10])
-    rotate([-90,0,0])
-    linear_extrude(height=4)
-    circle(4);
+    // cable hole
+    translate([50,6,0])
+    rotate([90,0,0])
+    linear_extrude(height=10) {
+        translate([0, 10])
+        circle(5);
+        translate([-5,10])
+        square([10, 30]);
+    }
+    // USB hole
+    translate([11,104,0])
+    rotate([90,0,0])
+    linear_extrude(height=10) {
+        translate([0, 10])
+        circle(6);
+        translate([-6, 10])
+        square([12, 30]);        
+    }
+    // TRRS hole
+    translate([61,90,0])
+    rotate([90,0,0])
+    linear_extrude(height=10) {
+        translate([0, 15])
+        circle(5);
+        translate([-5, 15])
+        square([10, 30]);        
+    }
     for (x = [0, 70]) {
         joint_female(x);
     }
-
 }
 
 module finger_case() {
