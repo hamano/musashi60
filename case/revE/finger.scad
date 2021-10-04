@@ -6,22 +6,24 @@ UNIT_Q = UNIT / 4;
 UNIT_E = UNIT / 8;
 
 KEY_OFFSET_X = 12;
-KEY_OFFSET_Y = 10;
+KEY_OFFSET_Y = 8;
 
 finger_plate_points = [
     [-60,2],
-    [80, 2],
-    [80, 5+UNIT*4],
-    [20, 22+UNIT*4],
-    [0,  22+UNIT*4],
-    [-60, 5+UNIT*4],
+    [-12,2],
+    [-12,12],
+    [80, 12],
+    [80, 82],
+    [20, 100],
+    [0,  100],
+    [-60, 82],
 ];
 
 finger_plate_sc_points = [
     [-60+3, 2+3],
-    [80-3, 2+3],
-    [80-3, 5+UNIT*4 - 3],
-    [-60+3, 5+UNIT*4 - 3],
+    [80-3, 12+3],
+    [80-3, 82 - 3],
+    [-60+3, 82 - 3],
 ];
 
 module finger_plate_nohole() {
@@ -49,27 +51,27 @@ module finger_plate_holes() {
     keyswitch_col(FX, FY, 4);
     // E
     EX = KEY_OFFSET_X - UNIT;
-    EY = KEY_OFFSET_Y + UNIT_H + UNIT_Q;
+    EY = KEY_OFFSET_Y + UNIT_H + UNIT_Q + UNIT_Q;
     echo("E: ", EX, EY);
     keyswitch_col(EX, EY, 4);
     // D
     DX = KEY_OFFSET_X;
-    DY = KEY_OFFSET_Y + UNIT;
+    DY = KEY_OFFSET_Y + UNIT + UNIT_Q;
     echo("D: ", DX, DY);
     keyswitch_col(DX, DY, 4);
     // C
     CX = KEY_OFFSET_X+ UNIT;
-    CY = KEY_OFFSET_Y + UNIT_H + UNIT_Q;
+    CY = KEY_OFFSET_Y + UNIT;
     echo("C: ", CX, CY);
     keyswitch_col(CX, CY, 4);
     // B
     BX = KEY_OFFSET_X+UNIT * 2;
-    BY = KEY_OFFSET_Y+ UNIT_H;
+    BY = KEY_OFFSET_Y+ UNIT_H + UNIT_Q;
     echo("B: ", BX, BY);
     keyswitch_col(BX, BY, 4);
     // A
     AX = KEY_OFFSET_X+UNIT*3;
-    AY = KEY_OFFSET_Y+UNIT_H+UNIT_Q;
+    AY = KEY_OFFSET_Y+UNIT + UNIT_Q;
     echo("A: ", AX, AY);
     keyswitch_col(AX, AY, 1);
     echo("A2: ", AX, AY + UNIT + UNIT_Q);
@@ -93,7 +95,7 @@ tilt_angle = [-6,-8,0];
 tilt_angle_r = tilt_angle * -1;
 echo(tilt_angle_r);
 
-height = 26;
+height = 25;
 
 module finger_case_outer_face() {
     projection()
@@ -137,7 +139,7 @@ module finger_case_nohole() {
         translate([0,0,height])
         rotate(tilt_angle){
             linear_extrude(height=50)
-            square(200, center=true);
+            square(300, center=true);
             // sc hole
             translate([0,0,-9])
             linear_extrude(height=9)
@@ -156,35 +158,33 @@ module finger_case_nohole() {
 
 module finger_case_hole() {
     // cable hole
-    translate([50,6,0])
+    translate([55,20,0])
     rotate([90,0,0])
-    linear_extrude(height=10) {
+    linear_extrude(height=20) {
         translate([0, 10])
-        circle(5);
-        translate([-5,10])
-        square([10, 30]);
+        circle(6);
+        translate([-6,10])
+        square([12, 30]);
     }
     // USB hole
-    translate([11,104,0])
+    translate([11,110,0])
     rotate([90,0,0])
-    linear_extrude(height=10) {
+    linear_extrude(height=20) {
         translate([0, 10])
         circle(6);
         translate([-6, 10])
         square([12, 30]);        
     }
     // TRRS hole
-    translate([61,90,0])
+    translate([65,95,0])
     rotate([90,0,0])
-    linear_extrude(height=10) {
+    linear_extrude(height=20) {
         translate([0, 15])
-        circle(5);
-        translate([-5, 15])
-        square([10, 30]);        
+        circle(6);
+        translate([-6, 15])
+        square([12, 30]);        
     }
-    for (x = [0, 70]) {
-        joint_female(x);
-    }
+
 }
 
 module finger_case() {
@@ -192,9 +192,13 @@ module finger_case() {
         finger_case_nohole();
         finger_case_hole();
     }
+    for (x = [0, 70]) {
+        joint_male([x, 10]);
+    }
 }
 
-//finger_case();
+finger_case();
 
-//rotate([180,0,0])
+translate([0,-10])
+rotate([180,0,0])
 finger_plate();
