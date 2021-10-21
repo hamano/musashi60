@@ -5,17 +5,17 @@ UNIT_H = UNIT / 2;
 UNIT_Q = UNIT / 4;
 UNIT_E = UNIT / 8;
 
-KEY_OFFSET_X = 12;
+KEY_OFFSET_X = 10;
 KEY_OFFSET_Y = 8;
 
 finger_plate_points = [
     [-60,2],
-    [-12,2],
-    [-12,12],
+    [-15,2],
+    [-15,12],
     [80, 12],
     [80, 82],
-    [20, 100],
-    [0,  100],
+    [21, 100],
+    [-1, 100],
     [-60, 82],
 ];
 
@@ -91,7 +91,7 @@ module finger_plate() {
 }
 
 
-tilt_angle = [-6,-8,0];
+tilt_angle = [-5,-8,0];
 tilt_angle_r = tilt_angle * -1;
 echo(tilt_angle_r);
 
