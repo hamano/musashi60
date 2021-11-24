@@ -106,7 +106,7 @@ module case() {
 }
 
 module thumb_case_hole() {
-    translate([55,0,0])
+    translate([40,0,0])
     rotate([90,0,0])
     linear_extrude(height=4){
         translate([0, 10])
