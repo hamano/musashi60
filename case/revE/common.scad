@@ -49,19 +49,19 @@ module joint_female(pos=[0,0]) {
     translate(pos){
       rotate([0,0,180]){
         linear_extrude(height=10)
-        offset(delta=0.3)
+        offset(delta=0.4)
         joint_male_face();
         
-        translate([0,1.7,10])
+        translate([0,1.6,10])
         rotate([-90,0,0])
-        linear_extrude(height=2.6)
-        offset(delta=0.3)
+        linear_extrude(height=2.8)
+        offset(delta=0.4)
         circle(3, $fn=12);
 
-        translate([0,-0.3,10])
+        translate([0,-0.4,10])
         rotate([-90,0,0])
-        linear_extrude(height=2.6)
-        offset(delta=0.3)
+        linear_extrude(height=2.8)
+        offset(delta=0.4)
         circle(1, $fn=12);
       }
     }
