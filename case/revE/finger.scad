@@ -9,9 +9,9 @@ KEY_OFFSET_X = 10;
 KEY_OFFSET_Y = 8;
 
 finger_plate_points = [
-    [-60,2],
-    [-15,2],
-    [-15,12],
+    [-60,0],
+    [-14,0],
+    [-14,12],
     [80, 12],
     [80, 82],
     [21, 100],
@@ -20,7 +20,7 @@ finger_plate_points = [
 ];
 
 finger_plate_sc_points = [
-    [-60+3, 2+3],
+    [-35, 3],
     [80-3, 12+3],
     [80-3, 82 - 3],
     [-60+3, 82 - 3],
@@ -171,13 +171,13 @@ module finger_case_hole() {
     rotate([90,0,0])
     linear_extrude(height=20) {
         translate([0, 10])
-        circle(6);
-        translate([-6, 10])
-        square([12, 30]);        
+        circle(8);
+        translate([-8, 10])
+        square([16, 30]);        
     }
     // TRRS hole
-    translate([65,95,0])
-    rotate([90,0,0])
+    translate([75,95,0])
+    rotate([90,0,-30])
     linear_extrude(height=20) {
         translate([0, 15])
         circle(6);
