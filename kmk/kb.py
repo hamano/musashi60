@@ -15,5 +15,4 @@ class KMKKeyboard(_KMKKeyboard):
     coord_mapping.extend(ic(2, x) for x in range(14))
     coord_mapping.extend(ic(3, x) for x in range(6))
     coord_mapping.extend(ic(3, x) for x in range(8, 14))
-    coord_mapping.extend(ic(4, x) for x in range(3, 9))
-
+    coord_mapping.extend(ic(4, x) for x in range(3, 11))
