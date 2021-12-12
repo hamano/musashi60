@@ -27,6 +27,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT Musashi60
 #define DESCRIPTION A custom keyboard
 
+//#define DEBUG_MATRIX_SCAN_RATE
+
 /* key matrix size */
 #define MATRIX_ROWS 5 * 2
 #define MATRIX_COLS 7
