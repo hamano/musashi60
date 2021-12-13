@@ -42,9 +42,8 @@ split = Split(
 #    split_flip=True,
     data_pin=data_pin,
     data_pin2=data_pin2,
-#    target_left=False,
-#    split_target_left=False,
-#    data_pin2=data_pin2
+#    target_left=True,
+#    split_target_left=True,
     debug_enabled=True
 )
 
@@ -64,11 +63,11 @@ keyboard.keymap = [
         # ------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
         KC.GRV,  KC.Q,    KC.W,    KC.E,    KC.R,    KC.T,    KC.ESC,  KC.DEL,  KC.Y,    KC.U,    KC.I,    KC.O,    KC.P,    KC.MINS,\
         # ------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
-        KC.LGUI, KC.A,    KC.S,    KC.D,    KC.F,    KC.G,    KC.TAB,  KC.BSPC, KC.H,    KC.J,    KC.K,    KC.L,    KC.SCLN, CT_QUOT,\
+        KC.LGUI, KC.A,    KC.S,    KC.D,    KC.F,    KC.G,    KC.TAB,  KC.BSPC, KC.H,    KC.J,    KC.K,    KC.L,    KC.SCLN, KC.QUOT,\
         # ------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
-        KC.LSFT, KC.Z,    KC.X,    KC.C,    KC.V,    KC.B,                      KC.N,    KC.M,    KC.COMM, KC.DOT,  KC.SLSH, SF_MINS,\
+        KC.LSFT, KC.Z,    KC.X,    KC.C,    KC.V,    KC.B,                      KC.N,    KC.M,    KC.COMM, KC.DOT,  KC.SLSH, KC.MINS,\
         # ------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
-                                   MT_LALT, KC.LCTL, KC.SPC,  LOWER,   RAISE,   KC.ENT,  KC.RCTL, MT_RALT
+                                   MT_LALT, KC.LCTL, KC.SPC,  KC.SPC,  KC.SPC,  KC.ENT,  KC.RCTL, MT_RALT
         # ------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+
     ]
 ]
