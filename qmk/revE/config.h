@@ -51,9 +51,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /*
  * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
  */
-#define SOFT_SERIAL_PIN D2  // or D1, D2, D3, E6
+#define SOFT_SERIAL_PIN 2
 
 #define SPLIT_HAND_PIN 28
+#define MASTER_LEFT
+#define DEBUG_MATRIX_SCAN_RATE
+//#define DEBUG_ACTION
 
 // #define BACKLIGHT_PIN B7
 // #define BACKLIGHT_BREATHING
@@ -253,3 +256,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define BOOTMAGIC_LITE_COLUMN 0
 #define TAPPING_TERM 200
 #define PERMISSIVE_HOLD
+
