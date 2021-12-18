@@ -22,6 +22,26 @@
 // Optional override functions below.
 // You can leave any or all of these undefined.
 // These are only required if you want to perform custom actions.
+static int is_left;
+static int is_master;
+
+void keyboard_pre_init_kb(void) {
+    debug_enable = true;
+    debug_matrix = true;
+
+    is_left = is_keyboard_left();
+    is_master = is_keyboard_master();
+}
+
+void keyboard_post_init_kb(void) {
+
+#if MCU_FAMILY == PICO
+    setPinOutput(25);
+    writePinHigh(25);
+#endif
+
+    keyboard_post_init_user();
+}
 
 #ifdef POINTING_DEVICE_ENABLE
 
@@ -32,17 +52,10 @@
 #define POINTING_MAX ((1 << (9 - POINTING_SPEED)) - 1)
 
 static report_mouse_t mouseReport = {};
-static int is_left;
-static int is_master;
 static int8_t js_cal_x;
 static int8_t js_cal_y;
 static int no_js;
 
-void keyboard_pre_init_kb(void) {
-    debug_enable = true;
-    is_left = is_keyboard_left();
-    is_master = is_keyboard_master();
-}
 
 void pointing_device_init(void) {
     setPinInput(POINTING_H_PIN);
