@@ -91,7 +91,7 @@ module finger_plate() {
 }
 
 //tilt_angle = [-5,-5,0];
-tilt_angle = [0,-5,0];
+tilt_angle = [3,-6,0];
 tilt_angle_r = tilt_angle * -1;
 echo(tilt_angle_r);
 
@@ -166,13 +166,21 @@ module finger_case_hole() {
         translate([-8,12])
         square([16, 30]);
     }
+    translate([10,20,0])
+    rotate([90,0,0])
+    linear_extrude(height=20) {
+        translate([0, 8])
+        circle(4);
+        translate([-4,8])
+        square([8, 30]);
+    }
     // USB hole
     translate([12,110,0])
     rotate([90,0,0])
     linear_extrude(height=20) {
         //translate([0, 10])
         //circle(9);
-        translate([-9, 2])
+        translate([-9, 4])
         square([18, 30]);
     }
     // TRRS hole
@@ -191,13 +199,13 @@ module finger_case() {
         finger_case_nohole();
         finger_case_hole();
     }
-    for (x = [0, 70]) {
+    for (x = [20,70]) {
         joint_male([x, 10]);
     }
 }
 
 finger_case();
 
-//translate([0,-10])
-//rotate([180,0,0])
-//finger_plate();
+translate([0,-10])
+rotate([180,0,0])
+finger_plate();
