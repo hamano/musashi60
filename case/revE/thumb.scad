@@ -1,4 +1,3 @@
-
 use <common.scad>;
 
 thumb_plate_points = [
@@ -43,7 +42,7 @@ module thumb_plate() {
 }
 
 
-tilt_angle = [12,6,0];
+tilt_angle = [10,6,0];
 tilt_angle_r = tilt_angle * -1;
 height = 25;
 
@@ -114,7 +113,7 @@ module thumb_case_hole() {
         translate([-8,10])
         square([16, 30]);
     }
-    for (x = [0,20,70]) {
+    for (x = [20,70]) {
         joint_female([x, 0]);
     }
 }
