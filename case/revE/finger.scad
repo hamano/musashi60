@@ -91,11 +91,11 @@ module finger_plate() {
 }
 
 //tilt_angle = [-5,-5,0];
-tilt_angle = [3,-6,0];
+tilt_angle = [3,-8,0];
 tilt_angle_r = tilt_angle * -1;
 echo(tilt_angle_r);
 
-height = 18;
+height = 20;
 
 module finger_case_outer_face() {
     projection()
@@ -199,7 +199,7 @@ module finger_case() {
         finger_case_nohole();
         finger_case_hole();
     }
-    for (x = [20,70]) {
+    for (x = [25,75]) {
         joint_male([x, 10]);
     }
 }
