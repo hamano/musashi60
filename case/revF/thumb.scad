@@ -109,15 +109,15 @@ module case() {
 
 module thumb_case_hole() {
     // cable hole
-    translate([40,0,0])
+    translate([45,0,0])
     rotate([90,0,0])
     linear_extrude(height=4){
         translate([0, 15])
-        circle(8);
-        translate([-8,15])
-        square([16, 30]);
+        circle(6);
+        translate([-6,15])
+        square([12, 30]);
     }
-    for (x = [25,75]) {
+    for (x = [30,70]) {
         joint_female([x, 0]);
     }
 }
@@ -131,6 +131,5 @@ module thumb_case() {
 
 thumb_case();
 
-translate([0,10])
-rotate([180,0,0])
+translate([0, 60])
 thumb_plate();
