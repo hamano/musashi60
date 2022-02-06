@@ -46,7 +46,7 @@ module joint_male(pos=[0,0]) {
 }
 
 module joint_female(pos=[0,0]) {
-    delta = 0.5;
+    delta = 0.6;
     translate(pos){
       rotate([0,0,180]){
         linear_extrude(height=10)
