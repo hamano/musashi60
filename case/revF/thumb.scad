@@ -46,9 +46,9 @@ module thumb_plate() {
 }
 
 
-tilt_angle = [14,18,0];
+tilt_angle = [12,20,0];
 tilt_angle_r = tilt_angle * -1;
-height = 45;
+height = 46;
 
 module thumb_case_outer_face() {
     projection()
@@ -79,7 +79,7 @@ module thumb_case_bottom_face() {
     for(p=thumb_plate_sc_points){
         linear_extrude(height=1)
         translate(p)
-        circle(4);
+        circle(4.4);
     }
 }
 
