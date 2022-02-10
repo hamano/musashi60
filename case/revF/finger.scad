@@ -159,15 +159,7 @@ module finger_case_nohole() {
 
 module finger_case_hole() {
     // cable hole
-    translate([10,20,0])
-    rotate([90,0,0])
-    linear_extrude(height=20) {
-        translate([0, 8])
-        circle(4);
-        translate([-4,8])
-        square([8, 30]);
-    }
-    translate([45,15,0])
+    translate([55,15,0])
     rotate([90,0,0])
     linear_extrude(height=20){
         translate([0, 10])
