@@ -1,16 +1,18 @@
 use <common.scad>;
 
 thumb_plate_points = [
-                [18,-21],
-                [18, -2],
-                [86, -2],
-                [88,-40],
+                [23,-21],
+                [23, -2],
+                [91, -2],
+                [96,-22],
+                [85,-41],
+                [77,-41],
                 ];
 
 thumb_plate_sc_points = [
-                [18+4, -12],
-                [86-3, -2-5],
-                [88-4, -40+5],
+                [23+4.5, -12],
+                [91-2.5, -2-5],
+                [85-4, -41+3],
                 ];
 
 module plate_nohole() {
@@ -27,9 +29,9 @@ module keyswitch_col(x=0,y=0,c=3,a=0) {
 }
 
 module plate_holes() {
-    keyswitch_hole(35, -31+19);
-    keyswitch_hole(56, -15, -15);
-    keyswitch_hole(76, -24, -30);
+    keyswitch_hole(40, -31+19);
+    keyswitch_hole(61, -15, -15);
+    keyswitch_hole(81, -24, -30);
 
     for(p=thumb_plate_sc_points){
         linear_extrude(height=5)
@@ -79,9 +81,9 @@ module thumb_case_bottom_face() {
     rotate(tilt_angle)
     for(p=thumb_plate_sc_points){
         linear_extrude(height=1)
-        translate([-1.5,0])
+        translate([-1.9,0])
         translate(p)
-        circle(4.5);
+        circle(4.6);
     }
 }
 
@@ -111,7 +113,7 @@ module case() {
 
 module thumb_case_hole() {
     // cable hole
-    translate([50,0,0])
+    translate([55,0,0])
     rotate([90,0,0])
     linear_extrude(height=4){
         translate([0, 15])
@@ -119,7 +121,7 @@ module thumb_case_hole() {
         translate([-6,15])
         square([12, 30]);
     }
-    for (x = [25,65]) {
+    for (x = [30,70]) {
         joint_female([x, 0]);
     }
 }
