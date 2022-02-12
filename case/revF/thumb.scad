@@ -49,7 +49,7 @@ module thumb_plate() {
 }
 
 
-tilt_angle = [10,25,0];
+tilt_angle = [12,25,0];
 tilt_angle_r = tilt_angle * -1;
 height = 50;
 
