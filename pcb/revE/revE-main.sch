@@ -70,7 +70,7 @@ Connection ~ 8850 4050
 Connection ~ 8850 3400
 Connection ~ 8850 2750
 $Comp
-L musashi60:SW_PUSH-foostan SW_B3
+L local:SW_PUSH-foostan SW_B3
 U 1 1 5F6E55AF
 P 8550 3750
 F 0 "SW_B3" H 8550 4005 50  0000 C CNN
@@ -92,7 +92,7 @@ F 3 "~" H 8850 3900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_B4
+L local:SW_PUSH-foostan SW_B4
 U 1 1 5F6E55A3
 P 8550 4400
 F 0 "SW_B4" H 8550 4655 50  0000 C CNN
@@ -103,7 +103,7 @@ F 3 "" H 8550 4400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_B1
+L local:SW_PUSH-foostan SW_B1
 U 1 1 5F6E559D
 P 8550 2450
 F 0 "SW_B1" H 8550 2705 50  0000 C CNN
@@ -114,7 +114,7 @@ F 3 "" H 8550 2450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_B2
+L local:SW_PUSH-foostan SW_B2
 U 1 1 5F6E5597
 P 8550 3100
 F 0 "SW_B2" H 8550 3355 50  0000 C CNN
@@ -166,7 +166,7 @@ F 3 "~" H 8850 4550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_A3
+L local:SW_PUSH-foostan SW_A3
 U 1 1 5F6A5E17
 P 9250 3750
 F 0 "SW_A3" H 9250 4005 50  0000 C CNN
@@ -188,7 +188,7 @@ F 3 "~" H 9550 3900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_G4
+L local:SW_PUSH-foostan SW_G4
 U 1 1 5F6A8BBB
 P 5050 4400
 F 0 "SW_G4" H 5050 4655 50  0000 C CNN
@@ -199,7 +199,7 @@ F 3 "" H 5050 4400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_F1
+L local:SW_PUSH-foostan SW_F1
 U 1 1 5F6AA817
 P 5750 2450
 F 0 "SW_F1" H 5750 2705 50  0000 C CNN
@@ -210,7 +210,7 @@ F 3 "" H 5750 2450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_A2
+L local:SW_PUSH-foostan SW_A2
 U 1 1 5F6AA82B
 P 9250 3100
 F 0 "SW_A2" H 9250 3355 50  0000 C CNN
@@ -264,7 +264,7 @@ row5
 Text GLabel 9650 4700 2    50   Input ~ 0
 row4
 $Comp
-L musashi60:SW_PUSH-foostan SW_D3
+L local:SW_PUSH-foostan SW_D3
 U 1 1 5F812BA9
 P 7150 3750
 F 0 "SW_D3" H 7150 4005 50  0000 C CNN
@@ -286,7 +286,7 @@ F 3 "~" H 7450 3900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_D4
+L local:SW_PUSH-foostan SW_D4
 U 1 1 5F812BB5
 P 7150 4400
 F 0 "SW_D4" H 7150 4655 50  0000 C CNN
@@ -297,7 +297,7 @@ F 3 "" H 7150 4400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_D1
+L local:SW_PUSH-foostan SW_D1
 U 1 1 5F812BBB
 P 7150 2450
 F 0 "SW_D1" H 7150 2705 50  0000 C CNN
@@ -308,7 +308,7 @@ F 3 "" H 7150 2450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_D2
+L local:SW_PUSH-foostan SW_D2
 U 1 1 5F812BC1
 P 7150 3100
 F 0 "SW_D2" H 7150 3355 50  0000 C CNN
@@ -360,7 +360,7 @@ F 3 "~" H 7450 4550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_E3
+L local:SW_PUSH-foostan SW_E3
 U 1 1 5F83B1EF
 P 6450 3750
 F 0 "SW_E3" H 6450 4005 50  0000 C CNN
@@ -382,7 +382,7 @@ F 3 "~" H 6750 3900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_E4
+L local:SW_PUSH-foostan SW_E4
 U 1 1 5F83B1FB
 P 6450 4400
 F 0 "SW_E4" H 6450 4655 50  0000 C CNN
@@ -393,7 +393,7 @@ F 3 "" H 6450 4400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_E1
+L local:SW_PUSH-foostan SW_E1
 U 1 1 5F83B201
 P 6450 2450
 F 0 "SW_E1" H 6450 2705 50  0000 C CNN
@@ -404,7 +404,7 @@ F 3 "" H 6450 2450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_E2
+L local:SW_PUSH-foostan SW_E2
 U 1 1 5F83B207
 P 6450 3100
 F 0 "SW_E2" H 6450 3355 50  0000 C CNN
@@ -454,7 +454,7 @@ F 3 "~" H 6750 4550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_F3
+L local:SW_PUSH-foostan SW_F3
 U 1 1 5F83F174
 P 5750 3750
 F 0 "SW_F3" H 5750 4005 50  0000 C CNN
@@ -476,7 +476,7 @@ F 3 "~" H 6050 3900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_C1
+L local:SW_PUSH-foostan SW_C1
 U 1 1 5F83F186
 P 7850 2450
 F 0 "SW_C1" H 7850 2705 50  0000 C CNN
@@ -487,7 +487,7 @@ F 3 "" H 7850 2450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_F4
+L local:SW_PUSH-foostan SW_F4
 U 1 1 5F83F18C
 P 5750 4400
 F 0 "SW_F4" H 5750 4655 50  0000 C CNN
@@ -535,7 +535,7 @@ F 3 "~" H 6050 3250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_F2
+L local:SW_PUSH-foostan SW_F2
 U 1 1 5F747684
 P 5750 3100
 F 0 "SW_F2" H 5750 3355 50  0000 C CNN
@@ -546,7 +546,7 @@ F 3 "" H 5750 3100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_C3
+L local:SW_PUSH-foostan SW_C3
 U 1 1 5F85843D
 P 7850 3750
 F 0 "SW_C3" H 7850 4005 50  0000 C CNN
@@ -557,7 +557,7 @@ F 3 "" H 7850 3750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_C2
+L local:SW_PUSH-foostan SW_C2
 U 1 1 5F858455
 P 7850 3100
 F 0 "SW_C2" H 7850 3355 50  0000 C CNN
@@ -587,7 +587,7 @@ colF
 Text GLabel 3100 1700 2    50   Input ~ 0
 data
 $Comp
-L musashi60:MJ-4PP-9-foostan J1
+L local:MJ-4PP-9-foostan J1
 U 1 1 5F7A2FFF
 P 3150 4350
 F 0 "J1" H 3181 4626 50  0000 C CNN
@@ -652,7 +652,7 @@ Connection ~ 7450 4700
 Wire Wire Line
 	7450 4700 8150 4700
 $Comp
-L musashi60:SW_PUSH-foostan SW_C4
+L local:SW_PUSH-foostan SW_C4
 U 1 1 5F747678
 P 7850 4400
 F 0 "SW_C4" H 7850 4655 50  0000 C CNN
@@ -705,7 +705,7 @@ colG
 Connection ~ 6050 4050
 Connection ~ 6050 3400
 $Comp
-L musashi60:SW_PUSH-foostan SW_G2
+L local:SW_PUSH-foostan SW_G2
 U 1 1 60A7871B
 P 5050 3100
 F 0 "SW_G2" H 5050 3355 50  0000 C CNN
@@ -716,7 +716,7 @@ F 3 "" H 5050 3100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_G3
+L local:SW_PUSH-foostan SW_G3
 U 1 1 60A786E9
 P 5050 3750
 F 0 "SW_G3" H 5050 4005 50  0000 C CNN
@@ -767,7 +767,7 @@ Wire Wire Line
 	6050 4700 5350 4700
 Connection ~ 6050 4700
 $Comp
-L musashi60:SW_PUSH-foostan SW_G1
+L local:SW_PUSH-foostan SW_G1
 U 1 1 60DF9883
 P 5050 2450
 F 0 "SW_G1" H 5050 2705 50  0000 C CNN
@@ -831,7 +831,7 @@ F 3 "~" H 950 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pico:Pico U1
+L local:Pico U1
 U 1 1 61AA6BC8
 P 2400 2650
 F 0 "U1" H 2400 3865 50  0000 C CNN
