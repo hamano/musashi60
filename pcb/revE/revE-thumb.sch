@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L revE-thumb-rescue:MountingHole_Pad-Mechanical H_LA1
+L local:MountingHole_Pad-Mechanical H_LA1
 U 1 1 61A275B8
 P 3950 1250
 F 0 "H_LA1" H 3850 1450 50  0000 L CNN
@@ -25,7 +25,7 @@ F 3 "~" H 3950 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L revE-thumb-rescue:MountingHole_Pad-Mechanical H_LB1
+L local:MountingHole_Pad-Mechanical H_LB1
 U 1 1 61A25B2F
 P 3100 1250
 F 0 "H_LB1" H 3000 1450 50  0000 L CNN
@@ -36,7 +36,7 @@ F 3 "~" H 3100 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L revE-thumb-rescue:MountingHole_Pad-Mechanical H_LC1
+L local:MountingHole_Pad-Mechanical H_LC1
 U 1 1 61A26894
 P 2250 1250
 F 0 "H_LC1" H 2150 1450 50  0000 L CNN
@@ -47,7 +47,7 @@ F 3 "~" H 2250 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L revE-thumb-rescue:MountingHole_Pad-Mechanical H_LD1
+L local:MountingHole_Pad-Mechanical H_LD1
 U 1 1 61A26ADC
 P 1400 1250
 F 0 "H_LD1" H 1300 1450 50  0000 L CNN
@@ -58,7 +58,7 @@ F 3 "~" H 1400 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L revE-thumb-rescue:MountingHole_Pad-Mechanical H_L5
+L local:MountingHole_Pad-Mechanical H_L5
 U 1 1 61A27B42
 P 4500 1250
 F 0 "H_L5" H 4400 1450 50  0000 L CNN
@@ -69,7 +69,7 @@ F 3 "~" H 4500 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L revE-thumb-rescue:MountingHole_Pad-Mechanical H_LGND1
+L local:MountingHole_Pad-Mechanical H_LGND1
 U 1 1 61A27F0E
 P 5000 1250
 F 0 "H_LGND1" H 4900 1450 50  0000 L CNN
@@ -80,7 +80,7 @@ F 3 "~" H 5000 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_LA5
+L local:SW_PUSH-foostan SW_LA5
 U 1 1 61A293DD
 P 3650 1350
 F 0 "SW_LA5" H 3650 1513 50  0000 C CNN
@@ -91,7 +91,7 @@ F 3 "" H 3650 1350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_LB5
+L local:SW_PUSH-foostan SW_LB5
 U 1 1 61A2B094
 P 2800 1350
 F 0 "SW_LB5" H 2800 1513 50  0000 C CNN
@@ -102,7 +102,7 @@ F 3 "" H 2800 1350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_LC5
+L local:SW_PUSH-foostan SW_LC5
 U 1 1 61A2FE9B
 P 1950 1350
 F 0 "SW_LC5" H 1950 1513 50  0000 C CNN
@@ -113,7 +113,7 @@ F 3 "" H 1950 1350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_LD5
+L local:SW_PUSH-foostan SW_LD5
 U 1 1 61A35327
 P 1100 1350
 F 0 "SW_LD5" H 1100 1513 50  0000 C CNN
@@ -192,7 +192,7 @@ Connection ~ 3350 1650
 Wire Wire Line
 	3350 1650 4500 1650
 $Comp
-L revE-thumb-rescue:MountingHole_Pad-Mechanical H_RA1
+L local:MountingHole_Pad-Mechanical H_RA1
 U 1 1 61A3DFC3
 P 4000 2450
 F 0 "H_RA1" H 3900 2650 50  0000 L CNN
@@ -203,7 +203,7 @@ F 3 "~" H 4000 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L revE-thumb-rescue:MountingHole_Pad-Mechanical H_RB1
+L local:MountingHole_Pad-Mechanical H_RB1
 U 1 1 61A3E093
 P 3150 2450
 F 0 "H_RB1" H 3050 2650 50  0000 L CNN
@@ -214,7 +214,7 @@ F 3 "~" H 3150 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L revE-thumb-rescue:MountingHole_Pad-Mechanical H_RC1
+L local:MountingHole_Pad-Mechanical H_RC1
 U 1 1 61A3E09D
 P 2300 2450
 F 0 "H_RC1" H 2200 2650 50  0000 L CNN
@@ -225,7 +225,7 @@ F 3 "~" H 2300 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L revE-thumb-rescue:MountingHole_Pad-Mechanical H_RD1
+L local:MountingHole_Pad-Mechanical H_RD1
 U 1 1 61A3E0A7
 P 1450 2450
 F 0 "H_RD1" H 1350 2650 50  0000 L CNN
@@ -236,7 +236,7 @@ F 3 "~" H 1450 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L revE-thumb-rescue:MountingHole_Pad-Mechanical H_R5
+L local:MountingHole_Pad-Mechanical H_R5
 U 1 1 61A3E0B1
 P 4550 2450
 F 0 "H_R5" H 4450 2650 50  0000 L CNN
@@ -247,7 +247,7 @@ F 3 "~" H 4550 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L revE-thumb-rescue:MountingHole_Pad-Mechanical H_RGND1
+L local:MountingHole_Pad-Mechanical H_RGND1
 U 1 1 61A3E0BB
 P 5050 2450
 F 0 "H_RGND1" H 4950 2650 50  0000 L CNN
@@ -258,7 +258,7 @@ F 3 "~" H 5050 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_RA5
+L local:SW_PUSH-foostan SW_RA5
 U 1 1 61A3E0C5
 P 3700 2550
 F 0 "SW_RA5" H 3700 2713 50  0000 C CNN
@@ -269,7 +269,7 @@ F 3 "" H 3700 2550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_RB5
+L local:SW_PUSH-foostan SW_RB5
 U 1 1 61A3E0CF
 P 2850 2550
 F 0 "SW_RB5" H 2850 2713 50  0000 C CNN
@@ -280,7 +280,7 @@ F 3 "" H 2850 2550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_RC5
+L local:SW_PUSH-foostan SW_RC5
 U 1 1 61A3E0D9
 P 2000 2550
 F 0 "SW_RC5" H 2000 2713 50  0000 C CNN
@@ -291,7 +291,7 @@ F 3 "" H 2000 2550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L musashi60:SW_PUSH-foostan SW_RD5
+L local:SW_PUSH-foostan SW_RD5
 U 1 1 61A3E0E3
 P 1150 2550
 F 0 "SW_RD5" H 1150 2713 50  0000 C CNN
