@@ -1,7 +1,7 @@
 use <common.scad>;
 
 thumb_plate_points = [
-                [22,-21],
+                [22,-22],
                 [22, -2],
                 [88, -2],
                 [95,-22],
@@ -29,8 +29,8 @@ module keyswitch_col(x=0,y=0,c=3,a=0) {
 }
 
 module plate_holes() {
-    keyswitch_hole(40, -12, 90);
-    keyswitch_hole(61, -15, 90-15);
+    keyswitch_hole(39, -13, 90);
+    keyswitch_hole(61, -16, 90-15);
     keyswitch_hole(81, -24, 90-30);
 
     for(p=thumb_plate_sc_points){
