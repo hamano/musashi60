@@ -1,8 +1,8 @@
 use <common.scad>;
 
 thumb_plate_points = [
-                [22,-22],
-                [22, -2],
+                [20,-22],
+                [20, -2],
                 [88, -2],
                 [95,-22],
                 [84,-41],
@@ -10,7 +10,7 @@ thumb_plate_points = [
                 ];
 
 thumb_plate_sc_points = [
-                [22+4.2, -12],
+                [20+5, -12],
                 [88-2, -2-4],
                 [84-3, -41+3],
                 ];
@@ -121,7 +121,7 @@ module thumb_case_hole() {
         translate([-6,15])
         square([12, 30]);
     }
-    for (x = [30,70]) {
+    for (x = [27,67]) {
         joint_female([x, 0]);
     }
 }
