@@ -100,7 +100,7 @@ module case() {
                 linear_extrude(height=9)
                 for(p=thumb_plate_sc_points){
                     translate(p)
-                        circle(1.5);
+                        circle(1.6);
                 }
             // plate hole
             translate([0,0,-2])
