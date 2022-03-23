@@ -177,12 +177,12 @@ module finger_case_hole() {
         square([18, 40]);
     }
     // TRRS hole
-    translate([72,95,0])
+    translate([72.5,95,0])
     rotate([90,0,-30])
     linear_extrude(height=20) {
-        translate([0, 20])
+        translate([0, 30])
         circle(5);
-        translate([-5, 20])
+        translate([-5, 30])
         square([10, 30]);
     }
 }
