@@ -34,8 +34,8 @@ void keyboard_pre_init_kb(void) {
 }
 
 void keyboard_post_init_kb(void) {
-    setPinOutput(GP25);
-    writePinHigh(GP25);
+//    setPinOutput(GP25);
+//    writePinHigh(GP25);
 
 //    keyboard_post_init_user();
 }
