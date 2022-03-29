@@ -1,2 +1,1 @@
-#DEFAULT_FOLDER = musashi60/revD
-DEFAULT_FOLDER = musashi60/revE
+DEFAULT_FOLDER = musashi60/revF
