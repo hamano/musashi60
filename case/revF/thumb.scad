@@ -49,9 +49,9 @@ module thumb_plate() {
 }
 
 
-tilt_angle = [12,25,0];
+tilt_angle = [12,20,0];
 tilt_angle_r = tilt_angle * -1;
-height = 50;
+height = 45;
 
 module thumb_case_outer_face() {
     projection()
