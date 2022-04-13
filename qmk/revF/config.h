@@ -51,14 +51,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /*
  * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
  */
-#define SOFT_SERIAL_PIN GP0
-//#define SOFT_SERIAL_PIN GP2
+//#define SOFT_SERIAL_PIN GP0
+#define SOFT_SERIAL_PIN GP3
 #define SPLIT_HAND_PIN GP28
 //#define SERIAL_USART_FULL_DUPLEX
-//#define SERIAL_USART_TX_PIN GP4
-//#define SERIAL_USART_RX_PIN GP5
+//#define SERIAL_USART_TX_PIN GP0
+//#define SERIAL_USART_RX_PIN GP1
 
-#define MASTER_LEFT
+//#define MASTER_LEFT
 #define DEBUG_MATRIX_SCAN_RATE
 //#define DEBUG_ACTION
 
@@ -268,4 +268,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_LED GP25
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 500U
 #define SERIAL_USART_TIMEOUT  200
-#define SELECT_SOFT_SERIAL_SPEED 5
+#define SELECT_SOFT_SERIAL_SPEED 1
