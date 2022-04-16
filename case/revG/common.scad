@@ -1,13 +1,9 @@
-
+cls = 0.1
 module keyswitch_hole(x=0, y=0, a=0) {
     translate([x, y, 0]) {
         rotate([0, 0, 90+a]) {
             linear_extrude(height = 2) {
-            square([14, 14], center = true);
-            //translate([-8, 3, 0]) square([1, 3]);
-            //translate([-8, -6, 0]) square([1, 3]);
-            //translate([7, 3, 0]) square([1, 3]);
-            //translate([7, -6, 0]) square([1, 3]);
+            square([14+cls, 14+cls], center = true);
             }
             linear_extrude(height = 0.6) {
                 translate([-3, 7]) square([6, 1]);
