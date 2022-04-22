@@ -1,4 +1,4 @@
-cls = 0.15;
+cls = 0.20;
 
 module keyswitch_hole(x=0, y=0, a=0) {
     translate([x, y, 0]) {
