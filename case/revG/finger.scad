@@ -9,8 +9,8 @@ KEY_OFFSET_X = 10;
 KEY_OFFSET_Y = 8;
 
 finger_plate_points = [
-    [-60,0],
-    [-10,0],
+    [-60,-4],
+    [-10,-4],
     [-10,12],
     [80, 12],
     [80, 84],
@@ -20,7 +20,7 @@ finger_plate_points = [
 ];
 
 finger_plate_sc_points = [
-    [-34, 3],
+    [-34, -4+3],
     [80-3, 12+3],
     [80-3, 84 - 3],
     [-60+3, 84 - 3],
@@ -41,7 +41,7 @@ module keyswitch_col(x=0,y=0,c=3,a=0) {
 module finger_plate_holes() {
     // G
     GX = KEY_OFFSET_X - UNIT * 3;
-    GY = KEY_OFFSET_Y + UNIT_Q;
+    GY = KEY_OFFSET_Y;// + UNIT_Q;
     echo("G: ", GX, GY);
     keyswitch_col(GX, GY, 4);
     // F
@@ -73,9 +73,9 @@ module finger_plate_holes() {
     AX = KEY_OFFSET_X+UNIT*3;
     AY = KEY_OFFSET_Y+UNIT + UNIT_Q;
     echo("A: ", AX, AY);
-    keyswitch_col(AX, AY, 1);
-    echo("A2: ", AX, AY + UNIT + UNIT_Q);
-    keyswitch_col(AX, AY + UNIT + UNIT_Q, 1);  
+    keyswitch_col(AX, AY, 2);
+    //echo("A2: ", AX, AY + UNIT + UNIT_Q);
+    //keyswitch_col(AX, AY + UNIT + UNIT_Q, 1);  
     for(p=finger_plate_sc_points){
         linear_extrude(height=5)
             translate(p)
@@ -91,7 +91,7 @@ module finger_plate() {
 }
 
 //tilt_angle = [-5,-5,0];
-tilt_angle = [4,-10,0];
+tilt_angle = [4,-12,0];
 tilt_angle_r = tilt_angle * -1;
 echo(tilt_angle_r);
 
