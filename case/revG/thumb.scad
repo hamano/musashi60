@@ -1,17 +1,18 @@
-                      use <common.scad>;
+use <common.scad>;
 
 thumb_plate_points = [
-                [20,-42],
-                [20, -2],
-                [86, -2],
-                [95,-22],
-                [84,-42],
+                [2,-24],
+                [2, -2],
+                [82, -2],
+                [93,-22],
+                [82,-42],
+                [76,-42],
                 ];
 
 thumb_plate_sc_points = [
-                [20+5, -22],
-                [86-2, -2-4],
-                [84-2, -42+3],
+                [2+4, -13],
+                [82-3, -2-4],
+                [82-3, -42+3],
                 ];
 
 module plate_nohole() {
@@ -28,10 +29,11 @@ module keyswitch_col(x=0,y=0,c=3,a=0) {
 }
 
 module plate_holes() {
-    keyswitch_hole(39, -13-19, 90);
-    keyswitch_hole(39, -13, 90);
-    keyswitch_hole(60, -16, 90-20);
-    keyswitch_hole(79, -25, 90-40);
+    keyswitch_hole(20, -13, 90);
+    keyswitch_hole(39.5, -14, 90-5);
+    keyswitch_hole(60, -17, 90-20);
+    keyswitch_hole(79, -25, 90-30);
+
     for(p=thumb_plate_sc_points){
         linear_extrude(height=5)
             translate(p)
@@ -48,9 +50,9 @@ module thumb_plate() {
 }
 
 
-tilt_angle = [12,20,0];
+tilt_angle = [10,15,0];
 tilt_angle_r = tilt_angle * -1;
-height = 45;
+height = 37;
 
 module thumb_case_outer_face() {
     projection()
@@ -82,7 +84,7 @@ module thumb_case_bottom_face() {
         linear_extrude(height=1)
         translate([-2,1])
         translate(p)
-        circle(4.2);
+        circle(4);
     }
 }
 
