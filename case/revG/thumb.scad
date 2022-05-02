@@ -29,8 +29,8 @@ module keyswitch_col(x=0,y=0,c=3,a=0) {
 }
 
 module plate_holes() {
-    keyswitch_hole(20, -13, 90);
-    keyswitch_hole(39.5, -14, 90-5);
+    keyswitch_hole(20, -16, 90);
+    keyswitch_hole(39, -14, 90);
     keyswitch_hole(60, -17, 90-20);
     keyswitch_hole(79, -25, 90-30);
 
