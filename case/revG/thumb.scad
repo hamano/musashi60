@@ -1,18 +1,18 @@
-use <common.scad>;
+                       use <common.scad>;
 
 thumb_plate_points = [
-                [2,-24],
+                [2,-26],
                 [2, -2],
                 [82, -2],
-                [93,-22],
-                [82,-42],
-                [76,-42],
+                [98,-23],
+                [82,-44],
+                [76,-44],
                 ];
 
 thumb_plate_sc_points = [
-                [2+4, -13],
-                [82-3, -2-4],
-                [82-3, -42+3],
+                [2+4, -14],
+                [82-2, -2-4],
+                [82-2, -44+3],
                 ];
 
 module plate_nohole() {
@@ -32,7 +32,7 @@ module plate_holes() {
     keyswitch_hole(20, -16, 90);
     keyswitch_hole(39, -14, 90);
     keyswitch_hole(60, -17, 90-20);
-    keyswitch_hole(79, -25, 90-30);
+    keyswitch_hole(78, -27, 90-40);
 
     for(p=thumb_plate_sc_points){
         linear_extrude(height=5)
