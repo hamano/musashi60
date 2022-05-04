@@ -4,15 +4,15 @@ thumb_plate_points = [
                 [2,-26],
                 [2, -2],
                 [82, -2],
-                [98,-23],
-                [82,-44],
-                [76,-44],
+                [100,-24],
+                [82,-46],
+                [76,-46],
                 ];
 
 thumb_plate_sc_points = [
                 [2+4, -14],
                 [82-2, -2-4],
-                [82-2, -44+3],
+                [82-2, -46+3],
                 ];
 
 module plate_nohole() {
@@ -31,7 +31,7 @@ module keyswitch_col(x=0,y=0,c=3,a=0) {
 module plate_holes() {
     keyswitch_hole(20, -16, 90);
     keyswitch_hole(39, -14, 90);
-    keyswitch_hole(60, -17, 90-20);
+    keyswitch_hole(60, -16, 90-20);
     keyswitch_hole(78, -27, 90-40);
 
     for(p=thumb_plate_sc_points){
@@ -95,7 +95,7 @@ module case() {
         translate([0,0,height])
             rotate(tilt_angle){
             linear_extrude(height=50)
-                square(200, center=true);
+                square(300, center=true);
             // screw hole
             translate([0,0,-9])
                 linear_extrude(height=9)
