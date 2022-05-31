@@ -159,13 +159,13 @@ module finger_case_nohole() {
 
 module finger_case_hole() {
     // cable hole
-    translate([55,15,0])
+    translate([25,15,0])
     rotate([90,0,0])
     linear_extrude(height=20){
         translate([0, 15])
-        circle(6);
-        translate([-6,15])
-        square([12, 30]);
+        circle(8);
+        translate([-8,15])
+        square([16, 30]);
     }
     // USB hole
     translate([12,110,0])
@@ -192,7 +192,7 @@ module finger_case() {
         finger_case_nohole();
         finger_case_hole();
     }
-    for (x = [27, 67]) {
+    for (x = [10, 60]) {
         joint_male([x, 10]);
     }
 }
