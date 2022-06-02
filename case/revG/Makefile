@@ -6,13 +6,13 @@ REV=revG
 %.png: %.scad
 	openscad $^ --render -o $@
 
-all: finger_case.stl finger_plate.stl thumb_case.stl thumb_plate.stl
+all: main_case.stl main_plate.stl thumb_case.stl thumb_plate.stl
 
 clean:
-	rm -rf finger_case.stl finger_plate.stl thumb_case.stl thumb_plate.stl
+	rm -rf main_case.stl main_plate.stl thumb_case.stl thumb_plate.stl
 
-finger_case.stl: finger_case.scad
-finger_plate.stl: finger_plate.scad
+main_case.stl: main_case.scad
+main_plate.stl: main_plate.scad
 
 thumb_case.stl: thumb_case.scad
 thumb_plate.stl: thumb_plate.scad
