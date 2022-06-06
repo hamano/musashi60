@@ -16,7 +16,7 @@
 
 #include "analog.h"
 #include "print.h"
-#include "pointing_device.h"
+//#include "pointing_device.h"
 #include "musashi60.h"
 
 // Optional override functions below.
