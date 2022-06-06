@@ -57,7 +57,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define SERIAL_USART_TX_PIN GP0
 //#define SERIAL_USART_RX_PIN GP1
 
-//#define MASTER_LEFT
+#define MASTER_LEFT
 #define DEBUG_MATRIX_SCAN_RATE
 //#define DEBUG_ACTION
 
@@ -262,5 +262,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_LED GP25
 #define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 500U
-#define SERIAL_USART_TIMEOUT  200
-#define SELECT_SOFT_SERIAL_SPEED 1
+//#define SERIAL_USART_TIMEOUT  200
