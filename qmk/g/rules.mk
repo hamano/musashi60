@@ -45,4 +45,3 @@ POINTING_DEVICE_ENABLE = no
 
 ALLOW_WARNINGS = yes
 SERIAL_DRIVER = vendor
-CONSOLE_ENABLE = yes         # Console for debug
