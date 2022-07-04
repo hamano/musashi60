@@ -9,8 +9,8 @@ KEY_OFFSET_X = 10;
 KEY_OFFSET_Y = 8;
 
 finger_plate_points = [
-    [-60,-4],
-    [-10,-4],
+    [-60,0],
+    [-10,0],
     [-10,12],
     [80, 12],
     [80, 84],
@@ -20,7 +20,7 @@ finger_plate_points = [
 ];
 
 finger_plate_sc_points = [
-    [-34, -4+3],
+    [-34, 0+3],
     [80-3, 12+3],
     [80-3, 84 - 3],
     [-60+3, 84 - 3],
@@ -41,7 +41,7 @@ module keyswitch_col(x=0,y=0,c=3,a=0) {
 module finger_plate_holes() {
     // G
     GX = KEY_OFFSET_X - UNIT * 3;
-    GY = KEY_OFFSET_Y;// + UNIT_Q;
+    GY = KEY_OFFSET_Y + UNIT_Q;
     echo("G: ", GX, GY);
     keyswitch_col(GX, GY, 4);
     // F
