@@ -2,7 +2,7 @@
 *.bck
 *.kicad_pcb-bak
 *.sch-bak
-*-cache
+*-cache.lib
 *.gcode
 fp-info-cache
 fp-lib-table
