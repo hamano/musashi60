@@ -20,7 +20,7 @@ finger_plate_points = [
 ];
 
 finger_plate_sc_points = [
-    [-34, 0+3],
+    [-34, 3],
     [80-3, 12+3],
     [80-3, 84 - 3],
     [-60+3, 84 - 3],
@@ -73,9 +73,11 @@ module finger_plate_holes() {
     AX = KEY_OFFSET_X+UNIT*3;
     AY = KEY_OFFSET_Y+UNIT + UNIT_Q;
     echo("A: ", AX, AY);
-    keyswitch_col(AX, AY, 2);
-    //echo("A2: ", AX, AY + UNIT + UNIT_Q);
-    //keyswitch_col(AX, AY + UNIT + UNIT_Q, 1);  
+    keyswitch_col(AX, AY, 1);
+    // next plan?
+    //keyswitch_col(AX, AY, 2);
+    echo("A2: ", AX, AY + UNIT + UNIT_Q);
+    keyswitch_col(AX, AY + UNIT + UNIT_Q, 1);
     for(p=finger_plate_sc_points){
         linear_extrude(height=5)
             translate(p)
@@ -90,7 +92,6 @@ module finger_plate() {
     }
 }
 
-//tilt_angle = [-5,-5,0];
 tilt_angle = [4,-12,0];
 tilt_angle_r = tilt_angle * -1;
 echo(tilt_angle_r);
