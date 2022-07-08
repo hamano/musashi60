@@ -112,7 +112,7 @@ module case() {
     }
 }
 
-module thumb_case_hole() {
+module thumb_case_hole(joint=true) {
     // cable hole
     translate([25,0,0])
     rotate([90,0,0])
@@ -122,15 +122,17 @@ module thumb_case_hole() {
         translate([-8,15])
         square([16, 30]);
     }
-    for (x = [10,60]) {
-        joint_female([x, 0]);
+    if (joint) {
+        for (x = [10,60]) {
+            joint_female([x, 0]);
+        }
     }
 }
 
-module thumb_case() {
+module thumb_case(joint=true) {
     difference() {
         case();
-        thumb_case_hole();
+        thumb_case_hole(joint=joint);
     }
 }
 

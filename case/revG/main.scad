@@ -188,13 +188,15 @@ module finger_case_hole() {
     }
 }
 
-module finger_case() {
+module finger_case(joint=true) {
     difference() {
         finger_case_nohole();
         finger_case_hole();
     }
-    for (x = [10, 60]) {
-        joint_male([x, 10]);
+    if (joint) {
+        for (x = [10, 60]) {
+            joint_male([x, 10]);
+        }
     }
 }
 
