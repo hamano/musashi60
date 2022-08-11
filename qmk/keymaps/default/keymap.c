@@ -31,8 +31,8 @@ enum custom_keycodes {
 
 #define RAISE MO(_RAISE)
 #define LOWER MO(_LOWER)
-#define MT_LALT MT(MOD_LALT, KC_MHEN) // Tap for MUHENKAN, hold for LCTL
-#define MT_RALT MT(MOD_RALT, KC_HENK) // Tap for HENKAN, hold for RCTL
+#define MT_RALT MT(MOD_RALT, KC_INT4) // Tap for HENKAN, hold for RCTL
+#define MT_LALT MT(MOD_LALT, KC_INT5) // Tap for MUHENKAN, hold for LCTL
 #define ALT_GRV LALT(KC_GRV)  // Alt + GRV
 #define ALT_BS  LALT(KC_BSPC) // Alt + BS
 #define ALT_DEL LALT(KC_DEL)  // Alt + DEL
@@ -55,7 +55,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                             _______,_______,_______,_______,_______,_______,_______,_______                         \
   ),
   [_LOWER] = LAYOUT(
-    KC_NO,  KC_F11, KC_F12, KC_F13, KC_F14, KC_F15,                 KC_VOLU,KC_VOLD,KC_MUTE,DEBUG,  KC_NO,  KC_NO,  \
+    KC_NO,  KC_F11, KC_F12, KC_F13, KC_F14, KC_F15,                 KC_VOLU,KC_VOLD,KC_MUTE,KC_NO,  KC_NO,  KC_NO,  \
     KC_BSLS,KC_1,   KC_2,   KC_3,   KC_4,   KC_5,   KC_BTN1,ALT_DEL,KC_6,   KC_7,   KC_8,   KC_9,   KC_0,   KC_EQL, \
     _______,_______,_______,_______,_______,_______,KC_DEL, ALT_BS, CT_PGUP,KC_PGDN,KC_PGUP,CT_PGDN,KC_LCBR,KC_PIPE,\
     _______,_______,_______,_______,_______,_______,                CT_PGUP,KC_PGDN,KC_PGUP,CT_PGDN,KC_RCBR,_______,\
