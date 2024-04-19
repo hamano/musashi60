@@ -12,8 +12,8 @@
   "processor": "RP2040",
   "usb": {
     "device_version": "0.0.1",
-    "pid": "0x0001",
-    "vid": "0x0634"
+    "pid": "0x0634",
+    "vid": "0xFEED"
   },
   "split": {
     "enabled": true
