@@ -21,11 +21,12 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 ## Gallery
 
-![gallery1](image/gallery1.jpg)
+![photo2](image/photo2.jpg)
+![photo1](image/photo1.jpg)
 
 ## Parts list
 
-- Pro micro
+- RP2024
 - PCB
 - case
 - plate
